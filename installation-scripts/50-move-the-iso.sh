@@ -19,4 +19,4 @@ echo "moving iso to insync just for Teammembers only"
 cp ~/arcolinux-build/archiso/out/arcolinux* ~/Insync/SHARED/TeamMembers-Only/
 
 #echo "moving iso to insync TEAMMEMBERS"
-#cp ~/arcolinuxd-build/archiso/out/arcolinuxd* ~/Insync/SHARED/arcolinux/
+#cp ~/arcolinux-build/archiso/out/arcolinux* ~/Insync/SHARED/arcolinux/
