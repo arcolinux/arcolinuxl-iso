@@ -1,0 +1,23 @@
+---
+componentName:  arcolinux
+
+strings:
+    productName:         ArcoLinux
+    shortProductName:    ArcoLinux
+    version:             1.0
+    shortVersion:        1.0
+    versionedName:       ArcoLinux
+    shortVersionedName:  ArcoLinux
+    bootloaderEntryName: ArcoLinux
+
+images:
+    productLogo:         "squid.png"
+    productIcon:         "logo.png"
+    productWelcome:      "languages.png"
+
+slideshow:               "show.qml"
+
+style:
+   sidebarBackground:    "#353945"
+   sidebarText:          "#ECEDEE"
+   sidebarTextSelect:    "#353945"

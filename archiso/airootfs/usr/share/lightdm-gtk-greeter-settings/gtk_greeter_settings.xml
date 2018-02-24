@@ -1,0 +1,17 @@
+<glade-catalog name="gtk_greeter_settings" domain="glade-3" 
+               depends="gtk+" version="1.0">
+  <glade-widget-classes>
+    <glade-widget-class title="Settings Window" name="GtkGreeterSettingsWindow" 
+                        generic-name="GtkGreeterSettingsWindow" parent="GtkWindow"
+                        icon-name="widget-gtk-window"/>
+    <glade-widget-class title="Indicator Properties Dialog" name="IndicatorPropertiesDialog" 
+                        generic-name="IndicatorPropertiesDialog" parent="GtkDialog"
+                        icon-name="widget-gtk-dialog"/>
+    <glade-widget-class title="Icon Chooser Dialog" name="IconChooserDialog" 
+                        generic-name="IconChooserDialog" parent="GtkDialog"
+                        icon-name="widget-gtk-dialog"/>
+    <glade-widget-class title="Multihead Setup Dialog" name="MultiheadSetupDialog" 
+                        generic-name="MultiheadSetupDialog" parent="GtkDialog"
+                        icon-name="widget-gtk-dialog"/>
+  </glade-widget-classes>
+</glade-catalog>
