@@ -3,7 +3,7 @@ Description=checks if installed on virtual machine or not
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/archmerge-virtual-machine-check
+ExecStart=/usr/bin/arcolinux-virtual-machine-check
 
 [Install]
 WantedBy=multi-user.target
