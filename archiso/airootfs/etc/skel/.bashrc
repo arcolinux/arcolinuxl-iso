@@ -29,6 +29,9 @@ alias fgrep='fgrep --color=auto'
 #readable output
 alias df='df -h'
 
+#pacman unlock
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+
 #free
 alias free="free -mt"
 
