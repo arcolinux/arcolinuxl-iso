@@ -16,15 +16,19 @@ echo "Removing old files/folders from folder"
 rm -rf ../archiso/airootfs/etc/skel/.* 2> /dev/null
 
 echo "getting .bashrc from arcolinux-root"
-cp -r ../../arcolinux-root/root/.bashrc-latest ../archiso/airootfs/etc/skel/.bashrc
+#cp -r ../../arcolinux-root/root/.bashrc-latest ../archiso/airootfs/etc/skel/.bashrc
+wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/root/.bashrc-latest -O ../archiso/airootfs/etc/skel/.bashrc
 echo ".bashrc copied to /etc/skel"
 
 echo "getting oblogout.conf from arcolinux-oblogout-themes"
-cp -r ../../arcolinux-oblogout-themes/oblogout.conf.arcolinuxnew ../archiso/airootfs/etc/oblogout.conf
+#cp -r ../../arcolinux-oblogout-themes/oblogout.conf.arcolinuxnew ../archiso/airootfs/etc/oblogout.conf
+wget https://raw.githubusercontent.com/arcolinux/arcolinux-oblogout-themes/master/oblogout.conf.arcolinuxnew -O ../archiso/airootfs/etc/oblogout.conf
+
 echo "oblogout.conf copied"
 
 echo "getting slim.conf from arcolinux-slimlock-themes"
-cp -r ../../arcolinux-slimlock-themes/slim.conf.arcolinuxnew ../archiso/airootfs/etc/slim.conf
+#cp -r ../../arcolinux-slimlock-themes/slim.conf.arcolinuxnew ../archiso/airootfs/etc/slim.conf
+wget https://raw.githubusercontent.com/arcolinux/arcolinux-slimlock-themes/master/slim.conf.arcolinuxnew -O ../archiso/airootfs/etc/slim.conf
 echo "slim.conf copied"
 
 
