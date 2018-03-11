@@ -4,4 +4,4 @@ Name=Install ArcoLinux
 Comment=Installer for ArcoLinux
 Categories=Utility;
 Exec=env QT_QPA_PLATFORMTHEME=Arc sudo -E calamares
-Icon=am-calamares
+Icon=arco-calamares

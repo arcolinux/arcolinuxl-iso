@@ -12,7 +12,7 @@
 ##################################################################################################################
 result=$(systemd-detect-virt)
 if [ $result = "none" ];	
-	then	
+	then
 	rm /etc/xdg/autostart/vboxclient.desktop
 	pacman -Rns virtualbox-guest-utils virtualbox-guest-modules-arch --noconfirm
 	rm /etc/modules-load.d/virtualbox.conf
