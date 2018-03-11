@@ -270,7 +270,7 @@ hunspell
 hunspell-en
 hyphen
 hyphen-en
-intel-ucode
+#intel-ucode
 intltool
 inxi
 iw
