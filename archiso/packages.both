@@ -400,23 +400,30 @@ xfpanel-switch
 
 arcolinux-arc-themes-git
 arcolinux-common-git
+arcolinux-config-git
 arcolinux-conky-collection-git
 arcolinux-docs-git
 arcolinux-i3wm-git
-arcolinux-iso-skel-git
+arcolinux-geany-git
 arcolinux-keyring
+arcolinux-local-git
 arcolinux-neofetch-git
+arcolinux-nitrogen-git
 arcolinux-oblogout-themes-git
 arcolinux-obmenu-generator-git
 arcolinux-openbox-configs-git
 arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
+arcolinux-plank-git
 arcolinux-plank-themes-git
 arcolinux-polybar-git
+arcolinux-rofi-git
 arcolinux-root-git
 arcolinux-slimlock-themes-git
 arcolinux-termite-themes-git
+arcolinux-tint2-git
 arcolinux-tint2-themes-git
+arcolinux-variety-git
 arcolinux-wallpapers-git
 arcolinux-xfce-thunar-git
 
