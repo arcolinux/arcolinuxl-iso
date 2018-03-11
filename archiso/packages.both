@@ -1,5 +1,5 @@
 #######################
-##     arcolinux      ##
+##     ArcoLinux      ##
 #######################
 
 ##########################################
@@ -211,7 +211,6 @@ atom
 catfish
 chromium
 compton
-#conky
 dmenu
 evolution
 feh
@@ -300,7 +299,6 @@ rsync
 rxvt-unicode
 simple-scan
 shotwell
-#snapd
 speedtest-cli
 squashfs-tools
 timeshift
@@ -358,7 +356,6 @@ adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 cantarell-fonts
 ckbcomp
-#ephifonts
 noto-fonts
 terminus-font
 ttf-bitstream-vera
@@ -431,7 +428,6 @@ arcolinux-xfce-thunar-git
 
 #applications
 vivaldi
-#vivaldi-ffmpeg-codecs
 vivaldi-codecs-ffmpeg-extra-bin
 
 #i3
@@ -489,12 +485,10 @@ mugshot
 neofetch
 oh-my-zsh-git
 oomox
-#pacaur
 package-query
 packer
 pamac-aur
 peek
-#polybar
 powertop
 pulseaudio-equalizer-ladspa
 screenkey
