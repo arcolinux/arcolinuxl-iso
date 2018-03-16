@@ -264,7 +264,7 @@ gnome-software
 gparted
 gpick
 gtop
-hexchat
+#hexchat
 hardinfo
 htop
 hunspell
