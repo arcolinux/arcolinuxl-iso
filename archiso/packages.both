@@ -211,6 +211,7 @@ atom
 catfish
 chromium
 compton
+darktable
 dmenu
 evolution
 feh
@@ -248,7 +249,7 @@ baobab
 catfish
 cmatrix
 cool-retro-term
-darktable
+dconf-editor
 dialog
 dmidecode
 evince
