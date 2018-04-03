@@ -408,6 +408,18 @@ ttf-ms-fonts
 #i3
 i3-gaps-next-git
 
+#icons
+faba-icon-theme
+halo-icons-git
+moka-icon-theme
+numix-circle-arc-icons-git
+numix-icon-theme-git
+numix-circle-icon-theme-git
+paper-icon-theme
+papirus-icon-theme-git
+sardi-icons
+surfn-icons-git
+
 #network
 b43-firmware
 broadcom-wl
@@ -419,17 +431,7 @@ obmenu-generator
 perl-linux-desktopfiles
 
 #theming
-faba-icon-theme
-halo-icons-git
-moka-icon-theme
-numix-circle-arc-icons-git
-numix-icon-theme-git
-numix-circle-icon-theme-git
 openbox-arc-git
-paper-icon-theme
-papirus-icon-theme-git
-sardi-icons
-surfn-icons-git
 
 #tools
 mkinitcpio-openswap
