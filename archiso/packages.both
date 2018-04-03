@@ -422,7 +422,7 @@ surfn-icons-git
 
 #network
 b43-firmware
-broadcom-wl
+#broadcom-wl
 
 #openbox
 obkey
