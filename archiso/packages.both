@@ -471,6 +471,7 @@ xfpanel-switch
 #############################
 #arcolinux_repo for arcolinux
 arcolinux-arc-themes-git
+arcolinux-awesome-git
 arcolinux-common-git
 arcolinux-config-git
 arcolinux-conky-collection-git
