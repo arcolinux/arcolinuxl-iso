@@ -36,7 +36,7 @@ function editOrCreateConfigFilesFunc () {
 
 function createLiveUserFunc () {
 	# add liveuser
-	useradd -m -p "arcolinux" -u 500 -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
+	useradd -m -p "arcolinux" -u 500 -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/bash liveuser
     chown -R liveuser:users /home/liveuser
 
     #enable autologin
