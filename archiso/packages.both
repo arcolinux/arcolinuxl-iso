@@ -474,13 +474,14 @@ xfpanel-switch
 #arcolinux_repo for arcolinux
 arcolinux-arc-themes-git
 #arcolinux-awesome-git
+#arcolinux-bspwm-git
 arcolinux-common-git
 arcolinux-config-git
 arcolinux-conky-collection-git
 arcolinux-docs-git
-arcolinux-i3wm-git
 arcolinux-faces-git
 arcolinux-geany-git
+arcolinux-i3wm-git
 arcolinux-keyring
 arcolinux-local-git
 arcolinux-neofetch-git
