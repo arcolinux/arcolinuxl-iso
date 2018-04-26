@@ -64,8 +64,8 @@ function enableServicesFunc() {
     systemctl enable org.cups.cupsd.service
     systemctl enable bluetooth.service
     systemctl enable ntpd.service
-    systemctl enable smbd.service
-    systemctl enable nmbd.service
+    systemctl enable smb.service
+    systemctl enable nmb.service
     systemctl enable winbindd.service
     systemctl enable avahi-daemon.service
     #systemctl enable avahi-daemon.socket
