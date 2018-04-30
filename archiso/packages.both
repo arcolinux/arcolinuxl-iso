@@ -322,6 +322,7 @@ glances
 gnome-disk-utility
 gnome-keyring
 gnome-software
+gnome-software-packagekit-plugin
 gparted
 gpick
 gtop
