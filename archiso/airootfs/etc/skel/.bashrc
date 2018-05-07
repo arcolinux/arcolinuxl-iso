@@ -9,6 +9,10 @@ export HISTCONTROL=ignoreboth:erasedups
 
 PS1='[\u@\h \W]\$ '
 
+if [ -d "$HOME/.bin" ] ;
+	then PATH="$HOME/.bin:$PATH"
+fi
+
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
