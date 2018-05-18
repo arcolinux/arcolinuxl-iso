@@ -476,7 +476,7 @@ xfpanel-switch
 
 #############################
 #arcolinux_repo for arcolinux
-arcolinux-applications
+arcolinux-applications-git
 arcolinux-arc-themes-git
 #arcolinux-awesome-git
 #arcolinux-bspwm-git
