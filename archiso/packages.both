@@ -490,7 +490,7 @@ arcolinux-i3wm-git
 arcolinux-keyring
 arcolinux-local-git
 arcolinux-neofetch-git
-arcolinux-neofetch-ascii-git
+#arcolinux-neofetch-ascii-git
 arcolinux-nitrogen-git
 arcolinux-oblogout-themes-git
 arcolinux-obmenu-generator-git
