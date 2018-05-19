@@ -6,8 +6,8 @@ pacman-key --populate archlinux arcolinux
 set -e -u
 
 iso_name=arcolinux
-iso_label="arcolinux-v6.7.4-$(date +%Y%m)-x86_64"
-iso_version="v6.7.4-$(date +%Y.%m.%d)"
+iso_label="arcolinux-v6.7.5-$(date +%Y%m)-x86_64"
+iso_version="v6.7.5-$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work
 out_dir=out
