@@ -1,7 +1,7 @@
 NAME="ArcoLinux"
 ID=ArcoLinux
 ID_LIKE="arch"
-VERSION_ID=v6.7.3
+VERSION_ID=v6.7.4
 PRETTY_NAME="Kirk"
 ANSI_COLOR="0;36"
 HOME_URL="https://arcolinux.info"
