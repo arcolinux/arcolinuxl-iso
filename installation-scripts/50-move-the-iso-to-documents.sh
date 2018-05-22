@@ -12,5 +12,7 @@ set -e
 #
 ##################################################################################################################
 
+[ -d ~/Documents/ArcoLinux ] || mkdir ~/Documents/ArcoLinux
+
 echo "moving iso to documents"
-cp ~/arcolinux-build/archiso/out/arcolinux* ~/Documents/
+cp ~/arcolinux-build/archiso/out/arcolinux* ~/Documents/ArcoLinux
