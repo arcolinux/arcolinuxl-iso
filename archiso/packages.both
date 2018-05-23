@@ -514,12 +514,6 @@ arcolinux-wallpapers-git
 arcolinux-xfce-thunar-git
 
 
-#discord - ArcoLinux chat channel
-#discord
-#libc++
-#libc++abi
-#libc++experimental
-
 #Calamares installer
 calamares
 boost-libs
