@@ -482,7 +482,6 @@ arcolinux-arc-themes-git
 #arcolinux-awesome-git
 arcolinux-bin-git
 #arcolinux-bspwm-git
-arcolinux-calamares-git
 arcolinux-common-git
 arcolinux-config-git
 arcolinux-conky-collection-git
@@ -524,3 +523,4 @@ arcolinux-xfce-thunar-git
 #Calamares installer
 calamares
 boost-libs
+arcolinux-calamares-git
