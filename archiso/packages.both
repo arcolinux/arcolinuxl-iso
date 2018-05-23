@@ -234,7 +234,7 @@ guvcview
 hardinfo
 imagemagick
 inkscape
-libreoffice-fresh
+#libreoffice-fresh
 meld
 nitrogen
 numlockx
@@ -246,7 +246,7 @@ tint2
 transmission-gtk
 variety
 vlc
-zoom
+#zoom
 
 #conky
 jq
@@ -515,10 +515,10 @@ arcolinux-xfce-thunar-git
 
 
 #discord - ArcoLinux chat channel
-discord
-libc++
-libc++abi
-libc++experimental
+#discord
+#libc++
+#libc++abi
+#libc++experimental
 
 #Calamares installer
 calamares
