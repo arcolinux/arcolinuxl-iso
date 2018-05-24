@@ -224,7 +224,7 @@ dmenu
 evolution
 feh
 firefox
-flashplugin
+#flashplugin
 galculator
 geany
 gimp
@@ -315,7 +315,7 @@ dialog
 dmidecode
 evince
 file-roller
-filezilla
+#filezilla
 git
 gksu
 glances
