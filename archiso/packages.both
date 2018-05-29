@@ -281,11 +281,11 @@ gnome-icon-theme
 #lightdm
 accountsservice
 lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+#lightdm-gtk-greeter
+#lightdm-gtk-greeter-settings
 
 #login manager
-slim
+#slim
 
 #lx-applications
 lxappearance-obconf
@@ -295,7 +295,7 @@ lxrandr
 #openbox
 gtk2-perl
 obconf
-oblogout
+#oblogout
 openbox
 
 #themes
@@ -490,10 +490,13 @@ arcolinux-faces-git
 arcolinux-geany-git
 arcolinux-i3wm-git
 arcolinux-keyring
+arcolinux-lightdm-gtk-greeter
+arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
 arcolinux-neofetch-git
 #arcolinux-neofetch-ascii-git
 arcolinux-nitrogen-git
+arcolinux-oblogout
 arcolinux-oblogout-themes-git
 arcolinux-obmenu-generator-git
 arcolinux-openbox-configs-git
@@ -505,6 +508,7 @@ arcolinux-polybar-git
 arcolinux-rofi-git
 arcolinux-rofi-themes-git
 arcolinux-root-git
+arcolinux-slim
 arcolinux-slimlock-themes-git
 arcolinux-termite-themes-git
 arcolinux-tint2-git
