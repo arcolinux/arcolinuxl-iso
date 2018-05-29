@@ -11,6 +11,8 @@ rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
+sed -i 's/'#autologin-user='/'autologin-user=liveuser'/g' /etc/lightdm/lightdm.conf
+sed -i 's/'#autologin-session='/'autologin-session=xfce'/g' /etc/lightdm/lightdm.conf
 gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ position 'left'
 gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ theme 'OSXYosemite'
 gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ zoom-enabled 'true'
