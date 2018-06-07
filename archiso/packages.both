@@ -53,7 +53,7 @@ rsync
 sdparm
 sg3_utils
 smartmontools
-speedtouch
+#speedtouch
 sudo
 tcpdump
 testdisk
@@ -483,7 +483,10 @@ arcolinux-arc-themes-git
 arcolinux-bin-git
 #arcolinux-bspwm-git
 arcolinux-common-git
+#arcolinux-config-cinnamon-git
 arcolinux-config-git
+#arcolinux-config-gnome-git
+#arcolinux-config-plasma-git
 arcolinux-conky-collection-git
 arcolinux-docs-git
 arcolinux-faces-git
@@ -497,6 +500,8 @@ arcolinux-neofetch-git
 #arcolinux-neofetch-ascii-git
 arcolinux-nitrogen-git
 arcolinux-oblogout
+arcolinux-oblogout-awesome
+#arcolinux-oblogout-bspwm
 arcolinux-oblogout-themes-git
 arcolinux-obmenu-generator-git
 arcolinux-openbox-configs-git
