@@ -22,7 +22,6 @@ alias l.="ls -A | egrep '^\.'"
 
 #fix obvious typo's
 alias cd..='cd ..'
-alias sl="ls"
 alias pdw="pwd"
 
 ## Colorize the grep command output for ease of use (good for log files)##

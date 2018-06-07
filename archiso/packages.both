@@ -308,8 +308,8 @@ asciinema
 bash-completion
 baobab
 catfish
-cmatrix
-cool-retro-term
+#cmatrix
+#cool-retro-term
 dconf-editor
 dialog
 dmidecode
