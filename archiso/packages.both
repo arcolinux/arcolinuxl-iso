@@ -379,8 +379,8 @@ webkit2gtk
 wget
 wmctrl
 xapps
-xdg-desktop-portal-gtk
 xcape
+xdg-desktop-portal-gtk
 xfburn
 zenity
 zsh-completions
@@ -526,5 +526,4 @@ arcolinux-xfce-thunar-git
 
 #Calamares installer
 calamares
-boost-libs
 arcolinux-calamares-git
