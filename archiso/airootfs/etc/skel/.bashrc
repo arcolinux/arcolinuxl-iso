@@ -78,6 +78,9 @@ alias fc='sudo fc-cache -fv'
 alias mirror="sudo reflector --protocol https --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist"
 alias mirrors=mirror
 
+#mounting the folder Public for exchange between host and guest on virtualbox
+alias vbm="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Public /home/$USER/Public"
+
 #shopt
 shopt -s autocd # change to named directory
 shopt -s cdspell # autocorrects cd misspellings
