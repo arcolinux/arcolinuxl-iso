@@ -99,8 +99,8 @@ function initkeysFunc() {
     pacman-key --init
     pacman-key --populate archlinux
     pacman-key --populate arcolinux
-    #pacman-key --keyserver hkps://hkps.pool.sks-keyservers.net:443 -r 74F5DE85A506BF64
-    pacman-key --keyserver hkp://pool.sks-keyservers.net:80 -r 74F5DE85A506BF64
+    pacman-key --keyserver hkps://hkps.pool.sks-keyservers.net:443 -r 74F5DE85A506BF64
+    #pacman-key --keyserver hkp://pool.sks-keyservers.net:80 -r 74F5DE85A506BF64
     pacman-key --lsign-key 74F5DE85A506BF64
 	#sudo pacman-key --refresh-keys
 }
