@@ -2,7 +2,6 @@
 # ~/.bashrc
 #
 
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -52,10 +51,7 @@ alias merge="xrdb -merge ~/.Xresources"
 # pacman or pm
 alias pmsyu="sudo pacman -Syu --color=auto"
 alias pacman='sudo pacman --color auto'
-alias update='sudo pacman -Syu'
-
-# pacaur or pc
-alias pcsyu="pacaur -Syu"
+alias update='sudo pacman -Syyu'
 
 #ps
 alias ps="ps auxf"
