@@ -39,7 +39,7 @@ mtools
 ndisc6
 nfs-utils
 nilfs-utils
-nmap
+#nmap
 ntfs-3g
 ntp
 openconnect
@@ -152,7 +152,6 @@ pulseaudio-bluetooth
 #network
 avahi
 nss-mdns
-b43-fwcutter
 mobile-broadband-provider-info
 modemmanager
 networkmanager
@@ -164,8 +163,6 @@ networkmanager-vpnc
 networkmanager-dispatcher-ntpd
 openresolv
 samba
-wireless_tools
-wpa_actiond
 wpa_supplicant
 
 #file management
@@ -330,6 +327,7 @@ gparted
 gpick
 gtop
 hardinfo
+hddtemp
 htop
 #hunspell
 #hunspell-en
@@ -338,6 +336,7 @@ htop
 grsync
 intltool
 iw
+jsoncpp
 kpmcore
 libmtp
 laptop-detect
@@ -468,6 +467,7 @@ python-pywal
 screenkey
 sublime-text-dev
 temps
+tmux
 trizen
 urxvt-perls
 urxvt-resize-font-git
