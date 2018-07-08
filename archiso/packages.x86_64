@@ -4,6 +4,8 @@
 
 #archiso
 arch-install-scripts
+b43-fwcutter
+broadcom-wl
 btrfs-progs
 clonezilla
 crda
@@ -15,7 +17,7 @@ dmraid
 dnsmasq
 dnsutils
 dosfstools
-#elinks
+elinks
 ethtool
 exfat-utils
 f2fs-tools
@@ -23,13 +25,13 @@ fsarchiver
 gnu-netcat
 gpm
 gptfdisk
+#grml-zsh-config
 grub
-hddtemp
 hdparm
 ipw2100-fw
 ipw2200-fw
 irssi
-jsoncpp
+lftp
 linux-atm
 lsscsi
 mc
@@ -37,6 +39,7 @@ mtools
 ndisc6
 nfs-utils
 nilfs-utils
+nmap
 ntfs-3g
 ntp
 openconnect
@@ -53,18 +56,18 @@ rsync
 sdparm
 sg3_utils
 smartmontools
-#speedtouch
 sudo
 tcpdump
 testdisk
-tmux
 usb_modeswitch
 vim-minimal
 vpnc
 wget
+wireless_tools
+wpa_actiond
 wvdial
 xl2tpd
-zsh
+
 
 #xorg packages
 xorg-server
@@ -382,6 +385,7 @@ xcape
 xdg-desktop-portal-gtk
 xfburn
 zenity
+zsh
 zsh-completions
 zsh-syntax-highlighting
 
