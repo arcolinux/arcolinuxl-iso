@@ -437,7 +437,7 @@ obmenu-generator
 perl-linux-desktopfiles
 
 #theming
-openbox-arc-git
+#openbox-arc-git
 
 #tools
 mkinitcpio-openswap
