@@ -98,7 +98,7 @@ echo "################################################################"
 read -p "In order to build an iso we need to clean your cache (y/n)?" choice
 
 	case "$choice" in
- 	 y|Y ) sudo pacman -Sc;;
+ 	 y|Y ) sudo pacman -Scc;;
  	 n|N ) echo "Script has stopped. Nothing changed." & exit;;
  	 * ) echo "Type y or n." & echo "Script ended!" & exit;;
 	esac
