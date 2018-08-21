@@ -75,11 +75,11 @@ function enableServicesFunc() {
 }
 
 
-function fontFix() {
+#function fontFix() {
     # To disable scaling of bitmap fonts (which often makes them blurry)
 	# https://wiki.archlinux.org/index.php/font_configuration
-    rm -rf /etc/fonts/conf.d/10-scale-bitmap-fonts.conf
-}
+#    rm -rf /etc/fonts/conf.d/10-scale-bitmap-fonts.conf
+#}
 
 function fixWifiFunc() {
     #https://wiki.archlinux.org/index.php/NetworkManager#Configuring_MAC_Address_Randomization
@@ -127,8 +127,8 @@ setDefaultsFunc
 echo "#####   Function setDefaultsFunc done    #####"
 enableServicesFunc
 echo "#####   Function enableServicesFunc done    #####"
-fontFix
-echo "#####   Function fontFix done    #####"
+#fontFix
+#echo "#####   Function fontFix done    #####"
 fixWifiFunc
 echo "#####   Function fixWifiFunc done    #####"
 fixHibernateFunc
