@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -f /etc/sudoers.d/g_wheel
-#rm /etc/systemd/system/default.target
+chmod 750 /etc/sudoers.d
 rm /usr/share/applications/calamares.desktop
 rm -f /etc/skel/.config/autostart/calamares.desktop
 rm -rf /etc/calamares
