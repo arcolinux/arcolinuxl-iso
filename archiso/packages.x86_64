@@ -243,7 +243,7 @@ simplescreenrecorder
 termite
 tint2
 transmission-gtk
-variety
+variety-git
 vlc
 #zoom
 
@@ -471,7 +471,7 @@ urxvt-perls
 urxvt-resize-font-git
 wttr
 yad
-yay
+yay-bin
 yaourt
 
 #xfce4
