@@ -49,18 +49,15 @@ alias merge="xrdb -merge ~/.Xresources"
 
 # Aliases for software managment
 # pacman or pm
-alias pmsyu="sudo pacman -Syu --color=auto"
 alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syyu'
+
+# yay as aur helper - updates everything
+alias pksyua="yay -Syu --noconfirm"
 
 #ps
 alias ps="ps auxf"
 alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
-
-# yaourt keeps tmp folder cleaner than packer
-alias pks="yaourt -S --noconfirm "
-alias pksyu="yaourt -Syu --noconfirm"
-alias pksyua="yaourt -Syu  --aur --noconfirm"
 
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
