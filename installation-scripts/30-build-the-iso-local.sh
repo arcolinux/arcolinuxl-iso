@@ -134,3 +134,11 @@ echo
 
 cd ~/arcolinux-build/archiso/
 sudo ./build.sh -v
+
+echo
+echo "################################################################## "
+echo "Phase 7 : Copying the iso to Out folder"
+echo "################################################################## "
+echo
+[ -d  ~/ArcoLinux-Out ] || mkdir ~/ArcoLinux-Out
+cp ~/arcolinux-build/archiso/out/arcolinux* ~/ArcoLinux-Out
