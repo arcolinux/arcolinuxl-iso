@@ -137,7 +137,7 @@ sudo ./build.sh -v
 
 echo
 echo "################################################################## "
-echo "Phase 7 : Copying the iso to Out folder"
+echo "Phase 7 : Copying the iso to ~/ArcoLinux-Out"
 echo "################################################################## "
 echo
 [ -d  ~/ArcoLinux-Out ] || mkdir ~/ArcoLinux-Out
