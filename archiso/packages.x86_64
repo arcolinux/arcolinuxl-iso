@@ -244,7 +244,6 @@ tint2
 transmission-gtk
 variety
 vlc
-#zoom
 
 #conky
 jq
@@ -279,11 +278,7 @@ gnome-icon-theme
 #lightdm
 accountsservice
 lightdm
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
 
-#login manager
-#slim
 
 #lx-applications
 lxappearance-obconf
@@ -293,7 +288,6 @@ lxrandr
 #openbox
 gtk2-perl
 obconf
-#oblogout
 openbox
 
 #themes
@@ -336,7 +330,6 @@ grsync
 intltool
 iw
 jsoncpp
-kpmcore
 libmtp
 laptop-detect
 lsb-release
@@ -352,19 +345,17 @@ python2-dbus
 python2-xdg
 qt5ct
 qt5-styleplugins
-qt5-tools
+#qt5-tools
 qt5-webkit
 powertop
 reflector
 redshift
 ristretto
 rofi
-rsync
 rxvt-unicode
 simple-scan
 shotwell
 speedtest-cli
-squashfs-tools
 timeshift
 tlp
 transmission-cli
@@ -387,11 +378,6 @@ zsh
 zsh-completions
 zsh-syntax-highlighting
 
-#xfce4
-gtk-xfce-engine
-xfce4
-#mousepad
-xfce4-goodies
 
 #############################
 #arcolinux_repo_iso 3th party
@@ -456,7 +442,6 @@ neofetch
 oh-my-zsh-git
 oomox
 package-query
-#packer
 pamac-aur
 peek
 pulseaudio-equalizer-ladspa
@@ -472,6 +457,17 @@ wttr
 yad
 yay-bin
 yaourt
+
+#############################
+#Games
+#############################
+
+#steam
+#steam-native-runtime
+#lutris
+#sauerbraten
+#xonotic
+
 
 #############################
 #arcolinux_repo for arcolinux
@@ -518,9 +514,83 @@ arcolinux-tint2-git
 arcolinux-tint2-themes-git
 arcolinux-variety-git
 arcolinux-wallpapers-git
+arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
 
+#xfce4 also for ArcoLinuxB iso builds
+#xfce4 group content
+exo
+garcon
+gtk-xfce-engine
+thunar
+thunar-volman
+tumbler
+xfce4-appfinder
+xfce4-panel
+xfce4-power-manager
+xfce4-session
+xfce4-settings
+xfce4-terminal
+xfconf
+xfdesktop
+xfwm4
+xfwm4-themes
 
-#Calamares installer
+
+#xfce4-goodies group content
+#mousepad
+#orage
+#parole
+ristretto
+thunar-archive-plugin
+thunar-media-tags-plugin
+xfburn
+#xfce4-artwork
+xfce4-battery-plugin
+xfce4-clipman-plugin
+xfce4-cpufreq-plugin
+xfce4-cpugraph-plugin
+xfce4-datetime-plugin
+xfce4-dict
+xfce4-diskperf-plugin
+xfce4-eyes-plugin
+xfce4-fsguard-plugin
+xfce4-genmon-plugin
+xfce4-mailwatch-plugin
+xfce4-mount-plugin
+xfce4-mpc-plugin
+xfce4-netload-plugin
+xfce4-notes-plugin
+xfce4-notifyd
+xfce4-pulseaudio-plugin
+xfce4-screenshooter
+xfce4-sensors-plugin
+xfce4-smartbookmark-plugin
+xfce4-systemload-plugin
+xfce4-taskmanager
+xfce4-time-out-plugin
+xfce4-timer-plugin
+xfce4-verve-plugin
+xfce4-wavelan-plugin
+xfce4-weather-plugin
+xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
+
+xfce4-panel-profiles
+
+#Needed for Calamares installer
 calamares
-arcolinux-calamares-git
+networkmanager
+upower
+extra-cmake-modules
+kcoreaddons
+kconfig
+ki18n
+kservice
+kwidgetsaddons
+kpmcore
+boost-libs
+libpwquality
+squashfs-tools
+
+arcolinuxb-calamares-git
