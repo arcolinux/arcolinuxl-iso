@@ -78,6 +78,7 @@ xterm
 #video
 #xorg-drivers
 #xorg-drivers includes
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-keyboard
 xf86-input-libinput
@@ -87,7 +88,7 @@ xf86-input-vmmouse
 xf86-input-void
 xf86-video-amdgpu
 xf86-video-ati
-xf86-video-dummy
+#xf86-video-dummy
 xf86-video-fbdev
 xf86-video-intel
 #xf86-video-nouveau
@@ -95,16 +96,16 @@ xf86-video-openchrome
 #xf86-video-qxl
 xf86-video-vesa
 xf86-video-vmware
-xf86-video-voodoo
-xf86-video-sisusb
+#xf86-video-voodoo
+#xf86-video-sisusb
 
 #hardware video support
 #bumblebee
-libva-intel-driver
-libva-vdpau-driver
+#libva-intel-driver
+#libva-vdpau-driver
 mesa
 #mesa-demos
-mesa-vdpau
+#mesa-vdpau
 #opencl-mesa
 #primus
 #vulkan-intel
@@ -183,6 +184,7 @@ xdg-user-dirs
 
 #printers
 cups
+cups-filters
 cups-pdf
 cups-pk-helper
 ghostscript
@@ -208,6 +210,7 @@ freetype2
 libgsf
 libopenraw
 poppler-glib
+poppler-qt5
 
 ###########################
 #Software from Arch repo's
@@ -219,6 +222,7 @@ catfish
 chromium
 compton
 #darktable
+#deadbeef
 dmenu
 evolution
 feh
@@ -255,7 +259,7 @@ xcursor-simpleandsoft
 #fonts
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
-cantarell-fonts
+#cantarell-fonts
 ckbcomp
 noto-fonts
 terminus-font
@@ -281,14 +285,15 @@ lightdm
 
 
 #lx-applications
+lxappearance
 lxappearance-obconf
-lxmenu-data
 lxrandr
 
 #openbox
 gtk2-perl
 obconf
 openbox
+gtk-engine-murrine
 
 #themes
 adapta-gtk-theme
@@ -354,7 +359,7 @@ ristretto
 rofi
 rxvt-unicode
 simple-scan
-shotwell
+#shotwell
 speedtest-cli
 timeshift
 tlp
@@ -480,6 +485,7 @@ arcolinux-common-git
 #arcolinux-config-cinnamon-git
 arcolinux-config-git
 #arcolinux-config-gnome-git
+#arcolinux-config-mate-git
 #arcolinux-config-plasma-git
 arcolinux-conky-collection-git
 arcolinux-docs-git
@@ -498,6 +504,7 @@ arcolinux-oblogout
 #arcolinux-oblogout-bspwm
 arcolinux-oblogout-themes-git
 arcolinux-obmenu-generator-git
+#arcolinux-obmenu-generator-minimal-git
 arcolinux-openbox-configs-git
 arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
@@ -538,7 +545,7 @@ xfwm4-themes
 
 
 #xfce4-goodies group content
-mousepad
+#mousepad
 #orage
 #parole
 ristretto
