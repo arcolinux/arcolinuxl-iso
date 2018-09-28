@@ -68,6 +68,9 @@ alias fixpng="find . -type f -name "*.png" -exec convert {} -strip {} \;"
 #add new fonts
 alias fc='sudo fc-cache -fv'
 
+#copy/paste all content of /etc/skel over to home folder - Beware
+alias skel='cp -rf /etc/skel/* ~'
+
 #get fastest mirrors in your neighborhood 
 alias mirror="sudo reflector --protocol https --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist"
 alias mirrors=mirror
