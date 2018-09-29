@@ -589,7 +589,6 @@ xfce4-panel-profiles
 calamares
 networkmanager
 upower
-#extra-cmake-modules
 kcoreaddons
 kconfig
 ki18n
