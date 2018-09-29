@@ -589,7 +589,7 @@ xfce4-panel-profiles
 calamares
 networkmanager
 upower
-extra-cmake-modules
+#extra-cmake-modules
 kcoreaddons
 kconfig
 ki18n
@@ -599,5 +599,7 @@ kpmcore
 boost-libs
 libpwquality
 squashfs-tools
+plasma-framework
+hwinfo
 
 arcolinux-calamares-git
