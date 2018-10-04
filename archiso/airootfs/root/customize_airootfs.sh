@@ -75,12 +75,6 @@ function enableServicesFunc() {
 }
 
 
-#function fontFix() {
-    # To disable scaling of bitmap fonts (which often makes them blurry)
-	# https://wiki.archlinux.org/index.php/font_configuration
-#    rm -rf /etc/fonts/conf.d/10-scale-bitmap-fonts.conf
-#}
-
 function fixWifiFunc() {
     #https://wiki.archlinux.org/index.php/NetworkManager#Configuring_MAC_Address_Randomization
     su -c 'echo "" >> /etc/NetworkManager/NetworkManager.conf'
@@ -102,7 +96,7 @@ function initkeysFunc() {
     #pacman-key --keyserver hkps://hkps.pool.sks-keyservers.net:443 -r 74F5DE85A506BF64
     #pacman-key --keyserver hkp://pool.sks-keyservers.net:80 -r 74F5DE85A506BF64
     pacman-key --lsign-key 74F5DE85A506BF64
-	#sudo pacman-key --refresh-keys
+	  #sudo pacman-key --refresh-keys
 }
 
 function getNewMirrorCleanAndUpgrade() {
@@ -127,8 +121,6 @@ setDefaultsFunc
 echo "#####   Function setDefaultsFunc done    #####"
 enableServicesFunc
 echo "#####   Function enableServicesFunc done    #####"
-#fontFix
-#echo "#####   Function fontFix done    #####"
 fixWifiFunc
 echo "#####   Function fixWifiFunc done    #####"
 fixHibernateFunc
