@@ -497,6 +497,7 @@ arcolinux-keyring
 arcolinux-lightdm-gtk-greeter
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
+arcolinux-logo-git
 arcolinux-neofetch-git
 arcolinux-mirrorlist-git
 arcolinux-nitrogen-git

@@ -70,12 +70,21 @@ alias fc='sudo fc-cache -fv'
 
 #copy/paste all content of /etc/skel over to home folder - Beware
 alias skel='cp -rf /etc/skel/* ~'
+#backup contents of /etc/skel to hidden backup folder in home/user
+alias bupskel='mkdir ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* "$_"'
 
 #quickly kill conkies
 alias kc='killall conky'
 
 #hardware info --short
 alias hw="hwinfo --short"
+
+#skip integrity check
+alias yayskip='yay -S --mflags --skipinteg'
+alias trizenskip='trizen -S --skipinteg'
+
+#check vulnerabilities microcode
+alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #get fastest mirrors in your neighborhood 
 alias mirror="sudo reflector --protocol https --latest 50 --number 20 --sort rate --save /etc/pacman.d/mirrorlist"
