@@ -446,7 +446,6 @@ mugshot
 neofetch
 oh-my-zsh-git
 oomox
-package-query
 pamac-aur
 peek
 pulseaudio-equalizer-ladspa
@@ -461,7 +460,6 @@ urxvt-resize-font-git
 wttr
 yad
 yay-bin
-yaourt
 
 #############################
 #Games
