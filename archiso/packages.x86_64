@@ -312,6 +312,7 @@ dconf-editor
 dialog
 dmidecode
 evince
+expac
 file-roller
 #filezilla
 git
@@ -377,6 +378,7 @@ xapps
 xcape
 xdg-desktop-portal-gtk
 xfburn
+youtube-dl
 zenity
 zsh
 zsh-completions
@@ -433,7 +435,6 @@ mkinitcpio-openswap
 aurvote-git
 conky-lua-archers
 downgrade
-expac
 font-manager
 glxinfo
 #google-talkplugin
@@ -460,7 +461,6 @@ urxvt-resize-font-git
 wttr
 yad
 yay-bin
-youtube-dl
 
 #############################
 #Games
