@@ -260,7 +260,6 @@ xcursor-simpleandsoft
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 #cantarell-fonts
-ckbcomp
 noto-fonts
 terminus-font
 ttf-bitstream-vera
@@ -286,7 +285,9 @@ lightdm
 
 #lx-applications
 lxappearance
+#lxappearance-gtk3
 lxappearance-obconf
+#lxappearance-obconf-gtk3
 lxrandr
 
 #openbox
@@ -338,7 +339,6 @@ jsoncpp
 libmtp
 laptop-detect
 lsb-release
-lxrandr
 mlocate
 nomacs
 p7zip
@@ -355,7 +355,6 @@ qt5-webkit
 powertop
 reflector
 redshift
-ristretto
 rofi
 rxvt-unicode
 simple-scan
@@ -589,6 +588,8 @@ xfce4-panel-profiles
 
 #Needed for Calamares installer
 calamares
+arcolinux-calamares-git
+ckbcomp
 networkmanager
 upower
 kcoreaddons
@@ -602,5 +603,3 @@ libpwquality
 squashfs-tools
 plasma-framework
 hwinfo
-
-arcolinux-calamares-git
