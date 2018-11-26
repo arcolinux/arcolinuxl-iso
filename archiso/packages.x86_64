@@ -151,7 +151,7 @@ bluez-firmware
 pulseaudio-bluetooth
 
 #network
-#avahi
+avahi
 #nss-mdns
 mobile-broadband-provider-info
 modemmanager
