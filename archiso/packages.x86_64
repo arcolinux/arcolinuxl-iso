@@ -151,8 +151,8 @@ bluez-firmware
 pulseaudio-bluetooth
 
 #network
-avahi
-nss-mdns
+#avahi
+#nss-mdns
 mobile-broadband-provider-info
 modemmanager
 networkmanager
@@ -163,7 +163,7 @@ networkmanager-pptp
 networkmanager-vpnc
 networkmanager-dispatcher-ntpd
 openresolv
-samba
+#samba
 wpa_supplicant
 
 #file management
@@ -172,7 +172,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
-gvfs-smb
+#gvfs-smb
 mtpfs
 thunar
 thunar-archive-plugin
