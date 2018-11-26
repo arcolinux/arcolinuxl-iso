@@ -362,7 +362,7 @@ simple-scan
 #shotwell
 speedtest-cli
 timeshift
-tlp
+#tlp
 transmission-cli
 ufw
 gufw
