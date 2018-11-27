@@ -22,15 +22,16 @@
 #======================= Global Settings =====================================
 [global]
 
-# workgroup = NT-Domain-Name or Workgroup-Name, eg: MIDEARTH
-   workgroup = WORKGROUP
-   #client max protocol = NT1
-
 # fix for winbind november 2018 - thanks to marco
 # more info : https://wiki.samba.org/index.php/Idmap_config_ad
+# activate winbind with systemctl enable winbind.service
 
 idmap config * : backend = tdb
 idmap config * : range = 3000-7999
+
+# workgroup = NT-Domain-Name or Workgroup-Name, eg: MIDEARTH
+   workgroup = WORKGROUP
+   #client max protocol = NT1
 
 # server string is the equivalent of the NT Description field
    server string = Samba Server
