@@ -26,6 +26,12 @@
    workgroup = WORKGROUP
    #client max protocol = NT1
 
+# fix for winbind november 2018 - thanks to marco
+# more info : https://wiki.samba.org/index.php/Idmap_config_ad
+
+idmap config * : backend = tdb
+idmap config * : range = 3000-7999
+
 # server string is the equivalent of the NT Description field
    server string = Samba Server
 
