@@ -3,10 +3,10 @@
 set -e -u
 
 iso_name=arcolinux
-iso_label="arcolinux-v18.12.3-x86_64"
+iso_label="arcolinux-v18.12.4-x86_64"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v18.12.3"
+iso_version="v18.12.4"
 install_dir=arch
 work_dir=work
 out_dir=out
