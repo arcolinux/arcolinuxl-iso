@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Install ArcoLinux
-Comment=Installer for ArcoLinux
-Categories=Utility;
-Exec=env QT_QPA_PLATFORMTHEME=Arc sudo -E calamares
-Icon=arco-calamares

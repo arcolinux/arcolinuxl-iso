@@ -2,9 +2,6 @@
 rm -f /etc/sudoers.d/g_wheel
 chmod 750 /etc/sudoers.d
 chmod 750 /etc/polkit-1/rules.d
-rm /usr/share/applications/calamares.desktop
-rm -f /etc/skel/.config/autostart/calamares.desktop
-rm -rf /etc/calamares
 rm -rf /usr/lib/calamares
 rm -rf /usr/share/backgrounds/xfce
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
