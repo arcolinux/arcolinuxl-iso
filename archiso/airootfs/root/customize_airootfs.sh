@@ -50,7 +50,7 @@ function createLiveUserFunc () {
 function setDefaultsFunc() {
     export _EDITOR=nano
     echo "EDITOR=${_EDITOR}" >> /etc/environment
-    echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
+    #echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
     echo "EDITOR=${_EDITOR}" >> /etc/profile
 }
 
