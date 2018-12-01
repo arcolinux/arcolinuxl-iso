@@ -590,6 +590,7 @@ xfce4-panel-profiles
 
 #Needed for Calamares installer
 calamares
+arcolinux-system-installation-git
 arcolinux-calamares-git
 ckbcomp
 networkmanager
