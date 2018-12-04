@@ -299,6 +299,7 @@ gtk-engine-murrine
 #themes
 adapta-gtk-theme
 arc-gtk-theme
+numix-gtk-theme
 
 #utilities
 arandr

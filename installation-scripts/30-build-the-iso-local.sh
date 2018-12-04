@@ -118,6 +118,10 @@ echo
 echo "Copying files and folder to ~/arcolinux-build"
 sudo cp -r ../../arcolinux-iso ~/arcolinux-build
 
+sudo chmod 750 ~/arcolinux-build/archiso/airootfs/etc/sudoers.d
+sudo chmod 750 ~/arcolinux-build/archiso/airootfs/etc/polkit-1/rules.d
+sudo chgrp polkitd ~/arcolinux-build/archiso/airootfs/etc/polkit-1/rules.d
+
 echo
 echo "################################################################## "
 echo "Phase 5 : Cleaning the cache"
