@@ -499,6 +499,8 @@ arcolinux-fonts-git
 arcolinux-geany-git
 arcolinux-i3wm-git
 arcolinux-keyring
+arcolinux-kvantum-git
+#arcolinux-kvantum-plasma-git
 arcolinux-lightdm-gtk-greeter
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
