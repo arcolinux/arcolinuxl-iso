@@ -368,6 +368,7 @@ speedtest-cli
 timeshift
 #tlp
 transmission-cli
+tree
 ufw
 gufw
 unace
@@ -503,6 +504,7 @@ arcolinux-keyring
 arcolinux-kvantum-git
 #arcolinux-kvantum-plasma-git
 arcolinux-lightdm-gtk-greeter
+#arcolinux-lightdm-gtk-greeter-plasma
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
 arcolinux-logo-git
