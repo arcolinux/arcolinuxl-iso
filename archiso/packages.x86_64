@@ -172,7 +172,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
-#gvfs-smb
+gvfs-smb
 mtpfs
 thunar
 thunar-archive-plugin
