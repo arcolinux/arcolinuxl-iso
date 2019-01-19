@@ -67,8 +67,8 @@ function enableServicesFunc() {
   #systemctl enable smb.service
   #systemctl enable nmb.service
   #systemctl enable winbind.service
-  #systemctl enable avahi-daemon.service
-  #systemctl enable avahi-daemon.socket
+  systemctl enable avahi-daemon.service
+  systemctl enable avahi-daemon.socket
   #systemctl enable tlp.service
   #systemctl enable tlp-sleep.service
   #systemctl enable vnstat.service

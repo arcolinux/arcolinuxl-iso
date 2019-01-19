@@ -152,7 +152,7 @@ pulseaudio-bluetooth
 
 #network
 avahi
-#nss-mdns
+nss-mdns
 mobile-broadband-provider-info
 modemmanager
 networkmanager
