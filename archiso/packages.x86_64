@@ -192,16 +192,16 @@ gsfonts
 gtk3-print-backends
 gutenprint
 libcups
-hplip
+#hplip
 splix
 system-config-printer
 
 #printer extra for hplip
-pyqt5-common
-python-pillow
-python-pip
-python-pyqt5
-python-reportlab
+#pyqt5-common
+#python-pillow
+#python-pip
+#python-pyqt5
+#python-reportlab
 
 #tumbler
 tumbler
@@ -359,7 +359,7 @@ qt5-styleplugins
 qt5-webkit
 powertop
 reflector
-#redshift
+redshift
 rofi
 rxvt-unicode
 simple-scan
@@ -455,11 +455,12 @@ oomox
 pamac-aur
 peek
 pulseaudio-equalizer-ladspa
-python-pywal
 python-pystache
+python-pywal
 screenkey
 sublime-text-dev
 temps
+the_platinum_searcher-bin
 tmux
 trizen
 urxvt-perls
@@ -498,6 +499,7 @@ arcolinux-docs-git
 arcolinux-faces-git
 arcolinux-fonts-git
 arcolinux-geany-git
+arcolinux-grub-theme-vimix-git
 arcolinux-i3wm-git
 arcolinux-keyring
 arcolinux-kvantum-git
@@ -602,8 +604,8 @@ xfce4-panel-profiles
 
 #Needed for Calamares installer
 calamares
-arcolinux-system-installation-git
 arcolinux-calamares-git
+arcolinux-system-installation-git
 ckbcomp
 networkmanager
 upower
