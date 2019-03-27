@@ -147,7 +147,7 @@ blueberry
 bluez
 bluez-libs
 bluez-utils
-bluez-firmware
+#bluez-firmware
 pulseaudio-bluetooth
 
 #network

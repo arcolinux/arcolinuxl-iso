@@ -6,4 +6,5 @@ rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
+rm -rf /usr/share/backgrounds/xfce
 rm /usr/bin/arcolinux-cleanup.sh
