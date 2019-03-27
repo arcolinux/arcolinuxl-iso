@@ -81,7 +81,7 @@ alias skel='cp -rf /etc/skel/* ~'
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
 #copy bashrc-latest over on bashrc - cb= copy bash
-alias cb="cp ~/.bashrc-latest ~/.bashrc && source ~/.bashrc"
+alias cb="cp ~/.bashrc-latest ~/.bashrc && source ~/.bashrc && sudo cp /etc/skel/.bashrc-latest /etc/skel/.bashrc"
 
 #quickly kill conkies
 alias kc='killall conky'
