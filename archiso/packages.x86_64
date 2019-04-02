@@ -455,7 +455,7 @@ oh-my-zsh-git
 pamac-aur
 peek
 pulseaudio-equalizer-ladspa
-python-pystache
+#python-pystache
 python-pywal
 screenkey
 sublime-text-dev
