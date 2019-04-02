@@ -17,7 +17,7 @@ dmraid
 dnsmasq
 dnsutils
 dosfstools
-elinks
+#elinks
 ethtool
 exfat-utils
 f2fs-tools
@@ -483,16 +483,19 @@ yay-bin
 #############################
 #arcolinux_repo for arcolinux
 arcolinux-applications-git
-arcolinux-arc-themes-git
+#arcolinux-arc-themes-git
+arcolinux-arc-themes-nico-git
 #arcolinux-awesome-git
 arcolinux-bin-git
 #arcolinux-bspwm-git
 arcolinux-common-git
 #arcolinux-config-cinnamon-git
+#arcolinux-config-deepin-git
 arcolinux-config-git
 #arcolinux-config-gnome-git
 #arcolinux-config-mate-git
 #arcolinux-config-plasma-git
+#arcolinux-config-xmobar-git
 #arcolinux-config-xmonad-git
 arcolinux-conky-collection-git
 arcolinux-docs-git
@@ -509,8 +512,8 @@ arcolinux-lightdm-gtk-greeter
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
 arcolinux-logo-git
-arcolinux-neofetch-git
 arcolinux-mirrorlist-git
+arcolinux-neofetch-git
 arcolinux-nitrogen-git
 arcolinux-oblogout
 #arcolinux-oblogout-awesome
@@ -526,6 +529,8 @@ arcolinux-plank-git
 arcolinux-plank-themes-git
 arcolinux-polybar-git
 arcolinux-qt5-git
+#arcolinux-qt5-plasma-git
+#arcolinux-qtile-git
 arcolinux-rofi-git
 arcolinux-rofi-themes-git
 arcolinux-root-git
@@ -539,7 +544,8 @@ arcolinux-variety-git
 arcolinux-wallpapers-git
 arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
-#arcolinux-xmonad-git
+#arcolinux-xmonad-polybar-git
+#arcolinux-xmonad-xmobar-git
 
 #xfce4 also for ArcoLinuxB iso builds
 #xfce4 group content
