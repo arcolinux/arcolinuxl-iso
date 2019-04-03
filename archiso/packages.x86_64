@@ -64,7 +64,7 @@ vim-minimal
 vpnc
 wget
 wireless_tools
-wpa_actiond
+#wpa_actiond
 wvdial
 xl2tpd
 
@@ -218,7 +218,6 @@ poppler-qt5
 
 #applications
 atom
-catfish
 chromium
 compton
 #darktable
@@ -313,7 +312,6 @@ catfish
 #cmatrix
 #cool-retro-term
 dconf-editor
-dialog
 dmidecode
 evince
 expac
@@ -377,12 +375,10 @@ unzip
 vnstat
 w3m
 webkit2gtk
-wget
 wmctrl
 xapps
 xcape
 xdg-desktop-portal-gtk
-xfburn
 youtube-dl
 zenity
 zsh
@@ -455,7 +451,6 @@ oh-my-zsh-git
 pamac-aur
 peek
 pulseaudio-equalizer-ladspa
-#python-pystache
 python-pywal
 screenkey
 sublime-text-dev
@@ -553,8 +548,6 @@ exo
 garcon
 gtk-xfce-engine
 thunar
-thunar-volman
-tumbler
 xfce4-appfinder
 xfce4-panel
 xfce4-power-manager
@@ -572,8 +565,6 @@ xfwm4-themes
 #orage
 #parole
 ristretto
-thunar-archive-plugin
-thunar-media-tags-plugin
 xfburn
 #xfce4-artwork
 xfce4-battery-plugin
@@ -610,10 +601,9 @@ xfce4-panel-profiles
 
 #Needed for Calamares installer
 calamares
-arcolinux-calamares-git
 arcolinux-system-installation-git
+arcolinux-calamares-git
 ckbcomp
-networkmanager
 upower
 kcoreaddons
 kconfig
