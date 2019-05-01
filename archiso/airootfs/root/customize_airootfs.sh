@@ -95,14 +95,14 @@ function fixWifiFunc() {
     su -c 'echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/NetworkManager.conf'
 }
 
-function fixGeoclueRedshift() {
-    pathToGeoclueConf="/etc/geoclue/geoclue.conf"
-    echo '' >> $pathToGeoclueConf
-    echo '[redshift]' >> $pathToGeoclueConf
-    echo 'allowed=true' >> $pathToGeoclueConf
-    echo 'system=false' >> $pathToGeoclueConf
-    echo 'users=' >> $pathToGeoclueConf
-}
+# function fixGeoclueRedshift() {
+#     pathToGeoclueConf="/etc/geoclue/geoclue.conf"
+#     echo '' >> $pathToGeoclueConf
+#     echo '[redshift]' >> $pathToGeoclueConf
+#     echo 'allowed=true' >> $pathToGeoclueConf
+#     echo 'system=false' >> $pathToGeoclueConf
+#     echo 'users=' >> $pathToGeoclueConf
+# }
 
 function fixHibernateFunc() {
     sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
@@ -169,10 +169,10 @@ enableServicesFunc
 echo
 echo "#####   Function enableServicesFunc done    #####"
 echo
-fixGeoclueRedshift
-echo
-echo "#####   Function fixGeoclueRedshift done    #####"
-echo
+# fixGeoclueRedshift
+# echo
+# echo "#####   Function fixGeoclueRedshift done    #####"
+#echo
 fixWifiFunc
 echo
 echo "#####   Function fixWifiFunc done    #####"
