@@ -358,7 +358,7 @@ qt5-styleplugins
 qt5-webkit
 powertop
 reflector
-redshift
+#redshift
 rofi
 rxvt-unicode
 simple-scan
