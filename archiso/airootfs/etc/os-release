@@ -1,7 +1,7 @@
 NAME="ArcoLinux"
 ID=ArcoLinux
 ID_LIKE="arch"
-VERSION_ID=v19.05.1
+VERSION_ID=v19.05.2
 ANSI_COLOR="0;36"
 HOME_URL="https://arcolinux.info"
 SUPPORT_URL="http://arcolinuxforum.com"
