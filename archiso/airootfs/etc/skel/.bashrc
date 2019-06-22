@@ -132,6 +132,9 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
+#get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 
