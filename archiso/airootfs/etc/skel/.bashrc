@@ -46,6 +46,9 @@ alias unlock="sudo rm /var/lib/pacman/db.lck"
 #free
 alias free="free -mt"
 
+#use all cores
+alias uac="sh ~/.bin/main/000*"
+
 #continue download
 alias wget="wget -c"
 
