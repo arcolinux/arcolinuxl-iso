@@ -129,6 +129,61 @@ echo "################################################################## "
 echo
 yes | sudo pacman -Scc
 
+echo
+echo "################################################################## "
+echo "Phase 5 bis : Choose whether you want linux kernel or linux-lts kernel"
+echo "If you do not know what this is about, choose linux kernel"
+echo "https://wiki.archlinux.org/index.php/Kernel"
+echo "################################################################## "
+echo
+echo "Choose linux kernel or linux-lts kernel"
+echo
+echo "1.  linux kernel"
+echo "2.  linux-lts kernel"
+echo "Type the number..."
+
+read CHOICE
+
+WDP=$HOME"/arcolinux-build/archiso"
+
+case $CHOICE in
+
+    1 )
+			echo
+			echo "################################################################## "
+      echo "You have chosen for the linux kernel"
+			echo "################################################################## "
+			echo
+      ;;
+    2 )
+			echo
+			echo "################################################################## "
+			echo "You have chosen for the linux-lts kernel"
+			echo "################################################################## "
+			echo
+			FIND="calamares"
+			REPLACE="calamares-lts"
+			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
+
+			FIND="arcolinux-calamares-git"
+			REPLACE="arcolinux-calamares-lts-git"
+			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
+
+			FIND="#linux-lts"
+			REPLACE="linux-lts"
+			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
+
+			FIND="iso_name=arcolinux"
+			REPLACE="iso_name=arcolinux-lts"
+			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/build.sh
+      ;;
+    * )
+      echo "############################################"
+      echo "Wrong choice - try again - keyboard issue?"
+      echo "############################################"
+			exit 1;
+      ;;
+esac
 
 echo
 echo "################################################################## "

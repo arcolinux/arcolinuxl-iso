@@ -617,3 +617,6 @@ squashfs-tools
 plasma-framework
 hwinfo
 qt5-xmlpatterns
+
+#Long Term Service kernel
+#linux-lts
