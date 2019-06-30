@@ -506,6 +506,7 @@ arcolinux-lightdm-gtk-greeter
 #arcolinux-lightdm-gtk-greeter-plasma
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
+#arcolinux-local-repo-git
 arcolinux-logo-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
@@ -617,6 +618,3 @@ squashfs-tools
 plasma-framework
 hwinfo
 qt5-xmlpatterns
-
-#Long Term Service kernel
-#linux-lts

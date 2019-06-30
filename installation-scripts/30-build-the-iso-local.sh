@@ -169,8 +169,8 @@ case $CHOICE in
 			REPLACE="arcolinux-calamares-lts-git"
 			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
 
-			FIND="#linux-lts"
-			REPLACE="linux-lts"
+			FIND="#arcolinux-local-repo-git"
+			REPLACE="arcolinux-local-repo-git"
 			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
 
 			FIND="iso_name=arcolinux"
