@@ -514,6 +514,7 @@ arcolinux-nitrogen-git
 arcolinux-oblogout
 #arcolinux-oblogout-awesome
 #arcolinux-oblogout-bspwm
+#arcolinux-oblogout-qtile
 arcolinux-oblogout-themes-git
 #arcolinux-oblogout-xmonad
 arcolinux-obmenu-generator-git
