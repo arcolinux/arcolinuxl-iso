@@ -3,7 +3,7 @@
 set -e -u
 
 iso_name=arcolinux
-iso_label="arcolinux-v19.07.9-x86_64"
+iso_label="arcolinux-v19.07.9"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
 iso_version="v19.07.9"
