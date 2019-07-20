@@ -301,7 +301,6 @@ adapta-gtk-theme
 arc-gtk-theme
 kvantum-qt5
 kvantum-theme-arc
-numix-gtk-theme
 
 #utilities
 arandr
@@ -445,6 +444,7 @@ inxi
 menulibre
 mintstick-git
 mugshot
+numix-gtk-theme-git
 neofetch
 #oomox
 pamac-aur
