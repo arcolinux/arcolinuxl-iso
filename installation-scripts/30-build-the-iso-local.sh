@@ -6,6 +6,8 @@
 # Website	:	https://www.arcolinux.info
 # Website	:	https://www.arcolinux.com
 # Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
 # Website	:	https://www.arcolinuxforum.com
 ##################################################################################################################
 #
@@ -18,7 +20,7 @@ echo "################################################################## "
 tput setaf 2;echo "Phase 1 : get the latest bashrc from github";tput sgr0
 echo "################################################################## "
 echo
-echo "Removing old files/folders from folder"
+echo "Removing old files/folders from /etc/skel"
 rm -rf ../archiso/airootfs/etc/skel/.* 2> /dev/null
 echo "getting .bashrc from arcolinux-root"
 wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O ../archiso/airootfs/etc/skel/.bashrc
@@ -30,7 +32,6 @@ echo "################################################################## "
 tput setaf 2;echo "Phase 2 : Checking if archiso is installed";tput sgr0
 echo "################################################################## "
 echo
-echo "Checking if archiso is installed"
 
 package="archiso"
 
@@ -60,27 +61,6 @@ else
 		echo "################################################################"
 		trizen -S --noconfirm --needed --noedit $package
 
-	elif pacman -Qi yaourt &> /dev/null; then
-
-		echo "################################################################"
-		echo "######### Installing with yaourt"
-		echo "################################################################"
-		yaourt -S --noconfirm $package
-
-	elif pacman -Qi pacaur &> /dev/null; then
-
-		echo "################################################################"
-		echo "######### Installing with pacaur"
-		echo "################################################################"
-		pacaur -S --noconfirm --noedit  $package
-
-	elif pacman -Qi packer &> /dev/null; then
-
-		echo "################################################################"
-		echo "######### Installing with packer"
-		echo "################################################################"
-		packer -S --noconfirm --noedit  $package
-
 	fi
 
 	# Just checking if installation was successful
@@ -95,7 +75,7 @@ else
 		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 		echo "!!!!!!!!!  "$package" has NOT been installed"
 		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-
+		exit 1
 	fi
 
 fi
