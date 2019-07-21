@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# User = liveuser
+# Password = empty
+count=0
+
+function layout() {
+    count=$[count+1]
+    echo
+    echo "##########################################################"
+    tput setaf 1;echo $count. " Function " $1 "has been installed";tput sgr0
+    echo "##########################################################"
+    echo
+}
+
 function deleteXfceWallpapers() {
     rm -rf /usr/share/backgrounds/xfce
 }
@@ -12,6 +25,9 @@ function umaskFunc() {
 #function localeGenFunc() {
     # Set locales
     #sed -i 's/^#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
+    #export LANGUAGE=en_US.UTF-8
+    #export LANG=en_US.UTF-8
+    #export LC_ALL=en_US.UTF-8
     #locale-gen
 #}
 
@@ -20,12 +36,6 @@ function setTimeZoneAndClockFunc() {
     ln -sf /usr/share/zoneinfo/UTC /etc/localtime
     # Set clock to UTC
     hwclock --systohc --utc
-}
-
-function configRootUserFunc() {
-    usermod -s /usr/bin/bash root
-    cp -aT /etc/skel/ /root/
-    chmod 750 /root
 }
 
 function editOrCreateConfigFilesFunc () {
@@ -38,17 +48,23 @@ function editOrCreateConfigFilesFunc () {
     sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 }
 
+function configRootUserFunc() {
+    usermod -s /usr/bin/bash root
+    cp -aT /etc/skel/ /root/
+    chmod 750 /root
+}
+
 function createLiveUserFunc () {
 	# add liveuser
 	useradd -m liveuser -u 500 -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/bash
-  chown -R liveuser:users /home/liveuser
-
-  #enable autologin
-  groupadd -r autologin
-  gpasswd -a liveuser autologin
-
+	chown -R liveuser:users /home/liveuser
+	passwd -d liveuser
+	# enable autologin
+	groupadd -r autologin
+	gpasswd -a liveuser autologin
 	groupadd -r nopasswdlogin
 	gpasswd -a liveuser nopasswdlogin
+	echo "The account liveuser with no password has been created"
 }
 
 function setDefaultsFunc() {
@@ -74,19 +90,18 @@ function enableServicesFunc() {
 	systemctl enable virtual-machine-check.service
 	systemctl enable reflector.service
 	systemctl enable reflector.timer
-  systemctl enable org.cups.cupsd.service
-  systemctl enable bluetooth.service
-  systemctl enable ntpd.service
-  #systemctl enable smb.service
-  #systemctl enable nmb.service
-  #systemctl enable winbind.service
-  systemctl enable avahi-daemon.service
-  systemctl enable avahi-daemon.socket
-  #systemctl enable tlp.service
-  #systemctl enable tlp-sleep.service
-  #systemctl enable vnstat.service
+  	systemctl enable org.cups.cupsd.service
+  	systemctl enable bluetooth.service
+  	systemctl enable ntpd.service
+  	#systemctl enable smb.service
+  	#systemctl enable nmb.service
+  	#systemctl enable winbind.service
+  	systemctl enable avahi-daemon.service
+  	systemctl enable avahi-daemon.socket
+  	#systemctl enable tlp.service
+  	#systemctl enable tlp-sleep.service
+  	#systemctl enable vnstat.service
 }
-
 
 function fixWifiFunc() {
     #https://wiki.archlinux.org/index.php/NetworkManager#Configuring_MAC_Address_Randomization
@@ -94,15 +109,6 @@ function fixWifiFunc() {
     su -c 'echo "[device]" >> /etc/NetworkManager/NetworkManager.conf'
     su -c 'echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/NetworkManager.conf'
 }
-
-# function fixGeoclueRedshift() {
-#     pathToGeoclueConf="/etc/geoclue/geoclue.conf"
-#     echo '' >> $pathToGeoclueConf
-#     echo '[redshift]' >> $pathToGeoclueConf
-#     echo 'allowed=true' >> $pathToGeoclueConf
-#     echo 'system=false' >> $pathToGeoclueConf
-#     echo 'users=' >> $pathToGeoclueConf
-# }
 
 function fixHibernateFunc() {
     sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
@@ -126,69 +132,35 @@ function getNewMirrorCleanAndUpgrade() {
     pacman -Sc --noconfirm
     pacman -Syyu --noconfirm
 }
-echo
-echo "##########################################################"
-echo "##########################################################"
-echo
+
+
 deleteXfceWallpapers
-echo "#####   Function deleteXfceWallpapers done    #####"
-echo
-echo
+layout deleteXfceWallpapers
 umaskFunc
-echo "#####   Function umaskFunc done    #####"
-echo
+layout umaskFunc
+#localeGenFunc
+#layout localeGenFunc
 setTimeZoneAndClockFunc
-echo
-echo "#####   Function setTimeZoneAndClockFunc done    #####"
-echo
+layout setTimeZoneAndClockFunc
 editOrCreateConfigFilesFunc
-echo
-echo "#####   Function editOrCreateConfigFilesFunc done    #####"
-echo
+layout editOrCreateConfigFilesFunc
 configRootUserFunc
-echo
-echo "#####   Function configRootUserFunc done    #####"
-echo
+layout configRootUserFunc
 createLiveUserFunc
-echo
-echo "#####   Function createLiveUserFunc done    #####"
-echo
+layout createLiveUserFunc
 setDefaultsFunc
-echo
-echo "#####   Function setDefaultsFunc done    #####"
-echo
+layout setDefaultsFunc
 fixHavegedFunc
-echo
-echo "#####   Function fixHavegedFunc done    #####"
-echo
+layout fixHavegedFunc
 fixPermissionsFunc
-echo
-echo "#####   Function fixPermissionsFunc done    #####"
-echo
+layout fixPermissionsFunc
 enableServicesFunc
-echo
-echo "#####   Function enableServicesFunc done    #####"
-echo
-# fixGeoclueRedshift
-# echo
-# echo "#####   Function fixGeoclueRedshift done    #####"
-#echo
+layout enableServicesFunc
 fixWifiFunc
-echo
-echo "#####   Function fixWifiFunc done    #####"
-echo
+layout fixWifiFunc
 fixHibernateFunc
-echo
-echo "#####   Function fixHibernateFunc done    #####"
-echo
+layout fixHibernateFunc
 initkeysFunc
-echo
-echo "#####   Function  initkeysFunc done    #####"
-echo
+layout initkeysFunc
 getNewMirrorCleanAndUpgrade
-echo
-echo "#####   Function getNewMirrorCleanAndUpgrade done    #####"
-echo
-echo "##########################################################"
-echo "##########################################################"
-echo
+layout getNewMirrorCleanAndUpgrade

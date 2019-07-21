@@ -15,7 +15,7 @@
 
 echo
 echo "################################################################## "
-echo "Phase 1 : get the latest bashrc from github"
+tput setaf 2;echo "Phase 1 : get the latest bashrc from github";tput sgr0
 echo "################################################################## "
 echo
 echo "Removing old files/folders from folder"
@@ -27,7 +27,7 @@ echo ".bashrc copied to /etc/skel"
 
 echo
 echo "################################################################## "
-echo "Phase 2 : Checking if archiso is installed"
+tput setaf 2;echo "Phase 2 : Checking if archiso is installed";tput sgr0
 echo "################################################################## "
 echo
 echo "Checking if archiso is installed"
@@ -103,7 +103,7 @@ fi
 
 echo
 echo "################################################################## "
-echo "Phase 3 : Making sure we start with a clean slate"
+tput setaf 2;echo "Phase 3 : Making sure we start with a clean slate";tput sgr0
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
@@ -112,7 +112,7 @@ echo "Deleting the build folder if one exists - takes some time"
 
 echo
 echo "################################################################## "
-echo "Phase 4 : Moving files to arcolinux-build folder"
+tput setaf 2;echo "Phase 4 : Moving files to arcolinux-build folder";tput sgr0
 echo "################################################################## "
 echo
 echo "Copying files and folder to ~/arcolinux-build"
@@ -124,16 +124,16 @@ sudo chgrp polkitd ~/arcolinux-build/archiso/airootfs/etc/polkit-1/rules.d
 
 echo
 echo "################################################################## "
-echo "Phase 5 : Cleaning the cache"
+tput setaf 2;echo "Phase 5 : Cleaning the cache";tput sgr0
 echo "################################################################## "
 echo
 yes | sudo pacman -Scc
 
 echo
 echo "################################################################## "
-echo "Phase 5 bis : Choose whether you want linux kernel or linux-lts kernel"
+tput setaf 2;echo "Phase 5 bis : Choose whether you want linux kernel or linux-lts kernel"
 echo "If you do not know what this is about, choose linux kernel"
-echo "https://wiki.archlinux.org/index.php/Kernel"
+echo "https://wiki.archlinux.org/index.php/Kernel";tput sgr0
 echo "################################################################## "
 echo
 echo "Choose linux kernel or linux-lts kernel"
@@ -187,7 +187,7 @@ esac
 
 echo
 echo "################################################################## "
-echo "Phase 6 : Building the iso"
+tput setaf 2;echo "Phase 6 : Building the iso";tput sgr0
 echo "################################################################## "
 echo
 
@@ -196,7 +196,7 @@ sudo ./build.sh -v
 
 echo
 echo "################################################################## "
-echo "Phase 7 : Copying the iso to ~/ArcoLinux-Out"
+tput setaf 2;echo "Phase 7 : Copying the iso to ~/ArcoLinux-Out";tput sgr0
 echo "################################################################## "
 echo
 [ -d  ~/ArcoLinux-Out ] || mkdir ~/ArcoLinux-Out
@@ -204,7 +204,7 @@ cp ~/arcolinux-build/archiso/out/arcolinux* ~/ArcoLinux-Out
 
 echo
 echo "################################################################## "
-echo "Phase 8 : Making sure we start with a clean slate next time"
+tput setaf 2;echo "Phase 8 : Making sure we start with a clean slate next time";tput sgr0
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"

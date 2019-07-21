@@ -3,10 +3,10 @@
 set -e -u
 
 iso_name=arcolinux
-iso_label="arcolinux-v19.07.11"
+iso_label="arcolinux-v19.07.12"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v19.07.11"
+iso_version="v19.07.12"
 install_dir=arch
 work_dir=work
 out_dir=out
@@ -50,11 +50,15 @@ run_once() {
         touch ${work_dir}/build.${1}
     fi
 }
+echo "###################################################################"
+tput setaf 3;echo "0. start of the build script";tput sgr0
+echo "###################################################################"
+
 
 # Setup custom pacman.conf with current cache directories.
 make_pacman_conf() {
     echo "###################################################################"
-    echo "1. Setup custom pacman.conf with current cache directories."
+    tput setaf 3;echo "1. Setup custom pacman.conf with current cache directories.";tput sgr0
     echo "###################################################################"
     local _cache_dirs
     _cache_dirs=($(pacman -v 2>&1 | grep '^Cache Dirs:' | sed 's/Cache Dirs:\s*//g'))
@@ -64,7 +68,7 @@ make_pacman_conf() {
 # Base installation, plus needed packages (airootfs)
 make_basefs() {
     echo "###################################################################"
-    echo "2. Base installation, plus needed packages (airootfs)"
+    tput setaf 3;echo "2. Base installation, plus needed packages (airootfs)";tput sgr0
     echo "###################################################################"
     mkarchiso ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" init
     mkarchiso ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" -p "haveged intel-ucode amd-ucode memtest86+ mkinitcpio-nfs-utils nbd zsh efitools" install
@@ -73,7 +77,7 @@ make_basefs() {
 # Additional packages (airootfs)
 make_packages() {
     echo "###################################################################"
-    echo "3. Additional packages (airootfs)"
+    tput setaf 3;echo "3. Additional packages (airootfs)";tput sgr0
     echo "###################################################################"
     mkarchiso ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" -p "$(grep -h -v ^# ${script_path}/packages.x86_64)" install
 }
@@ -81,7 +85,7 @@ make_packages() {
 # Copy mkinitcpio archiso hooks and build initramfs (airootfs)
 make_setup_mkinitcpio() {
     echo "###################################################################"
-    echo "4. Copy mkinitcpio archiso hooks and build initramfs (airootfs)"
+    tput setaf 3;echo "4. Copy mkinitcpio archiso hooks and build initramfs (airootfs)";tput sgr0
     echo "###################################################################"
     local _hook
     mkdir -p ${work_dir}/x86_64/airootfs/etc/initcpio/hooks
@@ -108,7 +112,7 @@ make_setup_mkinitcpio() {
 # Customize installation (airootfs)
 make_customize_airootfs() {
     echo "###################################################################"
-    echo "5. Customize installation (airootfs)"
+    tput setaf 3;echo "5. Customize installation (airootfs)";tput sgr0
     echo "###################################################################"
     cp -af ${script_path}/airootfs ${work_dir}/x86_64
 
@@ -116,7 +120,7 @@ make_customize_airootfs() {
 
     curl -o ${work_dir}/x86_64/airootfs/etc/pacman.d/mirrorlist 'https://www.archlinux.org/mirrorlist/?country=all&protocol=http&use_mirror_status=on'
 
-    lynx -dump -nolist 'https://wiki.archlinux.org/index.php/Installation_Guide?action=render' >> ${work_dir}/x86_64/airootfs/root/install.txt
+    #lynx -dump -nolist 'https://wiki.archlinux.org/index.php/Installation_Guide?action=render' >> ${work_dir}/x86_64/airootfs/root/install.txt
 
     mkarchiso ${verbose} -w "${work_dir}/x86_64" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/customize_airootfs.sh' run
     rm ${work_dir}/x86_64/airootfs/root/customize_airootfs.sh
@@ -125,7 +129,7 @@ make_customize_airootfs() {
 # Prepare kernel/initramfs ${install_dir}/boot/
 make_boot() {
     echo "###################################################################"
-    echo "6. Prepare kernel/initramfs ${install_dir}/boot/"
+    tput setaf 3;echo "6. Prepare kernel/initramfs ${install_dir}/boot/";tput sgr0
     echo "###################################################################"
     mkdir -p ${work_dir}/iso/${install_dir}/boot/x86_64
     cp ${work_dir}/x86_64/airootfs/boot/archiso.img ${work_dir}/iso/${install_dir}/boot/x86_64/archiso.img
@@ -135,7 +139,7 @@ make_boot() {
 # Add other aditional/extra files to ${install_dir}/boot/
 make_boot_extra() {
     echo "###################################################################"
-    echo "7. Add other aditional/extra files to ${install_dir}/boot/"
+    tput setaf 3;echo "7. Add other aditional/extra files to ${install_dir}/boot/";tput sgr0
     echo "###################################################################"
     cp ${work_dir}/x86_64/airootfs/boot/memtest86+/memtest.bin ${work_dir}/iso/${install_dir}/boot/memtest
     cp ${work_dir}/x86_64/airootfs/usr/share/licenses/common/GPL2/license.txt ${work_dir}/iso/${install_dir}/boot/memtest.COPYING
@@ -148,7 +152,7 @@ make_boot_extra() {
 # Prepare /${install_dir}/boot/syslinux
 make_syslinux() {
     echo "###################################################################"
-    echo "8. Prepare /${install_dir}/boot/syslinux"
+    tput setaf 3;echo "8. Prepare /${install_dir}/boot/syslinux";tput sgr0
     echo "###################################################################"
     _uname_r=$(file -b ${work_dir}/x86_64/airootfs/boot/vmlinuz-linux| awk 'f{print;f=0} /version/{f=1}' RS=' ')
     mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux
@@ -168,7 +172,7 @@ make_syslinux() {
 # Prepare /isolinux
 make_isolinux() {
     echo "###################################################################"
-    echo "9. Prepare /isolinux"
+    tput setaf 3;echo "9. Prepare /isolinux";tput sgr0
     echo "###################################################################"
     mkdir -p ${work_dir}/iso/isolinux
     sed "s|%INSTALL_DIR%|${install_dir}|g" ${script_path}/isolinux/isolinux.cfg > ${work_dir}/iso/isolinux/isolinux.cfg
@@ -180,7 +184,7 @@ make_isolinux() {
 # Prepare /EFI
 make_efi() {
     echo "###################################################################"
-    echo "10. Prepare /EFI"
+    tput setaf 3;echo "10. Prepare /EFI";tput sgr0
     echo "###################################################################"
     mkdir -p ${work_dir}/iso/EFI/boot
     cp ${work_dir}/x86_64/airootfs/usr/share/efitools/efi/PreLoader.efi ${work_dir}/iso/EFI/boot/bootx64.efi
@@ -206,7 +210,7 @@ make_efi() {
 # Prepare efiboot.img::/EFI for "El Torito" EFI boot mode
 make_efiboot() {
     echo "###################################################################"
-    echo "11. Prepare efiboot.img::/EFI for "El Torito" EFI boot mode"
+    tput setaf 3;echo "11. Prepare efiboot.img::/EFI for "El Torito" EFI boot mode";tput sgr0
     echo "###################################################################"
     mkdir -p ${work_dir}/iso/EFI/archiso
     truncate -s 64M ${work_dir}/iso/EFI/archiso/efiboot.img
@@ -246,7 +250,7 @@ make_efiboot() {
 # Build airootfs filesystem image
 make_prepare() {
     echo "###################################################################"
-    echo "12. Build airootfs filesystem image"
+    tput setaf 3;echo "12. Build airootfs filesystem image";tput sgr0
     echo "###################################################################"
     cp -a -l -f ${work_dir}/x86_64/airootfs ${work_dir}
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" pkglist
@@ -258,7 +262,7 @@ make_prepare() {
 # Build ISO
 make_iso() {
     echo "###################################################################"
-    echo "13. Build ISO"
+    tput setaf 3;echo "13. Build ISO";tput sgr0
     echo "###################################################################"
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}.iso"
 }
