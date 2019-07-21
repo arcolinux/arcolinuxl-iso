@@ -92,7 +92,7 @@ echo "Deleting the build folder if one exists - takes some time"
 
 echo
 echo "################################################################## "
-tput setaf 2;echo "Phase 4 : Moving files to arcolinux-build folder";tput sgr0
+tput setaf 2;echo "Phase 4 : Moving files to build folder";tput sgr0
 echo "################################################################## "
 echo
 echo "Copying files and folder to ~/arcolinux-build"
