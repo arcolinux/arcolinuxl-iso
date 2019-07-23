@@ -487,6 +487,7 @@ arcolinux-common-git
 #arcolinux-config-deepin-git
 arcolinux-config-git
 #arcolinux-config-gnome-git
+#arcolinux-config-lxqt-git
 #arcolinux-config-mate-git
 #arcolinux-config-plasma-git
 #arcolinux-config-xmobar-git
@@ -500,6 +501,7 @@ arcolinux-grub-theme-vimix-git
 arcolinux-i3wm-git
 arcolinux-keyring
 arcolinux-kvantum-git
+#arcolinux-kvantum-lxqt-git
 #arcolinux-kvantum-plasma-git
 arcolinux-lightdm-gtk-greeter
 #arcolinux-lightdm-gtk-greeter-plasma
@@ -507,6 +509,8 @@ arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-git
 #arcolinux-local-repo-git
 arcolinux-logo-git
+#arcolinux-lxqt-applications-add-git
+#arcolinux-lxqt-applications-hide-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
 arcolinux-nitrogen-git
@@ -538,6 +542,7 @@ arcolinux-tint2-git
 arcolinux-tint2-themes-git
 arcolinux-variety-git
 arcolinux-wallpapers-git
+#arcolinux-wallpapers-lxqt-dual-git
 arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
 #arcolinux-xmonad-polybar-git
