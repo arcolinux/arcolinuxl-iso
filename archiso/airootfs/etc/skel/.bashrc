@@ -31,6 +31,7 @@ alias l.="ls -A | egrep '^\.'"
 alias cd..='cd ..'
 alias pdw="pwd"
 alias udpate='sudo pacman -Syyu'
+alias upate='sudo pacman -Syyu'
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
@@ -65,6 +66,7 @@ alias update='sudo pacman -Syyu'
 
 # yay as aur helper - updates everything
 alias pksyua="yay -Syu --noconfirm"
+alias upall="yay -Syu --noconfirm"
 
 #ps
 alias ps="ps auxf"
@@ -137,6 +139,16 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
+
+#nano
+alias nlightdm="sudo nano /etc/lightdm/lightdm.conf"
+alias npacman="sudo nano /etc/pacman.conf"
+alias ngrub="sudo nano /etc/default/grub"
+alias nmkinitcpio="sudo nano/etc/mkinitcpio.conf"
+alias nslim="sudo /etc/slim.conf"
+
+#shutdown now
+alias ssn="sudo shutdown now"
 
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
