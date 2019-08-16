@@ -144,8 +144,9 @@ alias jctl="journalctl -p 3 -xb"
 alias nlightdm="sudo nano /etc/lightdm/lightdm.conf"
 alias npacman="sudo nano /etc/pacman.conf"
 alias ngrub="sudo nano /etc/default/grub"
-alias nmkinitcpio="sudo nano/etc/mkinitcpio.conf"
-alias nslim="sudo /etc/slim.conf"
+alias nmkinitcpio="sudo nano /etc/mkinitcpio.conf"
+alias nslim="sudo nano /etc/slim.conf"
+alias noblogout="sudo nano /etc/oblogout.conf"
 
 #shutdown now
 alias ssn="sudo shutdown now"
