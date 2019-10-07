@@ -33,10 +33,16 @@ ipw2200-fw
 irssi
 #lftp
 linux-atm
+linux-firmware
+logrotate
 lsscsi
+man-db
+man-pages
 mc
 mtools
+nano
 ndisc6
+netctl
 nfs-utils
 nilfs-utils
 #nmap
@@ -60,6 +66,7 @@ sudo
 tcpdump
 testdisk
 usb_modeswitch
+usbutils
 vim-minimal
 vpnc
 wget
@@ -112,6 +119,7 @@ mesa
 #vulkan-radeon
 
 #base and base-devel
+base
 base-devel
 
 #vbox or vmware
