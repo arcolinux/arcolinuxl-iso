@@ -148,8 +148,9 @@ alias nmkinitcpio="sudo nano /etc/mkinitcpio.conf"
 alias nslim="sudo nano /etc/slim.conf"
 alias noblogout="sudo nano /etc/oblogout.conf"
 
-#shutdown now
+#shutdown or reboot
 alias ssn="sudo shutdown now"
+alias sr="sudo reboot"
 
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.

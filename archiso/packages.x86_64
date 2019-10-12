@@ -490,6 +490,7 @@ arcolinux-arc-themes-nico-git
 arcolinux-bin-git
 #arcolinux-bspwm-git
 arcolinux-common-git
+#arcolinux-config-budgie-git
 #arcolinux-config-cinnamon-git
 #arcolinux-config-deepin-git
 arcolinux-config-git
@@ -505,6 +506,7 @@ arcolinux-faces-git
 arcolinux-fonts-git
 arcolinux-geany-git
 arcolinux-grub-theme-vimix-git
+#arcolinux-herbstluftwm-git
 arcolinux-i3wm-git
 arcolinux-keyring
 arcolinux-kvantum-git
@@ -524,6 +526,7 @@ arcolinux-nitrogen-git
 arcolinux-oblogout
 #arcolinux-oblogout-awesome
 #arcolinux-oblogout-bspwm
+#arcolinux-oblogout-herbstluftwm
 #arcolinux-oblogout-qtile
 arcolinux-oblogout-themes-git
 #arcolinux-oblogout-xmonad
