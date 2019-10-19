@@ -459,7 +459,7 @@ mkinitcpio-openswap
 aurvote-git
 conky-lua-archers
 downgrade
-font-manager
+#font-manager
 glxinfo
 #google-talkplugin
 grub-customizer
