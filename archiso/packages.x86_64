@@ -12,7 +12,9 @@ crda
 darkhttpd
 ddrescue
 dhclient
+#dhcpcd
 dialog
+diffutils
 dmraid
 dnsmasq
 dnsutils
@@ -31,14 +33,18 @@ hdparm
 ipw2100-fw
 ipw2200-fw
 irssi
+iwd
+jfsutils
 #lftp
 linux-atm
 linux-firmware
 logrotate
 lsscsi
+lvm2
 man-db
 man-pages
 mc
+mdadm
 mtools
 nano
 ndisc6
@@ -57,6 +63,7 @@ partimage
 ppp
 pptpclient
 refind-efi
+reiserfsprogs
 rp-pppoe
 rsync
 sdparm
@@ -67,12 +74,15 @@ tcpdump
 testdisk
 usb_modeswitch
 usbutils
+vi
 vim-minimal
 vpnc
 wget
+wireless-regdb
 wireless_tools
-#wpa_actiond
+wpa_supplicant
 wvdial
+xfsprogs
 xl2tpd
 
 
@@ -105,12 +115,18 @@ xf86-video-vesa
 xf86-video-vmware
 #xf86-video-voodoo
 #xf86-video-sisusb
+mesa
 
-#hardware video support
+#hardware video support you may need
+#https://wiki.archlinux.org/index.php/Xorg#Installation
 #bumblebee
+#optimus-manager
+#nvidia
+#nvidia-utils
+#nvidia-390xx
+#nvidia-390xx-utils
 #libva-intel-driver
 #libva-vdpau-driver
-mesa
 #mesa-demos
 #mesa-vdpau
 #opencl-mesa
