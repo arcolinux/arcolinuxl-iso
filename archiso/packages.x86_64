@@ -33,7 +33,7 @@ hdparm
 ipw2100-fw
 ipw2200-fw
 irssi
-iwd
+#iwd
 jfsutils
 #lftp
 linux-atm
