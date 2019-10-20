@@ -282,12 +282,12 @@ xcursor-simpleandsoft
 #fonts
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
-#cantarell-fonts
 noto-fonts
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
 ttf-droid
+ttf-hack
 ttf-inconsolata
 ttf-liberation
 ttf-roboto
