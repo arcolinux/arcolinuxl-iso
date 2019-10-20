@@ -90,7 +90,7 @@ xl2tpd
 xorg-server
 xorg-apps
 xorg-xinit
-xterm
+#xterm
 
 #video
 #xorg-drivers
