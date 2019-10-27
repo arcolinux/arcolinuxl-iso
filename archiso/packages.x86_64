@@ -511,7 +511,6 @@ arcolinux-config-git
 #arcolinux-config-lxqt-git
 #arcolinux-config-mate-git
 #arcolinux-config-plasma-git
-#arcolinux-config-xmobar-git
 #arcolinux-config-xmonad-git
 arcolinux-conky-collection-git
 arcolinux-docs-git
@@ -545,7 +544,7 @@ arcolinux-oblogout-themes-git
 #arcolinux-oblogout-xmonad
 arcolinux-obmenu-generator-git
 #arcolinux-obmenu-generator-minimal-git
-arcolinux-openbox-configs-git
+arcolinux-openbox-git
 arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
 arcolinux-plank-git
@@ -568,6 +567,7 @@ arcolinux-wallpapers-git
 #arcolinux-wallpapers-lxqt-dual-git
 arcolinux-xfce4-panel-profiles-git
 arcolinux-xfce-thunar-git
+#arcolinux-xmobar-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
 
