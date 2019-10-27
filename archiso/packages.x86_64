@@ -496,7 +496,6 @@ yay-bin
 
 #############################
 #arcolinux_repo for arcolinux
-arcolinux-applications-git
 #arcolinux-arc-themes-git
 arcolinux-arc-themes-nico-git
 #arcolinux-awesome-git
@@ -537,8 +536,9 @@ arcolinux-kvantum-git
 arcolinux-lightdm-gtk-greeter
 #arcolinux-lightdm-gtk-greeter-plasma
 arcolinux-lightdm-gtk-greeter-settings
-arcolinux-local-xfce4-git
+arcolinux-local-applications-git
 #arcolinux-local-repo-git
+arcolinux-local-xfce4-git
 arcolinux-logo-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
