@@ -79,7 +79,7 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias fixpng="find . -type f -name "*.png" -exec convert {} -strip {} \;"
 
 #add new fonts
-alias fc='sudo fc-cache -fv'
+alias update-fc='sudo fc-cache -fv'
 
 #copy/paste all content of /etc/skel over to home folder - Beware
 alias skel='cp -rf /etc/skel/* ~'
@@ -151,6 +151,32 @@ alias noblogout="sudo nano /etc/oblogout.conf"
 #shutdown or reboot
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
+
+# # ex = EXtractor for all kinds of archives
+# # usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+	  *.deb)       ar x $1      ;;
+	  *.tar.xz)    tar xf $1   ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
 
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.

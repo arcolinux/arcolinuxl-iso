@@ -283,7 +283,7 @@ xcursor-simpleandsoft
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 noto-fonts
-terminus-font
+#terminus-font
 ttf-bitstream-vera
 ttf-dejavu
 ttf-droid
