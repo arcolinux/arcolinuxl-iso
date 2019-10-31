@@ -112,6 +112,6 @@ Include = /etc/pacman.d/arcolinux-mirrorlist
 SigLevel = Required DatabaseOptional
 Include = /etc/pacman.d/arcolinux-mirrorlist
 
-[arcolinux_repo_submicron]
-SigLevel = Required DatabaseOptional
-Include = /etc/pacman.d/arcolinux-mirrorlist
+#[arcolinux_repo_submicron]
+#SigLevel = Required DatabaseOptional
+#Include = /etc/pacman.d/arcolinux-mirrorlist
