@@ -589,6 +589,29 @@ arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
 
+#arcolinux dconf per desktop
+#arcolinux-awesome-dconf-git
+#arcolinux-bspwm-dconf-git
+#arcolinux-budgie-dconf-git
+#arcolinux-cinnamon-dconf-git
+arcolinux-dconf-git
+#arcolinux-deepin-dconf-git
+#arcolinux-dwm-dconf-git
+#arcolinux-enlightenment-dconf-git
+#arcolinux-gnome-dconf-git
+#arcolinux-herbstluftwm-dconf-git
+#arcolinux-i3wm-dconf-git
+#arcolinux-jwm-dconf-git
+#arcolinux-lxqt-dconf-git
+#arcolinux-mate-dconf-git
+#arcolinux-openbox-dconf-git
+#arcolinux-plasma-dconf-git
+#arcolinux-qtile-dconf-git
+#arcolinux-xfce-dconf-git
+#arcolinux-xmonad-dconf-git
+#arcolinux-xtended-dconf-git
+
+
 #xfce4 also for ArcoLinuxB iso builds
 #xfce4 group content
 exo
