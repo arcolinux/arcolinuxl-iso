@@ -1,6 +1,9 @@
 #!/bin/bash
-#userid 972 error lightdm
+#fix userid 972 error lightdm
 chage -E -1 lightdm
+#fix for mediacodecs vivaldi
+/opt/vivaldi/update-ffmpeg
+/opt/vivaldi/update-widevine
 rm -f /etc/sudoers.d/g_wheel
 rm -rf /usr/share/backgrounds/xfce
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
