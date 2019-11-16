@@ -1,8 +1,8 @@
-#######################
-##     ArcoLinux      ##
-#######################
+#####################################################################
+##                            PACKAGES AVAILABLE
+#####################################################################
 
-#archiso
+###archiso
 arch-install-scripts
 #b43-fwcutter
 broadcom-wl
@@ -86,13 +86,13 @@ xfsprogs
 xl2tpd
 
 
-#xorg packages
+###xorg
 xorg-server
 xorg-apps
 xorg-xinit
 #xterm
 
-#video
+###video
 #xorg-drivers
 #xorg-drivers includes
 xf86-input-elographics
@@ -117,8 +117,7 @@ xf86-video-vmware
 #xf86-video-sisusb
 mesa
 
-#hardware video support you may need
-#https://wiki.archlinux.org/index.php/Xorg#Installation
+###hardware video support
 #bumblebee
 #optimus-manager
 #nvidia
@@ -134,22 +133,22 @@ mesa
 #vulkan-intel
 #vulkan-radeon
 
-#base and base-devel
+###base and base-devel
 base
 base-devel
 
-#vbox or vmware
+###virtual box or vmware
 #open-vm-tools  this made it lag
 virtualbox-guest-modules-arch
 virtualbox-guest-utils
 
-#packages for installer
+###packages for dual boot
 os-prober
 
-#LUKS encryption
+###LUKS encryption
 cryptsetup
 
-#audio
+###audio
 alsa-firmware
 alsa-plugins
 alsa-lib
@@ -166,7 +165,7 @@ pulseaudio-alsa
 pavucontrol
 volumeicon
 
-#bluetooth
+###bluetooth
 blueberry
 bluez
 bluez-libs
@@ -174,7 +173,7 @@ bluez-utils
 #bluez-firmware
 pulseaudio-bluetooth
 
-#network
+###network
 avahi
 nss-mdns
 mobile-broadband-provider-info
@@ -190,7 +189,7 @@ openresolv
 #samba
 wpa_supplicant
 
-#file management
+###file management
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -206,7 +205,7 @@ udiskie
 udisks2
 xdg-user-dirs
 
-#printers
+###printers
 cups
 cups-filters
 cups-pdf
@@ -220,14 +219,14 @@ libcups
 splix
 system-config-printer
 
-#printer extra for hplip
-#pyqt5-common
+###printer extra for hplip
+pyqt5-common
 #python-pillow
 #python-pip
 #python-pyqt5
 #python-reportlab
 
-#tumbler
+###tumbler
 tumbler
 ffmpegthumbnailer
 freetype2
@@ -236,11 +235,11 @@ libopenraw
 poppler-glib
 poppler-qt5
 
-###########################
-#Software from Arch repo's
-###########################
+#########################################################################
+#                  SOFTWARE FROM ARCH LINUX REPOSITORIES
+#########################################################################
 
-#applications
+###applications
 atom
 chromium
 compton
@@ -273,14 +272,14 @@ tint2
 variety
 vlc
 
-#conky
+###conky
 jq
 lm_sensors
 
-#cursors
+###cursors
 xcursor-simpleandsoft
 
-#fonts
+###fonts
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 noto-fonts
@@ -294,40 +293,29 @@ ttf-liberation
 ttf-roboto
 ttf-ubuntu-font-family
 
-#i3wm
-i3status
-i3blocks
-
-#icons
+###icons
 arc-icon-theme
 gnome-icon-theme
 papirus-icon-theme
 
-#lightdm
+###lightdm
 accountsservice
 lightdm
 
-
-#lx-applications
+###lx-applications
 lxappearance
 #lxappearance-gtk3
 lxappearance-obconf
 #lxappearance-obconf-gtk3
 lxrandr
 
-#openbox
-gtk2-perl
-obconf
-openbox
-gtk-engine-murrine
-
-#themes
+###themes
 adapta-gtk-theme
 arc-gtk-theme
 kvantum-qt5
 kvantum-theme-arc
 
-#utilities
+###utilities
 arandr
 asciinema
 bash-completion
@@ -407,30 +395,26 @@ zsh
 zsh-completions
 zsh-syntax-highlighting
 
+###########################################################################
+#                           ARCOLINUX_REPO_ISO
+###########################################################################
 
-#############################
-#arcolinux_repo_iso 3th party
-#############################
-
-#applications
+###applications
 vivaldi
 #vivaldi-codecs-ffmpeg-extra-bin
 
-#cursors
+###cursors
 breeze-cursors-lh
 breeze-obsidian-cursor-theme
 oxy-neon
 xcursor-breeze
 xcursor-vanilla-dmz-aa
 
-#fonts
+###fonts
 ttf-font-awesome
 ttf-ms-fonts
 
-#i3
-i3-gaps-next-git
-
-#icons
+###icons
 faba-icon-theme
 halo-icons-git
 moka-icon-theme
@@ -442,19 +426,13 @@ sardi-icons
 surfn-icons-git
 zafiro-icon-theme
 
-#network
+###network
 #b43-firmware
 
-#openbox
-obkey
-obmenu3
-obmenu-generator
-perl-linux-desktopfiles
-
-#tools
+###tools
 mkinitcpio-openswap
 
-#utilities
+###utilities
 aurvote-git
 conky-lua-archers
 downgrade
@@ -484,9 +462,9 @@ yad
 #yakuake
 yay-bin
 
-#############################
-#Games
-#############################
+###########################################################################
+#                               GAMES
+###########################################################################
 
 #steam
 #steam-native-runtime
@@ -494,47 +472,21 @@ yay-bin
 #sauerbraten
 #xonotic
 
+###########################################################################
+#                           ARCOLINUX FOLDER
+###########################################################################
 
-#############################
-#arcolinux_repo for arcolinux
 #arcolinux-arc-themes-git
 arcolinux-arc-themes-nico-git
-#arcolinux-awesome-git
 arcolinux-bin-git
-#arcolinux-bspwm-git
-#arcolinux-budgie-git
-#arcolinux-cinnamon-git
 arcolinux-common-git
-#arcolinux-config-awesome-git
-#arcolinux-config-bspwm-git
-#arcolinux-config-budgie-git
-#arcolinux-config-cinnamon-git
-#arcolinux-config-deepin-git
-#arcolinux-config-dwm-git
-#arcolinux-config-enlightenment-git
-arcolinux-config-git
-#arcolinux-config-gnome-git
-#arcolinux-config-herbstluftwm-git
-#arcolinux-config-i3-git
-#arcolinux-config-jwm-git
-#arcolinux-config-lxqt-git
-#arcolinux-config-openbox-git
-#arcolinux-config-mate-git
-#arcolinux-config-plasma-git
-#arcolinux-config-qtile
-#arcolinux-config-xfce-git
-#arcolinux-config-xmonad-git
 arcolinux-conky-collection-git
-#arcolinux-deepin-git
 arcolinux-docs-git
 arcolinux-faces-git
 arcolinux-fonts-git
 arcolinux-geany-git
-#arcolinux-gnome-git
 arcolinux-grub-theme-vimix-git
 arcolinux-hblock-git
-#arcolinux-herbstluftwm-git
-arcolinux-i3wm-git
 arcolinux-keyring
 arcolinux-kvantum-git
 #arcolinux-kvantum-lxqt-git
@@ -543,35 +495,25 @@ arcolinux-lightdm-gtk-greeter
 #arcolinux-lightdm-gtk-greeter-plasma
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-applications-git
-#arcolinux-local-repo-git
 arcolinux-local-xfce4-git
 arcolinux-logo-git
-#arcolinux-lxqt-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
 arcolinux-mirrorlist-git
-#arcolinux-mate-git
 arcolinux-neofetch-git
 arcolinux-nitrogen-git
 arcolinux-oblogout
-#arcolinux-oblogout-awesome
-#arcolinux-oblogout-bspwm
-#arcolinux-oblogout-herbstluftwm
-#arcolinux-oblogout-qtile
 arcolinux-oblogout-themes-git
-#arcolinux-oblogout-xmonad
 arcolinux-obmenu-generator-git
 #arcolinux-obmenu-generator-minimal-git
-arcolinux-openbox-git
+#arcolinux-obmenu-generator-xtended-git
 arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
 arcolinux-plank-git
 arcolinux-plank-themes-git
-#arcolinux-plasma-git
 arcolinux-polybar-git
 arcolinux-qt5-git
 #arcolinux-qt5-plasma-git
-#arcolinux-qtile-git
 arcolinux-rofi-git
 arcolinux-rofi-themes-git
 arcolinux-root-git
@@ -585,12 +527,63 @@ arcolinux-variety-git
 arcolinux-wallpapers-git
 #arcolinux-wallpapers-lxqt-dual-git
 arcolinux-xfce4-panel-profiles-git
-arcolinux-xfce-git
 #arcolinux-xmobar-git
+
+###########################################################################
+#                           ARCOLINUX DESKTOP FOLDER
+###########################################################################
+
+#arcolinux-awesome-git
+#arcolinux-bspwm-git
+#arcolinux-budgie-git
+#arcolinux-cinnamon-git
+#arcolinux-deepin-git
+#arcolinux-dwm-git
+#arcolinux-enlightenment-git
+#arcolinux-gnome-git
+#arcolinux-herbstluftwm-git
+arcolinux-i3wm-git
+#arcolinux-jwm-git
+#arcolinux-lxqt-git
+#arcolinux-mate-git
+arcolinux-openbox-git
+#arcolinux-openbox-xtended-git
+#arcolinux-plasma-git
+#arcolinux-plasma-nemesis-git
+#arcolinux-qtile-git
+arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
 
-#arcolinux dconf per desktop
+###########################################################################
+#                           ARCOLINUX CONFIG FOLDER
+###########################################################################
+
+#arcolinux-config-awesome-git
+#arcolinux-config-bspwm-git
+#arcolinux-config-budgie-git
+#arcolinux-config-cinnamon-git
+#arcolinux-config-deepin-git
+#arcolinux-config-dwm-git
+#arcolinux-config-enlightenment-git
+arcolinux-config-git
+#arcolinux-config-gnome-git
+#arcolinux-config-herbstluftwm-git
+#arcolinux-config-i3wm-git
+#arcolinux-config-jwm-git
+#arcolinux-config-lxqt-git
+#arcolinux-config-openbox-git
+#arcolinux-config-mate-git
+#arcolinux-config-plasma-git
+#arcolinux-config-qtile
+#arcolinux-config-xfce-git
+#arcolinux-config-xmonad-git
+#arcolinux-config-xtended-git
+
+###########################################################################
+#                           ARCOLINUX DCONF FOLDER
+###########################################################################
+
 #arcolinux-awesome-dconf-git
 #arcolinux-bspwm-dconf-git
 #arcolinux-budgie-dconf-git
@@ -612,9 +605,87 @@ arcolinux-dconf-git
 #arcolinux-xmonad-dconf-git
 #arcolinux-xtended-dconf-git
 
+###########################################################################
+#                                ARCOLINUX CALAMARES
+###########################################################################
 
-#xfce4 also for ArcoLinuxB iso builds
-#xfce4 group content
+arco-calamares
+#arco-calamares-dev
+#arco-calamares-comp
+arcolinux-system-installation-git
+
+###########################################################################
+#                                CALAMARES DEPENDENCIES
+###########################################################################
+
+ckbcomp
+upower
+kcoreaddons
+kconfig
+ki18n
+kservice
+kwidgetsaddons
+kpmcore
+boost-libs
+libpwquality
+squashfs-tools
+plasma-framework
+hwinfo
+qt5-xmlpatterns
+
+###########################################################################
+#                                ARCOLINUX CONFIG CALAMARES
+###########################################################################
+
+#arcob-calamares-config-awesome-git
+#arcob-calamares-config-bspwm-git
+#arcob-calamares-config-budgie-git
+#arcob-calamares-config-cinnamon-git
+#arcob-calamares-config-deepin-git
+#arcob-calamares-config-dwm-git
+#arcob-calamares-config-enlightenment-git
+#arcob-calamares-config-gnome-git
+#arcob-calamares-config-herbstluftwm-git
+#arcob-calamares-config-i3-git
+#arcob-calamares-config-jwm-git
+#arcob-calamares-config-lxqt-git
+#arcob-calamares-config-mate-git
+#arcob-calamares-config-openbox-git
+#arcob-calamares-config-plasma-git
+#arcob-calamares-config-qtile-git
+#arcob-calamares-config-xfce-git
+#arcob-calamares-config-xmonad-git
+#arcob-calamares-config-xtended-git
+arco-calamares-config-git
+#arco-calamares-config-comp-git
+#arco-calamares-config-dev-git
+#arcod-calamares-config-git
+#arcod-calamares-config-comp-git
+#arcod-calamares-config-dev-git
+
+###########################################################################
+#                                DESKTOP SPECIFIC
+###########################################################################
+
+###i3wm
+i3status
+i3blocks
+i3-gaps
+
+###openbox
+gtk2-perl
+obkey
+obmenu3
+obmenu-generator
+obconf
+openbox
+perl-linux-desktopfiles
+
+###########################################################################
+#                                XFCE
+###########################################################################
+
+###xfce4 group content
 exo
 garcon
 thunar
@@ -629,8 +700,7 @@ xfdesktop
 xfwm4
 xfwm4-themes
 
-
-#xfce4-goodies group content
+###xfce4-goodies group content
 #mousepad
 #orage
 #parole
@@ -668,22 +738,8 @@ xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
 
 xfce4-panel-profiles
+gtk-engine-murrine
 
-#Needed for Calamares installer
-calamares
-arcolinux-system-installation-git
-arcolinux-calamares-git
-ckbcomp
-upower
-kcoreaddons
-kconfig
-ki18n
-kservice
-kwidgetsaddons
-kpmcore
-boost-libs
-libpwquality
-squashfs-tools
-plasma-framework
-hwinfo
-qt5-xmlpatterns
+###########################################################################
+#                                ISO SPECIFIC
+###########################################################################
