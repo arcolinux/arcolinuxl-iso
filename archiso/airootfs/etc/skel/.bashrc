@@ -151,6 +151,7 @@ alias ngrub="sudo nano /etc/default/grub"
 alias nmkinitcpio="sudo nano /etc/mkinitcpio.conf"
 alias nslim="sudo nano /etc/slim.conf"
 alias noblogout="sudo nano /etc/oblogout.conf"
+alias nmirrorlist="sudo nano /etc/pacman.d/mirrorlist"
 
 #shutdown or reboot
 alias ssn="sudo shutdown now"
