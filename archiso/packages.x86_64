@@ -242,7 +242,7 @@ poppler-qt5
 ###applications
 atom
 chromium
-compton
+picom
 #darktable
 #deadbeef
 dmenu
