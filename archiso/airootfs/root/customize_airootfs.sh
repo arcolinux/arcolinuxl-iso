@@ -88,8 +88,8 @@ function enableServicesFunc() {
 	systemctl set-default graphical.target
 	systemctl enable NetworkManager.service
 	systemctl enable virtual-machine-check.service
-	systemctl enable reflector.service
-	systemctl enable reflector.timer
+	#systemctl enable reflector.service
+	#systemctl enable reflector.timer
   	systemctl enable org.cups.cupsd.service
   	systemctl enable bluetooth.service
   	systemctl enable ntpd.service
