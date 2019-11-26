@@ -294,9 +294,9 @@ ttf-roboto
 ttf-ubuntu-font-family
 
 ###icons
-arc-icon-theme
+#arc-icon-theme
 gnome-icon-theme
-papirus-icon-theme
+#papirus-icon-theme
 
 ###lightdm
 accountsservice
@@ -310,7 +310,7 @@ lxappearance-obconf
 lxrandr
 
 ###themes
-adapta-gtk-theme
+#adapta-gtk-theme
 arc-gtk-theme
 kvantum-qt5
 kvantum-theme-arc
@@ -405,28 +405,28 @@ vivaldi
 #vivaldi-codecs-ffmpeg-extra-bin
 
 ###cursors
-breeze-cursors-lh
-breeze-obsidian-cursor-theme
+#breeze-cursors-lh
+#breeze-obsidian-cursor-theme
 oxy-neon
 xcursor-breeze
-xcursor-vanilla-dmz-aa
+#xcursor-vanilla-dmz-aa
 
 ###fonts
 ttf-font-awesome
 ttf-ms-fonts
 
 ###icons
-faba-icon-theme
-halo-icons-git
-moka-icon-theme
+#faba-icon-theme
+#halo-icons-git
+#moka-icon-theme
 numix-circle-arc-icons-git
 numix-icon-theme-git
 numix-circle-icon-theme-git
-paper-icon-theme
+#paper-icon-theme
 sardi-icons
 surfn-icons-git
 #surfn-arc-breeze-icons-git
-zafiro-icon-theme
+#zafiro-icon-theme
 
 ###network
 #b43-firmware
@@ -744,7 +744,7 @@ xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
 
 xfce4-panel-profiles
-gtk-engine-murrine
+#gtk-engine-murrine
 
 ###########################################################################
 #                                ISO SPECIFIC
