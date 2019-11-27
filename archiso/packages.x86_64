@@ -277,7 +277,7 @@ jq
 lm_sensors
 
 ###cursors
-xcursor-simpleandsoft
+#xcursor-simpleandsoft
 
 ###fonts
 adobe-source-sans-pro-fonts

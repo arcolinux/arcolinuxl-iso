@@ -85,8 +85,8 @@ alias fixpng="find . -type f -name "*.png" -exec convert {} -strip {} \;"
 #add new fonts
 alias update-fc='sudo fc-cache -fv'
 
-#copy/paste all content of /etc/skel over to home folder - Beware
-alias skel='cp -rf /etc/skel/* ~'
+#copy/paste all content of /etc/skel over to home folder - backup of config created - beware
+alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
 #backup contents of /etc/skel to hidden backup folder in home/user
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
