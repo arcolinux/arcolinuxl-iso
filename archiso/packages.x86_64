@@ -221,7 +221,7 @@ splix
 system-config-printer
 
 ###printer extra for hplip
-pyqt5-common
+python2-pyqt5
 #python-pillow
 #python-pip
 #python-pyqt5
