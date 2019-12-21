@@ -14,10 +14,10 @@ set -e
 
 echo "Let us change all instances of version number everywhere."
 
-echo "What is the old version? e.g.   v19.11.2    (including v and dots)"
+echo "What is the old version? e.g.   v20.1.1    (including v and dots)"
 read oldversion
 
-echo "To what version do you want upgrade e.g.    v19.11.3   (including v and dots)"
+echo "To what version do you want upgrade e.g.    v20.1.2   (including v and dots)"
 
 read newversion
 

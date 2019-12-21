@@ -113,7 +113,6 @@ xf86-video-openchrome
 xf86-video-vesa
 xf86-video-vmware
 #xf86-video-voodoo
-#xf86-video-sisusb
 mesa
 
 ###hardware video support
