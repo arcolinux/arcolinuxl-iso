@@ -217,13 +217,6 @@ libcups
 splix
 system-config-printer
 
-###printer extra for hplip
-python2-pyqt5
-#python-pillow
-#python-pip
-#python-pyqt5
-#python-reportlab
-
 ###tumbler
 tumbler
 ffmpegthumbnailer
