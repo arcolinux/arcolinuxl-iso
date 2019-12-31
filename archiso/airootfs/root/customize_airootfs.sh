@@ -127,7 +127,7 @@ function initkeysFunc() {
 }
 
 function getNewMirrorCleanAndUpgrade() {
-    reflector -f 30 -l 30 --number 10 --save /etc/pacman.d/mirrorlist
+    reflector --threads 50 -l 100 -f 100 --number 20 --sort rate --save /etc/pacman.d/mirrorlist
     pacman -Sc --noconfirm
     pacman -Syyu --noconfirm
 }

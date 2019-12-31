@@ -3,10 +3,10 @@
 set -e -u
 
 iso_name=arcolinux
-iso_label="arcolinux-v19.12.17"
+iso_label="arcolinux-v20.1.4"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v19.12.17"
+iso_version="v20.1.4"
 install_dir=arch
 work_dir=work
 out_dir=out
@@ -267,6 +267,30 @@ make_iso() {
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}.iso"
 }
 
+# checks and sign
+make_checks() {
+    echo "###################################################################"
+    tput setaf 3;echo "14. checks and sign";tput sgr0
+    echo "###################################################################"
+    touch ${out_dir}/${iso_label}.checksum
+    echo "Building sha1sum"
+    echo "########################"
+    echo "sha1sum">> ${out_dir}/${iso_label}.checksum
+    sha1sum ${out_dir}/${iso_label}.iso >> ${out_dir}/${iso_label}.checksum
+    echo "Building sha256sum"
+    echo "########################"
+    echo "sha256sum" >> ${out_dir}/${iso_label}.checksum
+    sha256sum ${out_dir}/${iso_label}.iso >> ${out_dir}/${iso_label}.checksum
+    echo "Building md5sum"
+    echo "########################"
+    echo "md5sum" >> ${out_dir}/${iso_label}.checksum
+    md5sum ${out_dir}/${iso_label}.iso >> ${out_dir}/${iso_label}.checksum
+    echo "Moving pkglist.x86_64.txt"
+    echo "########################"
+    cp ${work_dir}/iso/arch/pkglist.x86_64.txt  ${out_dir}/${iso_label}.iso.pkglist.txt
+}
+
+
 if [[ ${EUID} -ne 0 ]]; then
     echo "This script must be run as root."
     _usage 1
@@ -307,3 +331,4 @@ run_once make_efi
 run_once make_efiboot
 run_once make_prepare
 run_once make_iso
+run_once make_checks
