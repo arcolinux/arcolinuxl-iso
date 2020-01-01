@@ -5,6 +5,7 @@
 ###archiso
 arch-install-scripts
 #b43-fwcutter
+bind-tools
 broadcom-wl
 btrfs-progs
 clonezilla
