@@ -347,6 +347,7 @@ laptop-detect
 lsb-release
 mlocate
 nomacs
+oh-my-zsh-git
 p7zip
 plank
 playerctl
@@ -529,6 +530,7 @@ arcolinux-wallpapers-git
 #arcolinux-wallpapers-lxqt-dual-git
 arcolinux-xfce4-panel-profiles-git
 #arcolinux-xmobar-git
+arcolinux-zsh-git
 
 ###########################################################################
 #                           ARCOLINUX DESKTOP FOLDER
