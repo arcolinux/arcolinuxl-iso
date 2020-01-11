@@ -428,7 +428,7 @@ surfn-icons-git
 ###tools
 mkinitcpio-openswap
 
-###utilities
+###utilities-repo
 aurvote-git
 conky-lua-archers
 downgrade
