@@ -614,8 +614,9 @@ arcolinux-dconf-git
 ###########################################################################
 
 arco-calamares
-#arco-calamares-dev
 #arco-calamares-comp
+#arco-calamares-dev
+#arco-calamares-next
 arcolinux-system-installation-git
 
 ###########################################################################
