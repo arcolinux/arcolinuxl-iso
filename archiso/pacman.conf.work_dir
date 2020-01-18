@@ -115,7 +115,3 @@ Include = /etc/pacman.d/arcolinux-mirrorlist
 [arcolinux_repo_xlarge]
 SigLevel = Required DatabaseOptional
 Include = /etc/pacman.d/arcolinux-mirrorlist
-
-[arcolinux_repo_iso]
-SigLevel = Required DatabaseOptional
-Include = /etc/pacman.d/arcolinux-mirrorlist
