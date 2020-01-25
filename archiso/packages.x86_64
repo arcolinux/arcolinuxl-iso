@@ -256,7 +256,6 @@ qbittorrent
 scrot
 simplescreenrecorder
 termite
-tint2
 variety
 vlc
 
@@ -656,7 +655,7 @@ arco-calamares-config-git
 #arcod-calamares-config-next-git
 
 ###########################################################################
-#                                DISPLAY MANAGER 
+#                                DISPLAY MANAGER
 ###########################################################################
 
 ###lightdm
@@ -664,7 +663,7 @@ accountsservice
 lightdm
 
 ###########################################################################
-#                         PICOM OR COMPTON 
+#                         PICOM OR COMPTON
 ###########################################################################
 
 picom
@@ -694,6 +693,7 @@ obmenu-generator
 obconf
 openbox
 perl-linux-desktopfiles
+tint2
 xcape
 
 ###lx-applications
