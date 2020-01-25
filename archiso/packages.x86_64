@@ -231,7 +231,6 @@ poppler-qt5
 ###applications
 atom
 chromium
-picom
 #darktable
 #deadbeef
 dmenu
@@ -286,17 +285,6 @@ ttf-ubuntu-font-family
 #arc-icon-theme
 gnome-icon-theme
 #papirus-icon-theme
-
-###lightdm
-accountsservice
-lightdm
-
-###lx-applications
-lxappearance
-#lxappearance-gtk3
-lxappearance-obconf
-#lxappearance-obconf-gtk3
-lxrandr
 
 ###themes
 #adapta-gtk-theme
@@ -378,7 +366,6 @@ w3m
 webkit2gtk
 wmctrl
 xapps
-xcape
 xdo
 xdotool
 xdg-desktop-portal-gtk
@@ -669,13 +656,35 @@ arco-calamares-config-git
 #arcod-calamares-config-next-git
 
 ###########################################################################
-#                                DESKTOP SPECIFIC
+#                                DISPLAY MANAGER 
+###########################################################################
+
+###lightdm
+accountsservice
+lightdm
+
+###########################################################################
+#                         PICOM OR COMPTON 
+###########################################################################
+
+picom
+
+###########################################################################
+#                         ARCOLINUX ISO SPECIFIC
+###########################################################################
+
+###########################################################################
+#                                 i3
 ###########################################################################
 
 ###i3wm
 i3status
 i3blocks
 i3-gaps
+
+###########################################################################
+#                               OPENBOX
+###########################################################################
 
 ###openbox
 gtk2-perl
@@ -685,6 +694,14 @@ obmenu-generator
 obconf
 openbox
 perl-linux-desktopfiles
+xcape
+
+###lx-applications
+lxappearance
+#lxappearance-gtk3
+lxappearance-obconf
+#lxappearance-obconf-gtk3
+lxrandr
 
 ###########################################################################
 #                                XFCE
