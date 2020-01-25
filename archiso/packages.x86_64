@@ -114,6 +114,7 @@ xf86-video-openchrome
 xf86-video-vesa
 xf86-video-vmware
 #xf86-video-voodoo
+#xf86-video-sisusb
 mesa
 
 ###hardware video support
@@ -196,10 +197,6 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 mtpfs
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
 udiskie
 udisks2
 xdg-user-dirs
@@ -392,7 +389,7 @@ zsh-completions
 zsh-syntax-highlighting
 
 ###########################################################################
-#                           ARCOLINUX_REPO_ISO
+#                           ARCOLINUX_REPOS
 ###########################################################################
 
 ###applications
@@ -402,8 +399,8 @@ vivaldi
 ###cursors
 #breeze-cursors-lh
 #breeze-obsidian-cursor-theme
-oxy-neon
-xcursor-breeze
+#oxy-neon
+breeze
 #xcursor-vanilla-dmz-aa
 
 ###fonts
@@ -465,8 +462,7 @@ yay-bin
 #                               GAMES
 ###########################################################################
 
-#steam
-#steam-native-runtime
+#arcolinux-meta-steam
 #lutris
 #sauerbraten
 #xonotic
@@ -618,6 +614,7 @@ arco-calamares
 #arco-calamares-dev
 #arco-calamares-next
 arcolinux-system-installation-git
+#arcolinux-config-live-session-git
 
 ###########################################################################
 #                                CALAMARES DEPENDENCIES
@@ -630,7 +627,8 @@ kconfig
 ki18n
 kservice
 kwidgetsaddons
-kpmcore
+#kpmcore
+kpmcore-git
 boost-libs
 libpwquality
 squashfs-tools
@@ -664,9 +662,11 @@ qt5-xmlpatterns
 arco-calamares-config-git
 #arco-calamares-config-comp-git
 #arco-calamares-config-dev-git
+#arco-calamares-config-next-git
 #arcod-calamares-config-git
 #arcod-calamares-config-comp-git
 #arcod-calamares-config-dev-git
+#arcod-calamares-config-next-git
 
 ###########################################################################
 #                                DESKTOP SPECIFIC
@@ -690,10 +690,13 @@ perl-linux-desktopfiles
 #                                XFCE
 ###########################################################################
 
-###xfce4 group content
+### xfce4 group content
+# https://www.archlinux.org/groups/x86_64/xfce4/
 exo
 garcon
 thunar
+thunar-volman
+tumbler
 xfce4-appfinder
 xfce4-panel
 xfce4-power-manager
@@ -705,11 +708,14 @@ xfdesktop
 xfwm4
 xfwm4-themes
 
-###xfce4-goodies group content
+### xfce4-goodies group content
+# https://www.archlinux.org/groups/x86_64/xfce4-goodies/
 #mousepad
 #orage
 #parole
 ristretto
+thunar-archive-plugin
+thunar-media-tags-plugin
 xfburn
 #xfce4-artwork
 xfce4-battery-plugin
@@ -729,6 +735,7 @@ xfce4-netload-plugin
 xfce4-notes-plugin
 xfce4-notifyd
 xfce4-pulseaudio-plugin
+#xfce4-screensaver
 xfce4-screenshooter
 xfce4-sensors-plugin
 xfce4-smartbookmark-plugin
@@ -743,7 +750,6 @@ xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
 
 xfce4-panel-profiles
-#gtk-engine-murrine
 
 ###########################################################################
 #                                ISO SPECIFIC
