@@ -599,7 +599,7 @@ arco-calamares
 #arco-calamares-next
 arcolinux-system-installation-git
 #arcolinux-config-live-session-git
-#arcolinux-welcome-app-git
+arcolinux-welcome-app-git
 
 ###########################################################################
 #                                CALAMARES DEPENDENCIES
