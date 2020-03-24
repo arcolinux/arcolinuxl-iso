@@ -419,7 +419,7 @@ aurvote-git
 conky-lua-archers
 downgrade
 font-manager-git
-glxinfo
+#glxinfo
 grub-customizer
 hardcode-fixer-git
 inxi
