@@ -306,7 +306,7 @@ file-roller
 #filezilla
 git
 gksu
-glances
+#glances
 gnome-disk-utility
 gnome-keyring
 gnome-screenshot
@@ -344,7 +344,7 @@ qt5ct
 qt5-styleplugins
 #qt5-tools
 qt5-webkit
-powertop
+#powertop
 reflector
 #redshift
 rofi
@@ -360,7 +360,7 @@ gufw
 unace
 unrar
 unzip
-vnstat
+#vnstat
 w3m
 webkit2gtk
 wmctrl
@@ -387,7 +387,7 @@ vivaldi
 #breeze-obsidian-cursor-theme
 #oxy-neon
 bibata-cursor-theme
-breeze
+#breeze
 #xcursor-vanilla-dmz-aa
 
 ###fonts
@@ -767,7 +767,7 @@ xfce4-netload-plugin
 xfce4-notes-plugin
 xfce4-notifyd
 xfce4-pulseaudio-plugin
-xfce4-screensaver
+#xfce4-screensaver
 xfce4-screenshooter
 xfce4-sensors-plugin
 xfce4-smartbookmark-plugin
