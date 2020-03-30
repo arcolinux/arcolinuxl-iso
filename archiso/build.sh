@@ -3,10 +3,10 @@
 set -e -u
 
 iso_name=arcolinux
-iso_label="arcolinux-v20.4.9"
+iso_label="arcolinux-v20.4.10"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v20.4.9"
+iso_version="v20.4.10"
 install_dir=arch
 work_dir=work
 out_dir=out
