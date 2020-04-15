@@ -158,6 +158,7 @@ alias nslim="sudo nano /etc/slim.conf"
 alias noblogout="sudo nano /etc/oblogout.conf"
 alias nmirrorlist="sudo nano /etc/pacman.d/mirrorlist"
 alias nconfgrub="sudo nano /boot/grub/grub.cfg"
+alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
 
 #gpg
 #verify signature for isos
