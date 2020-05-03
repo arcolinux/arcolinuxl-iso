@@ -504,6 +504,7 @@ arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
 arcolinux-system-config-git
+#arcolinuxd-system-config-git
 #arcolinux-systemd-services-git
 arcolinux-termite-themes-git
 arcolinux-tint2-git
@@ -695,6 +696,7 @@ volumeicon
 i3status
 i3blocks
 i3-gaps
+autotiling
 
 ###########################################################################
 #                               OPENBOX
