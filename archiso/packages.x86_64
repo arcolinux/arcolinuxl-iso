@@ -37,7 +37,6 @@ irssi
 #iwd
 jfsutils
 #lftp
-libatomic_ops
 linux-atm
 linux-firmware
 logrotate
@@ -414,7 +413,6 @@ mkinitcpio-openswap
 
 ###utilities-repo
 archiso
-aurvote-git
 conky-lua-archers
 downgrade
 font-manager-git
