@@ -316,10 +316,10 @@ gtop
 hardinfo
 hddtemp
 htop
-#hunspell
-#hunspell-en
-#hyphen
-#hyphen-en
+hunspell
+hunspell-en_US
+hyphen
+hyphen-en
 grsync
 intltool
 iw
