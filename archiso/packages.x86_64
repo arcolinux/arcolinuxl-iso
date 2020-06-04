@@ -478,6 +478,7 @@ arcolinux-local-applications-git
 arcolinux-local-xfce4-git
 arcolinux-logo-git
 arcolinux-logout-git
+arcolinux-logout-themes-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
 arcolinux-mirrorlist-git
