@@ -87,7 +87,7 @@ function enableServicesFunc() {
 	systemctl set-default graphical.target
 	systemctl enable NetworkManager.service
 	systemctl enable virtual-machine-check.service
-	systemctl enable update-mirrors.service
+	systemctl enable update-mirror.service
   systemctl enable org.cups.cupsd.service
   systemctl enable bluetooth.service
   systemctl enable ntpd.service
