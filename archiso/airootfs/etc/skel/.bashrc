@@ -24,6 +24,9 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+#ignore upper and lowercase when TAB completion
+bind "set completion-ignore-case on"
+
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'

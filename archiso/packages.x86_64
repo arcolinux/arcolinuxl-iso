@@ -294,7 +294,7 @@ asciinema
 bash-completion
 baobab
 catfish
-cronie
+#cronie
 dconf-editor
 dex
 dmidecode
@@ -459,7 +459,7 @@ arcolinux-bin-git
 arcolinux-common-git
 arcolinux-conky-collection-git
 #arcolinux-conky-collection-plasma-git
-arcolinux-cron-git
+#arcolinux-cron-git
 arcolinux-docs-git
 arcolinux-faces-git
 arcolinux-fonts-git
@@ -504,7 +504,7 @@ arcolinux-root-git
 #arcolinux-slimlock-themes-git
 arcolinux-system-config-git
 #arcolinuxd-system-config-git
-arcolinux-systemd-services-git
+#arcolinux-systemd-services-git
 arcolinux-termite-themes-git
 arcolinux-tint2-git
 arcolinux-tint2-themes-git
