@@ -182,7 +182,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-networkmanager-dispatcher-ntpd
+#networkmanager-dispatcher-ntpd
 openresolv
 #samba
 
