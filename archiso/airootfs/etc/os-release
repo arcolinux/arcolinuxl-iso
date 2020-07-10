@@ -1,4 +1,4 @@
-NAME="ArcoLinux"
+NAME=ArcoLinux
 ID=arcolinux
 ID_LIKE="arch"
 VERSION_ID=v20.7.5
