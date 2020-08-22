@@ -27,8 +27,6 @@ read response
 if [[ "$response" == [yY] ]]; then
     echo "Changing all instances";
     sed -i 's/'$oldversion'/'$newversion'/g' ../archiso/build.sh
-    sed -i 's/'$oldversion'/'$newversion'/g' ../archiso/airootfs/etc/os-release
-    #sed -i 's/'$oldversion'/'$newversion'/g' ../archiso/airootfs/etc/lsb-release
     sed -i 's/'$oldversion'/'$newversion'/g' ../archiso/airootfs/etc/dev-rel
     echo "All done"
 	notify-send -u normal "All versions have been updated. Carry on!"

@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e -u
+
+echo 'Warning: customize_airootfs.sh is deprecated! Support for it will be removed in a future archiso version.'
 
 # User = liveuser
 # Password = empty
