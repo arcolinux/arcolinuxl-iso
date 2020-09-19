@@ -132,6 +132,8 @@ function initkeysFunc() {
     pacman-key --lsign-key 4B1B49F7186D8731
     #stephen
     pacman-key --lsign-key 02D507C6EFB8CEAA
+    #brad
+    pacman-key --lsign-key 18064BF445855549
     #sudo pacman-key --refresh-keys
 }
 
