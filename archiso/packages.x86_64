@@ -154,7 +154,7 @@ base
 base-devel
 
 ###virtual box or vmware
-#open-vm-tools
+open-vm-tools
 #virtualbox-guest-modules-arch
 virtualbox-guest-utils
 
