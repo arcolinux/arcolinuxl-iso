@@ -623,6 +623,7 @@ arcolinux-dconf-git
 arco-calamares
 #arco-calamares-comp
 #arco-calamares-dev
+#arco-calamares-git
 #arco-calamares-next
 arcolinux-system-installation-git
 #arcolinux-config-live-session-git
@@ -677,6 +678,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-xmonad-git
 #arcob-calamares-config-xtended-git
 arco-calamares-config-git
+#arco-calamares-config-git-git
 #arco-calamares-config-comp-git
 #arco-calamares-config-dev-git
 #arco-calamares-config-next-git

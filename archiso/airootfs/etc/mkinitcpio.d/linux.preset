@@ -1,4 +1,4 @@
-# mkinitcpio preset file for the 'linux' package
+# mkinitcpio preset file for the 'linux' package on archiso
 
 PRESETS=('archiso')
 
