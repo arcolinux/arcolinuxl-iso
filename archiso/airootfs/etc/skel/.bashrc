@@ -40,6 +40,7 @@ alias pdw="pwd"
 alias udpate='sudo pacman -Syyu'
 alias upate='sudo pacman -Syyu'
 alias updte='sudo pacman -Syyu'
+alias updqte='sudo pacman -Syyu'
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
@@ -177,6 +178,13 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 #receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
+#maintenance
+alias big="expac -H M '%m\t%n' | sort -h | nl"
+alias downgrada="downgrade --ala-url 'https://bike.seedhost.eu/arcolinux/'"
+
+#systeminfo
+alias probe="sudo -E hw-probe -all -upload"
+
 #shutdown or reboot
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
@@ -200,7 +208,7 @@ ex ()
       *.7z)        7z x $1      ;;
       *.deb)       ar x $1      ;;
       *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;      
+      *.tar.zst)   unzstd $1    ;;
       *)           echo "'$1' cannot be extracted via ex()" ;;
     esac
   else

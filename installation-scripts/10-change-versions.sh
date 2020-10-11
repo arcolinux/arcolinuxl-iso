@@ -14,10 +14,10 @@ set -e
 
 echo "Let us change all instances of version number everywhere."
 
-echo "What is the old version? e.g.   v20.4.1    (including v and dots)"
+echo "What is the old version? e.g.   v20.11.3    (including v and dots)"
 read oldversion
 
-echo "To what version do you want upgrade e.g.    v20.4.2   (including v and dots)"
+echo "To what version do you want upgrade e.g.    v20.11.4   (including v and dots)"
 
 read newversion
 
@@ -26,8 +26,10 @@ echo "Is this correct?  (y/n) "
 read response
 if [[ "$response" == [yY] ]]; then
     echo "Changing all instances";
-    sed -i 's/'$oldversion'/'$newversion'/g' ../archiso/build.sh
     sed -i 's/'$oldversion'/'$newversion'/g' ../archiso/airootfs/etc/dev-rel
+    sed -i 's/'$oldversion'/'$newversion'/g' ../archiso/profiledef.sh
+    sed -i 's/'$oldversion'/'$newversion'/g' ./30-build-the-iso-the-first-time.sh
+    sed -i 's/'$oldversion'/'$newversion'/g' ./40-build-the-iso-local-again.sh
     echo "All done"
 	notify-send -u normal "All versions have been updated. Carry on!"
 
