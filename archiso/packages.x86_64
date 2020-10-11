@@ -428,6 +428,7 @@ surfn-icons-git
 mkinitcpio-openswap
 
 ###utilities-repo
+appstream
 archiso
 conky-lua-archers
 downgrade
@@ -827,4 +828,3 @@ xfce4-panel-profiles
 #                                ISO SPECIFIC
 ###########################################################################
 polybar
-appstream
