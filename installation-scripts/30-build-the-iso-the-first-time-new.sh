@@ -31,11 +31,11 @@ echo
 
 	arcolinuxVersion='v20.11.7'
 
-	isoLabel='arcolinux-'$arcolinuxVersion'-x86_64.iso'
+	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	buildFolder=$HOME"/arcolinux-build"
-	outFolder=$HOME"/ArcoLinux-Out"
+	buildFolder=$HOME"/arcolinuxb-build"
+	outFolder=$HOME"/ArcoLinuxB-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 	
 	echo "################################################################## "		
@@ -116,7 +116,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the work folder if one exists"
 echo "- Deleting the build folder if one exists"
-echo "- Copying the Archiso folder to work"
+echo "- Git clone the latest ArcoLinux-iso from github"
 tput sgr0
 echo "################################################################## "
 echo
@@ -127,10 +127,9 @@ echo
 	echo "Deleting the build folder if one exists - takes some time"
 	[ -d $buildFolder ] && sudo rm -rf $buildFolder
 	echo
-	echo "Copying the Archiso folder to work"
+	echo "Git clone the latest ArcoLinux-iso from github"
 	echo
-	mkdir ../work
-	cp -r ../archiso ../work
+	git clone https://github.com/arcolinux/arcolinux-iso ../work
 
 echo
 echo "################################################################## "
@@ -169,21 +168,21 @@ tput sgr0
 echo "################################################################## "
 echo
 
-	#Setting variables
+	#Setting variables for -B variant
 
 	#profiledef.sh
 	oldname1='iso_name=arcolinux'
-	newname1='iso_name=arcolinux'
+	newname1='iso_name=arcolinuxb-'$desktop
 
 	oldname2='iso_label="arcolinux'
-	newname2='iso_label="arcolinux'
+	newname2='iso_label="arcolinuxb-'$desktop
 
 	oldname3='ArcoLinux'
-	newname3='ArcoLinux'
+	newname3='ArcoLinuxB-'$desktop
 
 	#hostname
 	oldname4='ArcoLinux'
-	newname4='ArcoLinux'
+	newname4='ArcoLinuxB-'$desktop
 
 	#lightdm.conf user-session
 	oldname5='user-session=xfce'
@@ -230,17 +229,17 @@ echo
 	sudo chmod 600 $buildFolder/archiso/airootfs/etc/gshadow
 	sudo chmod 600 $buildFolder/archiso/airootfs/etc/shadow
 
-#echo
-#echo "################################################################## "
-#tput setaf 2
-#echo "Phase 7 :"
-#echo "- Cleaning the cache from /var/cache/pacman/pkg/"
-#tput sgr0
-#echo "################################################################## "
-#echo
+echo
+echo "################################################################## "
+tput setaf 2
+echo "Phase 7 :"
+echo "- Cleaning the cache from /var/cache/pacman/pkg/"
+tput sgr0
+echo "################################################################## "
+echo
 
-	#echo "Cleaning the cache  from /var/cache/pacman/pkg/"
-	#yes | sudo pacman -Scc
+	echo "Cleaning the cache  from /var/cache/pacman/pkg/"
+	yes | sudo pacman -Scc
 
 echo
 echo "################################################################## "
@@ -297,17 +296,17 @@ echo
 	cp $buildFolder/archiso/work/iso/arch/pkglist.x86_64.txt  $outFolder/$isoLabel".iso.pkglist.txt"
 	
 
-#echo
-#echo "##################################################################"
-#tput setaf 2
-#echo "Phase 11 :"
-#echo "- Making sure we start with a clean slate next time"
-#tput sgr0
-#echo "################################################################## "
-#echo
+echo
+echo "##################################################################"
+tput setaf 2
+echo "Phase 11 :"
+echo "- Making sure we start with a clean slate next time"
+tput sgr0
+echo "################################################################## "
+echo
 
-	#echo "Deleting the build folder if one exists - takes some time"
-	#[ -d $buildFolder ] && sudo rm -rf $buildFolder
+	echo "Deleting the build folder if one exists - takes some time"
+	[ -d $buildFolder ] && sudo rm -rf $buildFolder
 
 echo
 echo "##################################################################"
