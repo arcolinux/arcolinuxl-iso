@@ -661,6 +661,7 @@ qt5-xmlpatterns
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
+python-ptyprocess
 
 ###########################################################################
 #                                ARCOLINUX CONFIG CALAMARES
