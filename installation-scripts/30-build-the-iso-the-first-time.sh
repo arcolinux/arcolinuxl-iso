@@ -193,7 +193,7 @@ echo
 	oldname6='#autologin-session='
 	newname6='autologin-session='$lightdmDesktop
 
-	echo "Changing all references to the -B variant"
+	echo "Changing all references"
 	echo
 	sed -i 's/'$oldname1'/'$newname1'/g' ../work/archiso/profiledef.sh
 	sed -i 's/'$oldname2'/'$newname2'/g' ../work/archiso/profiledef.sh
