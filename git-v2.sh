@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Deleting the work folder if one exists"
+[ -d work ] && rm -rf work
+
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
 git pull
