@@ -239,7 +239,7 @@ tput sgr0
 echo "################################################################## "
 echo
 
-	echo "Cleaning the cache  from /var/cache/pacman/pkg/"
+	echo "Cleaning the cache from /var/cache/pacman/pkg/"
 	yes | sudo pacman -Scc
 
 echo
