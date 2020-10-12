@@ -43,7 +43,7 @@ echo
 	echo "Bulding version                        : "$arcolinuxVersion
 	echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
-	echo "Build folder                            : "$buildFolder
+	echo "Build folder                           : "$buildFolder
 	echo "Out folder                             : "$outFolder
 	echo "################################################################## "		
 
@@ -163,7 +163,7 @@ echo
 echo "################################################################## "
 tput setaf 2
 echo "Phase 5 : "
-echo "- Changing all references to the -B variant"
+echo "- Changing all references"
 echo "- Adding time to /etc/dev-rel"
 tput sgr0
 echo "################################################################## "
