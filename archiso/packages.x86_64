@@ -650,7 +650,8 @@ kconfig
 ki18n
 kservice
 kwidgetsaddons
-kpmcore
+#kpmcore
+arcolinux-kpmcore
 #kpmcore-git
 boost-libs
 libpwquality

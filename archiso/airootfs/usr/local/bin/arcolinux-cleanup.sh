@@ -12,9 +12,10 @@ chgrp polkitd /etc/polkit-1/rules.d
 chmod 600 /etc/gshadow
 chmod 600 /etc/shadow
 
-echo "Reflector"
-echo "#################################"
-reflector --threads 50 -l 100 -f 100 --number 20 --sort rate --save /etc/pacman.d/mirrorlist
+#Moved to calamares build
+#echo "Reflector"
+#echo "#################################"
+#reflector --threads 50 -l 100 -f 100 --number 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 echo "Populate Core Team keys"
 echo "#################################"
