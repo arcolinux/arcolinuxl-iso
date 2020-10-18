@@ -35,10 +35,14 @@ pacman-key --lsign-key 18064BF445855549
 #raniel
 pacman-key --lsign-key 7EC1A5550718AB89
 
-echo " Copy grub Vimix theme (archiso deletes /boot when making the ISO)"
+echo "Copy grub Vimix theme (archiso deletes /boot when making the ISO)"
 echo "#################################"
 mkdir -p /boot/grub/themes
 cp -Rf /usr/share/grub/themes/Vimix /boot/grub/themes/
+
+echo "Copy /etc/skel to /root"
+echo "#################################"
+cp -Rf /etc/skel/ /root
 
 echo "Cleanup autologin root"
 echo "#################################"
