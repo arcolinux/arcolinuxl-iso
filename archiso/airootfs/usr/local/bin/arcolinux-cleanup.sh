@@ -54,6 +54,10 @@ zcat /usr/share/app-info/xmls/community.xml.gz | sed 's|<em>||g;s|<\/em>||g;' | 
 mv new.xml.gz /usr/share/app-info/xmls/community.xml.gz
 appstreamcli refresh-cache --force
 
+echo "Setting editor to nano"
+echo "#################################"
+echo "EDITOR=nano" >> /etc/profile
+
 echo "Bluetooth improvements"
 echo "#################################"
 sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf
