@@ -652,7 +652,6 @@ kservice
 kwidgetsaddons
 kpmcore
 #arcolinux-kpmcore
-#kpmcore-git
 boost-libs
 libpwquality
 squashfs-tools
