@@ -42,7 +42,7 @@ cp -Rf /usr/share/grub/themes/Vimix /boot/grub/themes/
 
 echo "Copy /etc/skel to /root"
 echo "#################################"
-cp -Rf /etc/skel/ /root
+cp -aT /etc/skel/ /root/
 
 echo "Cleanup autologin root"
 echo "#################################"
