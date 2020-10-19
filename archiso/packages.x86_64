@@ -409,9 +409,9 @@ ttf-font-awesome
 ttf-ms-fonts
 
 ###icons
-#faba-icon-theme
+#faba-icon-theme-git
 #halo-icons-git
-#moka-icon-theme
+#moka-icon-theme-git
 numix-circle-arc-icons-git
 numix-icon-theme-git
 numix-circle-icon-theme-git
