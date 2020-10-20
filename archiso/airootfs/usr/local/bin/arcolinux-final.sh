@@ -19,11 +19,11 @@ echo "Cleanup autologin root"
 echo "#################################"
 rm -rf /etc/systemd/system/getty@tty1.service.d
 
-echo "Fix for pamac icons not showing"
-echo "#################################"
-zcat /usr/share/app-info/xmls/community.xml.gz | sed 's|<em>||g;s|<\/em>||g;' | gzip > "new.xml.gz"
-mv new.xml.gz /usr/share/app-info/xmls/community.xml.gz
-appstreamcli refresh-cache --force
+#echo "Fix for pamac icons not showing"
+#echo "#################################"
+#zcat /usr/share/app-info/xmls/community.xml.gz | sed 's|<em>||g;s|<\/em>||g;' | gzip > "new.xml.gz"
+#mv new.xml.gz /usr/share/app-info/xmls/community.xml.gz
+#appstreamcli refresh-cache --force
 
 echo "Setting editor to nano"
 echo "#################################"
