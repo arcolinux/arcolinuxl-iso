@@ -26,6 +26,10 @@ echo "#################################"
 mkdir -p /boot/grub/themes
 cp -Rf /usr/share/grub/themes/Vimix /boot/grub/themes/
 
+echo "Changing into our own linux.preset"
+echo "#################################"
+mv /etc/mkinitcpio.d/arcolinux /etc/mkinitcpio.d/linux.preset
+
 echo "#################################"
 echo "End arcolinux-before.sh"
 echo "#################################"
