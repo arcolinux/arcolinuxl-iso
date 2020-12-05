@@ -441,8 +441,8 @@ inxi
 mintstick-git
 neofetch
 numix-gtk-theme-git
-#pamac-all
-pamac-aur
+pamac-all
+#pamac-aur
 peek
 pulseaudio-equalizer-ladspa
 python-pyparted
