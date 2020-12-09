@@ -394,7 +394,8 @@ zsh-syntax-highlighting
 
 ###applications
 vivaldi
-#vivaldi-codecs-ffmpeg-extra-bin
+vivaldi-ffmpeg-codecs
+vivaldi-widevine
 
 ###cursors
 #breeze-cursors-lh
