@@ -63,45 +63,45 @@ echo
 	#----------------------------------------------------------------------------------
 
 	#checking if application is already installed or else install with aur helpers
-	if pacman -Qi $package &> /dev/null; then
+	# if pacman -Qi $package &> /dev/null; then
 
-			echo "Archiso is already installed"
+	# 		echo "Archiso is already installed"
 
-	else
+	# else
 
-		#checking which helper is installed
-		if pacman -Qi yay &> /dev/null; then
+	# 	#checking which helper is installed
+	# 	if pacman -Qi yay &> /dev/null; then
 
-			echo "################################################################"
-			echo "######### Installing with yay"
-			echo "################################################################"
-			yay -S --noconfirm $package
+	# 		echo "################################################################"
+	# 		echo "######### Installing with yay"
+	# 		echo "################################################################"
+	# 		yay -S --noconfirm $package
 
-		elif pacman -Qi trizen &> /dev/null; then
+	# 	elif pacman -Qi trizen &> /dev/null; then
 
-			echo "################################################################"
-			echo "######### Installing with trizen"
-			echo "################################################################"
-			trizen -S --noconfirm --needed --noedit $package
+	# 		echo "################################################################"
+	# 		echo "######### Installing with trizen"
+	# 		echo "################################################################"
+	# 		trizen -S --noconfirm --needed --noedit $package
 
-		fi
+	# 	fi
 
-		# Just checking if installation was successful
-		if pacman -Qi $package &> /dev/null; then
+	# 	# Just checking if installation was successful
+	# 	if pacman -Qi $package &> /dev/null; then
 
-			echo "################################################################"
-			echo "#########  "$package" has been installed"
-			echo "################################################################"
+	# 		echo "################################################################"
+	# 		echo "#########  "$package" has been installed"
+	# 		echo "################################################################"
 
-		else
+	# 	else
 
-			echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-			echo "!!!!!!!!!  "$package" has NOT been installed"
-			echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-			exit 1
-		fi
+	# 		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	# 		echo "!!!!!!!!!  "$package" has NOT been installed"
+	# 		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	# 		exit 1
+	# 	fi
 
-	fi
+	# fi
 
 	echo
 	echo "Saving current archiso version to readme"
