@@ -60,9 +60,9 @@ echo
 
 	package="archiso"
 
-	----------------------------------------------------------------------------------
+	#----------------------------------------------------------------------------------
 
-	checking if application is already installed or else install with aur helpers
+	#checking if application is already installed or else install with aur helpers
 	if pacman -Qi $package &> /dev/null; then
 
 			echo "Archiso is already installed"
