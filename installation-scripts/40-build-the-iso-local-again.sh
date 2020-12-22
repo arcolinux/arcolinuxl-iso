@@ -18,7 +18,7 @@ echo
 echo "################################################################## "
 tput setaf 2
 echo "Phase 1 : "
-echo "- General parameters"
+echo "- Setting General parameters"
 tput sgr0
 echo "################################################################## "
 echo
@@ -29,7 +29,7 @@ echo
 	desktop="xfce"
 	lightdmDesktop="xfce"
 
-	arcolinuxVersion='v21.01.4'
+	arcolinuxVersion='v21.01.5'
 
 	isoLabel='arcolinux-'$arcolinuxVersion'-x86_64.iso'
 
@@ -114,23 +114,19 @@ echo
 echo "################################################################## "
 tput setaf 2
 echo "Phase 3 :"
-echo "- Deleting the work folder if one exists"
 echo "- Deleting the build folder if one exists"
-echo "- Copying the Archiso folder to work"
+echo "- Copying the Archiso folder to build folder"
 tput sgr0
 echo "################################################################## "
 echo
 
-	echo "Deleting the work folder if one exists"
-	[ -d ../work ] && sudo rm -rf ../work
-	echo
 	echo "Deleting the build folder if one exists - takes some time"
 	[ -d $buildFolder ] && sudo rm -rf $buildFolder
 	echo
-	echo "Copying the Archiso folder to work"
+	echo "Copying the Archiso folder to build work"
 	echo
-	mkdir ../work
-	cp -r ../archiso ../work
+	mkdir $buildFolder
+	cp -r ../archiso $buildFolder/archiso
 
 echo
 echo "################################################################## "
@@ -138,26 +134,30 @@ tput setaf 2
 echo "Phase 4 :"
 echo "- Deleting any files in /etc/skel"
 echo "- Getting the last version of bashrc in /etc/skel"
-echo "- Removing the old packages.x86_64 file from work folder"
-echo "- Copying the new packages.x86_64 file to the work folder"
+echo "- Removing the old packages.x86_64 file from build folder"
+echo "- Copying the new packages.x86_64 file to the build folder"
+echo "- Changing group for polkit folder"
 tput sgr0
 echo "################################################################## "
 echo
 
 	echo "Deleting any files in /etc/skel"
-	rm -rf ../work/archiso/airootfs/etc/skel/.* 2> /dev/null
+	rm -rf $buildFolder/archiso/airootfs/etc/skel/.* 2> /dev/null
 	echo
 
 	echo "Getting the last version of bashrc in /etc/skel"
 	echo
-	wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O ../work/archiso/airootfs/etc/skel/.bashrc
+	wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O $buildFolder/archiso/airootfs/etc/skel/.bashrc
 
-	echo "Removing the old packages.x86_64 file from work folder"
-	rm ../work/archiso/packages.x86_64
+	echo "Removing the old packages.x86_64 file from build folder"
+	rm $buildFolder/archiso/packages.x86_64
 	echo
-	echo "Copying the new packages.x86_64 file to the work folder"
-	cp -f ../archiso/packages.x86_64 ../work/archiso/packages.x86_64
-
+	echo "Copying the new packages.x86_64 file to the build folder"
+	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
+	echo
+	echo "Changing group for polkit folder"
+	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
+	#is not working so fixing this during calamares installation
 
 echo
 echo "################################################################## "
@@ -195,45 +195,23 @@ echo
 
 	echo "Changing all references"
 	echo
-	sed -i 's/'$oldname1'/'$newname1'/g' ../work/archiso/profiledef.sh
-	sed -i 's/'$oldname2'/'$newname2'/g' ../work/archiso/profiledef.sh
-	sed -i 's/'$oldname3'/'$newname3'/g' ../work/archiso/airootfs/etc/dev-rel
-	sed -i 's/'$oldname4'/'$newname4'/g' ../work/archiso/airootfs/etc/hostname
-	sed -i 's/'$oldname5'/'$newname5'/g' ../work/archiso/airootfs/etc/lightdm/lightdm.conf
-	sed -i 's/'$oldname6'/'$newname6'/g' ../work/archiso/airootfs/etc/lightdm/lightdm.conf
+	sed -i 's/'$oldname1'/'$newname1'/g' $buildFolder/archiso/profiledef.sh
+	sed -i 's/'$oldname2'/'$newname2'/g' $buildFolder/archiso/profiledef.sh
+	sed -i 's/'$oldname3'/'$newname3'/g' $buildFolder/archiso/airootfs/etc/dev-rel
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/airootfs/etc/hostname
+	sed -i 's/'$oldname5'/'$newname5'/g' $buildFolder/archiso/airootfs/etc/lightdm/lightdm.conf
+	sed -i 's/'$oldname6'/'$newname6'/g' $buildFolder/archiso/airootfs/etc/lightdm/lightdm.conf
 
 	echo "Adding time to /etc/dev-rel"
 	date_build=$(date -d now)
 	echo "Iso build on : "$date_build
-	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" ../work/archiso/airootfs/etc/dev-rel
+	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" $buildFolder/archiso/airootfs/etc/dev-rel
 
-echo
-echo "################################################################## "
-tput setaf 2
-echo "Phase 6 : "
-echo "- Copying files and folder to build folder as root"
-echo "- Double-checking permissions"
-tput sgr0
-echo "################################################################## "
-echo
-
-	echo "Copying files and folder to build folder as root"
-	[ -d  $buildFolder ] || sudo mkdir $buildFolder
-	sudo cp -r ../work/* $buildFolder
-	echo
-
-	echo "Double-checking permissions"
-	sudo chmod 750 $buildFolder/archiso/airootfs/etc/sudoers.d
-	sudo chmod 750 $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
-	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
-	sudo chmod 750 $buildFolder/archiso/airootfs/root
-	sudo chmod 600 $buildFolder/archiso/airootfs/etc/gshadow
-	sudo chmod 600 $buildFolder/archiso/airootfs/etc/shadow
 
 #echo
 #echo "################################################################## "
 #tput setaf 2
-#echo "Phase 7 :"
+#echo "Phase 6 :"
 #echo "- Cleaning the cache from /var/cache/pacman/pkg/"
 #tput sgr0
 #echo "################################################################## "
@@ -245,34 +223,24 @@ echo
 echo
 echo "################################################################## "
 tput setaf 2
-echo "Phase 8 :"
+echo "Phase 7 :"
 echo "- Building the iso - this can take a while - be patient"
 tput sgr0
 echo "################################################################## "
 echo
 
-	cd $buildFolder/archiso/
-	sudo mkarchiso -v -w $buildFolder $buildFolder/archiso/
-
-echo
-echo "################################################################## "
-tput setaf 2
-echo "Phase 9 :"
-echo "- Copying the iso to the out folder :"$outFolder
-tput sgr0
-echo "################################################################## "
-echo
-
 	[ -d $outFolder ] || mkdir $outFolder
-	echo "Copying the iso to the out folder : "$outFolder
-	cp $buildFolder/archiso/out/arcolinux* $outFolder
+	cd $buildFolder/archiso/
+	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
+
+
 
 echo
 echo "###################################################################"
 tput setaf 2
-echo "Phase 10 :"
+echo "Phase 8 :"
 echo "- Creating checksums"
-echo "- Moving pgklist"
+echo "- Copying pgklist"
 tput sgr0
 echo "###################################################################"
 echo
@@ -284,23 +252,23 @@ echo
 	echo
 	echo "Building sha1sum"
 	echo "########################"
-	sha1sum $isoLabel > $isoLabel.sha1
+	sha1sum $isoLabel | tee $isoLabel.sha1
 	echo "Building sha256sum"
 	echo "########################"
-	sha256sum $isoLabel > $isoLabel.sha256
+	sha256sum $isoLabel | tee $isoLabel.sha256
 	echo "Building md5sum"
 	echo "########################"
-	md5sum $isoLabel >$isoLabel.md5
+	md5sum $isoLabel | tee $isoLabel.md5
 	echo
 	echo "Moving pkglist.x86_64.txt"
 	echo "########################"
-	cp $buildFolder/archiso/work/iso/arch/pkglist.x86_64.txt  $outFolder/$isoLabel".pkglist.txt"
+	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/$isoLabel".pkglist.txt"
 	
 
 #echo
 #echo "##################################################################"
 #tput setaf 2
-#echo "Phase 11 :"
+#echo "Phase 9 :"
 #echo "- Making sure we start with a clean slate next time"
 #tput sgr0
 #echo "################################################################## "

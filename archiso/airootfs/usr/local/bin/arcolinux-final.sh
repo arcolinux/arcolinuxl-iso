@@ -8,8 +8,6 @@ echo "#################################"
 chmod 750 /etc/sudoers.d
 chmod 750 /etc/polkit-1/rules.d
 chgrp polkitd /etc/polkit-1/rules.d
-chmod 600 /etc/gshadow
-chmod 600 /etc/shadow
 
 echo "Copy /etc/skel to /root"
 echo "#################################"
