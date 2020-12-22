@@ -547,6 +547,7 @@ arcolinux-zsh-git
 #arcolinux-bspwm-git
 #arcolinux-budgie-git
 #arcolinux-cinnamon-git
+#arcolinux-cwm-git
 #arcolinux-deepin-git
 #arcolinux-dwm-git
 #arcolinux-dwm-slstatus-git
@@ -580,6 +581,7 @@ arcolinux-config-all-desktops-git
 #arcolinux-config-bspwm-git
 #arcolinux-config-budgie-git
 #arcolinux-config-cinnamon-git
+#arcolinux-config-cwm-git
 #arcolinux-config-deepin-git
 #arcolinux-config-dwm-git
 #arcolinux-config-enlightenment-git
@@ -610,6 +612,7 @@ arcolinux-config-git
 #arcolinux-bspwm-dconf-git
 #arcolinux-budgie-dconf-git
 #arcolinux-cinnamon-dconf-git
+#arcolinux-cwm-dconf-git
 arcolinux-dconf-git
 #arcolinux-deepin-dconf-git
 #arcolinux-dwm-dconf-git
@@ -675,6 +678,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-bspwm-git
 #arcob-calamares-config-budgie-git
 #arcob-calamares-config-cinnamon-git
+#arcob-calamares-config-cwm-git
 #arcob-calamares-config-deepin-git
 #arcob-calamares-config-dwm-git
 #arcob-calamares-config-enlightenment-git
