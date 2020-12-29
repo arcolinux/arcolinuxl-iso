@@ -450,7 +450,7 @@ peek
 pulseaudio-equalizer-ladspa
 python-pyparted
 python-pywal
-#scour
+scour
 screenkey-git
 sublime-text-dev
 the_platinum_searcher-bin
