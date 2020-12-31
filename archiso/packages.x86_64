@@ -448,7 +448,7 @@ pamac-all
 #pamac-aur
 peek
 pulseaudio-equalizer-ladspa
-pyakm
+#pyakm
 python-pyparted
 python-pywal
 scour
