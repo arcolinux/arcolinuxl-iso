@@ -44,9 +44,9 @@ jfsutils
 #kitty-terminfo
 #lftp
 linux
-linux-headers
 linux-atm
 linux-firmware
+linux-headers
 logrotate
 lsscsi
 lvm2
