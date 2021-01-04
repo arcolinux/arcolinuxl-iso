@@ -50,5 +50,4 @@ echo "#################################"
 echo "End arcolinux-final.sh"
 echo "#################################"
 rm /usr/local/bin/arcolinux-all-cores.sh
-rm /usr/local/bin/arcolinux-calamares-deepin-fix.sh
 rm /usr/local/bin/arcolinux-final.sh
