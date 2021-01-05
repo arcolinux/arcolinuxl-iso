@@ -34,6 +34,7 @@ echo
 	isoLabel='arcolinux-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
+	archisoRequiredVersion="archiso 50.1-1"
 	buildFolder=$HOME"/arcolinux-build"
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
@@ -43,9 +44,26 @@ echo
 	echo "Building version                       : "$arcolinuxVersion
 	echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
+	echo "What is the required archiso version?  : "$archisoRequiredVersion
 	echo "Build folder                           : "$buildFolder
 	echo "Out folder                             : "$outFolder
 	echo "################################################################## "		
+
+	if [ "$archisoVersion" == "$archisoRequiredVersion" ]; then
+		tput setaf 2
+		echo "##################################################################"
+		echo "Archiso has the correct version. Continuing ..."
+		echo "##################################################################"
+		tput sgr0
+	else
+	tput setaf 1
+	echo "###################################################################################################"
+	echo "You need to install the correct version of Archiso"
+	echo "Use 'sudo downgrade archiso' to do that"
+	echo "###################################################################################################"
+	tput sgr0
+	exit 1
+	fi
 
 echo
 echo "################################################################## "
