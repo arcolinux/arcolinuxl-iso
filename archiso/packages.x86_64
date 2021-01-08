@@ -137,6 +137,7 @@ mesa
 ###hardware video support
 #bumblebee
 #optimus-manager
+#optimus-manager-qt
 #nvidia
 #nvidia-utils
 #nvidia-390xx
