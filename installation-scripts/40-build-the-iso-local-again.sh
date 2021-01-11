@@ -60,6 +60,7 @@ echo
 	echo "###################################################################################################"
 	echo "You need to install the correct version of Archiso"
 	echo "Use 'sudo downgrade archiso' to do that"
+	echo "or update your system"
 	echo "###################################################################################################"
 	tput sgr0
 	exit 1
