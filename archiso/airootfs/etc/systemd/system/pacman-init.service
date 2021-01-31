@@ -14,18 +14,6 @@ RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
 ExecStart=/usr/bin/pacman-key --populate archlinux
 ExecStart=/usr/bin/pacman-key --populate arcolinux
-#erik
-ExecStart=/usr/bin/pacman-key --lsign-key 74F5DE85A506BF64
-#marco
-ExecStart=/usr/bin/pacman-key --lsign-key F1ABB772CE9F7FC0
-#john
-ExecStart=/usr/bin/pacman-key --lsign-key 4B1B49F7186D8731
-#stephen
-ExecStart=/usr/bin/pacman-key --lsign-key 02D507C6EFB8CEAA
-#brad
-ExecStart=/usr/bin/pacman-key --lsign-key 18064BF445855549
-#raniel
-ExecStart=/usr/bin/pacman-key --lsign-key 7EC1A5550718AB89
 
 [Install]
 WantedBy=multi-user.target
