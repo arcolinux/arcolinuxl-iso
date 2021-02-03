@@ -27,9 +27,9 @@ echo
 	#First letter of desktop is small letter
 
 	desktop="xfce"
-	lightdmDesktop="xfce"
+	dmDesktop="xfce"
 
-	arcolinuxVersion='v21.03.2'
+	arcolinuxVersion='v21.03.3'
 
 	isoLabel='arcolinux-'$arcolinuxVersion'-x86_64.iso'
 
@@ -38,8 +38,8 @@ echo
 	buildFolder=$HOME"/arcolinux-build"
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
-	
-	echo "################################################################## "		
+
+	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
 	echo "Building version                       : "$arcolinuxVersion
 	echo "Iso label                              : "$isoLabel
@@ -47,7 +47,7 @@ echo
 	echo "What is the required archiso version?  : "$archisoRequiredVersion
 	echo "Build folder                           : "$buildFolder
 	echo "Out folder                             : "$outFolder
-	echo "################################################################## "		
+	echo "################################################################## "
 
 	if [ "$archisoVersion" == "$archisoRequiredVersion" ]; then
 		tput setaf 2
@@ -69,7 +69,7 @@ echo
 echo
 echo "################################################################## "
 tput setaf 2
-echo "Phase 2 :" 
+echo "Phase 2 :"
 echo "- Checking if archiso is installed"
 echo "- Saving current archiso version to readme"
 echo "- Making mkarchiso verbose"
@@ -204,13 +204,9 @@ echo
 	oldname4='ArcoLinux'
 	newname4='ArcoLinux'
 
-	#lightdm.conf user-session
-	oldname5='user-session=xfce'
-	newname5='user-session='$lightdmDesktop
-
-	#lightdm.conf autologin-session
-	oldname6='#autologin-session='
-	newname6='autologin-session='$lightdmDesktop
+	#sddm.conf user-session
+	oldname5='Session=xfce'
+	newname5='Session='$dmDesktop
 
 	echo "Changing all references"
 	echo
@@ -218,8 +214,7 @@ echo
 	sed -i 's/'$oldname2'/'$newname2'/g' $buildFolder/archiso/profiledef.sh
 	sed -i 's/'$oldname3'/'$newname3'/g' $buildFolder/archiso/airootfs/etc/dev-rel
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/airootfs/etc/hostname
-	sed -i 's/'$oldname5'/'$newname5'/g' $buildFolder/archiso/airootfs/etc/lightdm/lightdm.conf
-	sed -i 's/'$oldname6'/'$newname6'/g' $buildFolder/archiso/airootfs/etc/lightdm/lightdm.conf
+	sed -i 's/'$oldname5'/'$newname5'/g' $buildFolder/archiso/airootfs/etc/sddm.conf
 
 	echo "Adding time to /etc/dev-rel"
 	date_build=$(date -d now)
@@ -282,7 +277,6 @@ echo
 	echo "Moving pkglist.x86_64.txt"
 	echo "########################"
 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/$isoLabel".pkglist.txt"
-	
 
 #echo
 #echo "##################################################################"

@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name=arcolinux
-iso_label="arcolinux-v21.03.2"
+iso_label="arcolinux-v21.03.3"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v21.03.2"
+iso_version="v21.03.3"
 install_dir=arch
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"

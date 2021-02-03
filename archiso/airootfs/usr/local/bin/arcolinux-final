@@ -1,4 +1,5 @@
 #!/bin/bash
+echo
 echo "#################################"
 echo "Start arcolinux-final"
 echo "#################################"

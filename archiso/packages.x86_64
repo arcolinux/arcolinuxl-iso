@@ -721,13 +721,14 @@ arco-calamares-config-git
 accountsservice
 
 ###lightdm
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+#lightdm
+#lightdm-gtk-greeter
+#lightdm-gtk-greeter-settings
 
 ###sddm
-#sddm
-#sddm-sugar-candy-git
+sddm
+arcolinux-sddm-sugar-candy-git
+#arcolinux-sddm-breeze-git
 
 ###########################################################################
 #                         PICOM OR COMPTON
