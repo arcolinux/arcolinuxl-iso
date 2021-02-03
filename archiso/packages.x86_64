@@ -497,9 +497,6 @@ arcolinux-kvantum-git
 #arcolinux-kvantum-lxqt-git
 #arcolinux-kvantum-plasma-git
 arcolinux-kvantum-theme-arc-git
-#arcolinux-lightdm-gtk-greeter
-#arcolinux-lightdm-gtk-greeter-plasma
-#arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-applications-git
 #arcolinux-local-applications-plasma-hide-git
 arcolinux-local-xfce4-git
@@ -720,8 +717,6 @@ arco-calamares-config-git
 
 accountsservice
 
-###lightdm
-#lightdm
 #lightdm-gtk-greeter
 #lightdm-gtk-greeter-settings
 
