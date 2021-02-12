@@ -50,5 +50,9 @@ GRUB_THEME="/boot/grub/themes/Vimix/theme.txt"
 #GRUB_INIT_TUNE="480 440 1"
 
 # Uncomment to make GRUB remember the last selection. This requires
-# setting 'GRUB_DEFAULT=saved' above.
+# setting 'GRUB_DEFAULT=saved' above. Change 0 into saved.
+# Do not forget to 'update-grub' in a terminal to apply the new settings
 #GRUB_SAVEDEFAULT="true"
+
+# Uncomment to make grub stop using submenus
+#GRUB_DISABLE_SUBMENU=y

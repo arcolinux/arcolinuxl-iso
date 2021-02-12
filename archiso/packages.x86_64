@@ -374,7 +374,7 @@ timeshift
 #tlp
 tree
 ufw
-#gufw
+gufw
 unace
 unrar
 unzip
