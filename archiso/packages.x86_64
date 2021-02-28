@@ -554,6 +554,7 @@ arcolinux-zsh-git
 #arcolinux-dwm-slstatus-git
 #arcolinux-dwm-st-git
 #arcolinux-enlightenment-git
+#arcolinux-fvwm3-git
 #arcolinux-gnome-git
 #arcolinux-herbstluftwm-git
 arcolinux-i3wm-git
@@ -587,6 +588,7 @@ arcolinux-config-all-desktops-git
 #arcolinux-config-deepin-git
 #arcolinux-config-dwm-git
 #arcolinux-config-enlightenment-git
+#arcolinux-config-fvwm3-git
 arcolinux-config-git
 #arcolinux-config-gnome-git
 #arcolinux-config-herbstluftwm-git
@@ -619,6 +621,7 @@ arcolinux-dconf-git
 #arcolinux-deepin-dconf-git
 #arcolinux-dwm-dconf-git
 #arcolinux-enlightenment-dconf-git
+#arcolinux-fvwm3-dconf-git
 #arcolinux-gnome-dconf-git
 #arcolinux-herbstluftwm-dconf-git
 #arcolinux-i3wm-dconf-git
