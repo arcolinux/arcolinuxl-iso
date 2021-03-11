@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name=arcolinux
-iso_label="arcolinux-v21.03.8"
+iso_label="arcolinux-v21.03.9"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v21.03.8"
+iso_version="v21.03.9"
 install_dir=arch
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
@@ -15,6 +15,7 @@ airootfs_image_tool_options=('-comp' 'xz')
 #airootfs_image_tool_options=('-comp' 'zstd' '-Xcompression-level' '22')
 #airootfs_image_tool_options=('-comp' 'zstd')
 file_permissions=(
+  ["/etc/gshadow"]="0:0:600"	
   ["/etc/shadow"]="0:0:600"
   ["/root"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
