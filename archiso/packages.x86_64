@@ -27,6 +27,7 @@ efibootmgr
 ethtool
 exfatprogs
 f2fs-tools
+fatresize
 fsarchiver
 gnu-netcat
 gpm
@@ -85,6 +86,7 @@ rsync
 sdparm
 sg3_utils
 smartmontools
+sof-firmware
 sudo
 syslinux
 #systemd-resolvconf
@@ -93,6 +95,7 @@ terminus-font
 #termite-terminfo
 testdisk
 usb_modeswitch
+usbmuxd
 usbutils
 vim
 vpnc
