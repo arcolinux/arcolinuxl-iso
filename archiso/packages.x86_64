@@ -495,6 +495,10 @@ arcolinux-faces-git
 arcolinux-fonts-git
 arcolinux-geany-git
 arcolinux-grub-theme-vimix-git
+arcolinux-gtk3-sardi-arc-git
+#arcolinux-gtk3-surfn-arc-git
+#arcolinux-gtk3-surfn-arc-breeze-git
+#arcolinux-guake-autostart-git
 arcolinux-hblock-git
 arcolinux-keyring
 arcolinux-kvantum-git
@@ -538,6 +542,8 @@ arcolinux-tint2-git
 arcolinux-tint2-themes-git
 arcolinux-tweak-tool-git
 arcolinux-variety-git
+arcolinux-variety-autostart-git
+#arcolinux-volumeicon-git
 arcolinux-wallpapers-git
 #arcolinux-wallpapers-lxqt-dual-git
 arcolinux-xfce4-panel-profiles-git
@@ -653,7 +659,7 @@ arco-calamares
 #arco-calamares-git
 #arco-calamares-next
 arcolinux-system-installation-git
-#arcolinux-config-live-session-git
+#arcolinuxd-config-live-session-git
 arcolinux-welcome-app-git
 #arcolinux-welcome-app-dev-git
 #arcolinux-welcome-app-deepin-git
