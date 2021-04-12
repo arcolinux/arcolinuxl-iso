@@ -452,6 +452,7 @@ neofetch
 numix-gtk-theme-git
 pamac-all
 #pamac-aur
+paru-bin
 peek
 pulseaudio-equalizer-ladspa
 #pyakm
@@ -522,6 +523,7 @@ arcolinux-obmenu-generator-git
 #arcolinux-obmenu-generator-minimal-git
 #arcolinux-obmenu-generator-xtended-git
 arcolinux-openbox-themes-git
+arcolinux-paru-git
 arcolinux-pipemenus-git
 arcolinux-plank-git
 arcolinux-plank-themes-git
