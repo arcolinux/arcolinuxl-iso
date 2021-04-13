@@ -625,6 +625,7 @@ arcolinux-config-git
 #                           ARCOLINUX DCONF FOLDER
 ###########################################################################
 
+#arcolinux-dconf-all-desktops-git
 #arcolinux-awesome-dconf-git
 #arcolinux-bspwm-dconf-git
 #arcolinux-budgie-dconf-git
