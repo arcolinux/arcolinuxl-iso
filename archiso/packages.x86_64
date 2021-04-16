@@ -387,7 +387,7 @@ unzip
 w3m
 webkit2gtk
 wmctrl
-xapps
+xapp
 xdo
 xdotool
 xdg-desktop-portal-gtk
@@ -549,7 +549,7 @@ arcolinux-variety-autostart-git
 #arcolinux-volumeicon-git
 arcolinux-wallpapers-git
 #arcolinux-wallpapers-lxqt-dual-git
-arcolinux-xfce4-panel-profiles-git
+arcolinux-xfce-panel-profiles-git
 #arcolinux-xmobar-git
 arcolinux-zsh-git
 
