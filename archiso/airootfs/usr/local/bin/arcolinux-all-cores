@@ -27,3 +27,8 @@ then
 else
         echo "No change."
 fi
+
+echo "#################################"
+echo "End arcolinux-all-cores"
+echo "#################################"
+rm /usr/local/bin/arcolinux-all-cores

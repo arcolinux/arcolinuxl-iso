@@ -47,8 +47,11 @@ echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
 
+echo "Hardcode-fixer"
+echo "#################################"
+hardcode-fixer
+
 echo "#################################"
 echo "End arcolinux-final"
 echo "#################################"
-rm /usr/local/bin/arcolinux-all-cores
 rm /usr/local/bin/arcolinux-final

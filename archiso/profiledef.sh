@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="arcolinux"
-iso_label="arcolinux-v21.05.2"
+iso_label="arcolinux-v21.05.5"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v21.05.2"
+iso_version="v21.05.5"
 install_dir="arch"
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
@@ -23,6 +23,9 @@ file_permissions=(
   ["/etc/polkit-1/rules.d"]="0:0:750"
   ["/etc/sudoers.d"]="0:0:750"
   ["/usr/local/bin/arcolinux-all-cores"]="0:0:755"
-  ["/usr/local/bin/arcolinux-before"]="0:0:755"
   ["/usr/local/bin/arcolinux-final"]="0:0:755"
+  ["/usr/local/bin/arcolinux-skel"]="0:0:755"
+  ["/usr/local/bin/arcolinux-remove-nvidia"]="0:0:755"
+  ["/usr/local/bin/arcolinux-displaymanager-check"]="0:0:755"
+  ["/usr/local/bin/arcolinux-before"]="0:0:755"
 )

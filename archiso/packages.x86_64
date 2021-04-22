@@ -123,16 +123,16 @@ xf86-input-libinput
 #xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
-#xf86-video-amdgpu
-#xf86-video-ati
+xf86-video-amdgpu
+xf86-video-ati
 #xf86-video-dummy
-#xf86-video-fbdev
-#xf86-video-intel
-#xf86-video-nouveau
-#xf86-video-openchrome
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
 #xf86-video-qxl
-#xf86-video-vesa
-#xf86-video-vmware
+xf86-video-vesa
+xf86-video-vmware
 #xf86-video-voodoo
 #xf86-video-sisusb
 mesa
@@ -190,7 +190,6 @@ blueberry
 bluez
 bluez-libs
 bluez-utils
-#bluez-firmware
 pulseaudio-bluetooth
 
 ###network
@@ -257,10 +256,10 @@ feh
 firefox
 #flashplugin
 galculator
-geany
+#geany
 gimp
-gmrun
-gsimplecal
+#gmrun
+#gsimplecal
 guvcview
 imagemagick
 inkscape
@@ -295,6 +294,7 @@ ttf-hack
 ttf-inconsolata
 ttf-liberation
 ttf-roboto
+ttf-roboto-mono
 ttf-ubuntu-font-family
 
 ###icons
@@ -306,7 +306,7 @@ gnome-icon-theme
 #adapta-gtk-theme
 arc-gtk-theme
 kvantum-qt5
-openbox-arc-git
+#openbox-arc-git
 
 ###utilities
 arandr
@@ -369,7 +369,7 @@ qt5-webkit
 #powertop
 #redshift
 ripgrep
-rofi
+#rofi
 rxvt-unicode
 simple-scan
 #shotwell
@@ -460,11 +460,11 @@ pulseaudio-equalizer-ladspa
 python-pyparted
 python-pywal
 scour
-screenkey-git
+#screenkey-git
 sublime-text-dev
 the_platinum_searcher-bin
 tmux
-trizen
+#trizen
 urxvt-perls
 urxvt-resize-font-git
 wttr
@@ -488,14 +488,14 @@ yay-bin
 #arcolinux-arc-kde
 arcolinux-arc-themes-git
 arcolinux-bin-git
-arcolinux-common-git
+#arcolinux-common-git
 arcolinux-conky-collection-git
 #arcolinux-conky-collection-plasma-git
 #arcolinux-cron-git
-arcolinux-docs-git
+#arcolinux-docs-git
 arcolinux-faces-git
 arcolinux-fonts-git
-arcolinux-geany-git
+#arcolinux-geany-git
 arcolinux-grub-theme-vimix-git
 arcolinux-gtk3-sardi-arc-git
 #arcolinux-gtk3-surfn-arc-git
@@ -511,29 +511,30 @@ arcolinux-local-applications-git
 #arcolinux-local-applications-plasma-hide-git
 arcolinux-local-xfce4-git
 arcolinux-logo-git
-arcolinux-logout-git
-arcolinux-logout-themes-git
+#arcolinux-logout-git
+#arcolinux-logout-themes-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
+arcolinux-meta-logout
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
-arcolinux-nitrogen-git
+#arcolinux-nitrogen-git
 #arcolinux-oblogout
 #arcolinux-oblogout-themes-git
-arcolinux-obmenu-generator-git
+#arcolinux-obmenu-generator-git
 #arcolinux-obmenu-generator-minimal-git
 #arcolinux-obmenu-generator-xtended-git
-arcolinux-openbox-themes-git
+#arcolinux-openbox-themes-git
 arcolinux-paru-git
 arcolinux-pipemenus-git
 arcolinux-plank-git
 arcolinux-plank-themes-git
 #arcolinux-plasma-kservices-git
-arcolinux-polybar-git
+#arcolinux-polybar-git
 arcolinux-qt5-git
 #arcolinux-qt5-plasma-git
-arcolinux-rofi-git
-arcolinux-rofi-themes-git
+#arcolinux-rofi-git
+#arcolinux-rofi-themes-git
 arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
@@ -541,8 +542,8 @@ arcolinux-system-config-git
 #arcolinuxd-system-config-git
 arcolinux-systemd-services-git
 arcolinux-termite-themes-git
-arcolinux-tint2-git
-arcolinux-tint2-themes-git
+#arcolinux-tint2-git
+#arcolinux-tint2-themes-git
 arcolinux-tweak-tool-git
 arcolinux-variety-git
 arcolinux-variety-autostart-git
@@ -570,13 +571,13 @@ arcolinux-zsh-git
 #arcolinux-fvwm3-git
 #arcolinux-gnome-git
 #arcolinux-herbstluftwm-git
-arcolinux-i3wm-git
+#arcolinux-i3wm-git
 #arcolinux-icewm-git
 #arcolinux-jwm-git
 #arcolinux-kodi-git
 #arcolinux-lxqt-git
 #arcolinux-mate-git
-arcolinux-openbox-git
+#arcolinux-openbox-git
 #arcolinux-openboxb-git
 #arcolinux-openbox-xtended-git
 #arcolinux-plasma-git
@@ -602,7 +603,7 @@ arcolinux-config-all-desktops-git
 #arcolinux-config-dwm-git
 #arcolinux-config-enlightenment-git
 #arcolinux-config-fvwm3-git
-arcolinux-config-git
+#arcolinux-config-git
 #arcolinux-config-gnome-git
 #arcolinux-config-herbstluftwm-git
 #arcolinux-config-i3wm-git
@@ -625,13 +626,13 @@ arcolinux-config-git
 #                           ARCOLINUX DCONF FOLDER
 ###########################################################################
 
-#arcolinux-dconf-all-desktops-git
+arcolinux-dconf-all-desktops-git
 #arcolinux-awesome-dconf-git
 #arcolinux-bspwm-dconf-git
 #arcolinux-budgie-dconf-git
 #arcolinux-cinnamon-dconf-git
 #arcolinux-cwm-dconf-git
-arcolinux-dconf-git
+#arcolinux-dconf-git
 #arcolinux-deepin-dconf-git
 #arcolinux-dwm-dconf-git
 #arcolinux-enlightenment-dconf-git
@@ -749,7 +750,7 @@ sddm-config-editor-git
 #                         PICOM OR COMPTON
 ###########################################################################
 
-picom
+#picom
 
 ###########################################################################
 #                         GENERAL DESKTOP RELATED
@@ -757,7 +758,7 @@ picom
 
 mugshot
 menulibre
-volumeicon
+#volumeicon
 
 ###########################################################################
 #                         ARCOLINUX ISO SPECIFIC
@@ -768,33 +769,33 @@ volumeicon
 ###########################################################################
 
 ###i3wm
-i3status
-i3blocks
-i3-gaps
-autotiling
+#i3status
+#i3blocks
+#i3-gaps
+#autotiling
 
 ###########################################################################
 #                               OPENBOX
 ###########################################################################
 
 ###openbox
-gtk2-perl
-obkey
-obmenu3
-obmenu-generator
-obconf
-openbox
-perl-linux-desktopfiles
-tint2
-xcape
-openbox-themes-pambudi-git
+#gtk2-perl
+#obkey
+#obmenu3
+#obmenu-generator
+#obconf
+#openbox
+#perl-linux-desktopfiles
+#tint2
+#xcape
+#openbox-themes-pambudi-git
 
 ###lx-applications
-lxappearance
+#lxappearance
 #lxappearance-gtk3
-lxappearance-obconf
+#lxappearance-obconf
 #lxappearance-obconf-gtk3
-lxrandr
+#lxrandr
 
 ###########################################################################
 #                                XFCE
@@ -826,7 +827,7 @@ xfwm4-themes
 ristretto
 thunar-archive-plugin
 thunar-media-tags-plugin
-xfburn
+#xfburn
 #xfce4-artwork
 xfce4-battery-plugin
 xfce4-clipman-plugin
@@ -864,4 +865,7 @@ xfce4-panel-profiles
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
-polybar
+#arcolinuxb-installer-git
+nvidia
+nvidia-utils
+nvidia-settings

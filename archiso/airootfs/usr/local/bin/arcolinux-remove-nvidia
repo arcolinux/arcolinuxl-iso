@@ -1,0 +1,43 @@
+#!/bin/bash
+# driver=free or driver=non-free - grub and efi
+echo "Start arcolinux-remove-nvidia"
+kernel_cmdline(){
+	for param in $(cat /proc/cmdline); do
+		case "${param}" in
+			$1=*) echo "${param##*=}"; return 0 ;;
+			$1) return 0 ;;
+			*) continue ;;
+		esac
+	done
+	[ -n "${2}" ] && echo "${2}"
+	return 1
+}
+
+get_driver(){
+	echo $(kernel_cmdline driver)
+}
+
+while [ -e "/var/lib/pacman/db.lck" ];
+do
+    echo 'Pacman is not ready yet. Will try again in 10 seconds.'
+    seconds=$(($seconds + 10))
+    sleep 10
+    if [[ "$seconds" == "30" ]]; then
+        echo 'Warning: removing pacman db.lck!'
+        rm /var/lib/pacman/db.lck
+    fi
+done
+
+# remove Nvidia
+selection=$(get_driver)
+echo "Selection was "$selection
+if [[ $selection == "free" ]]; then
+	pacman -R --noconfirm nvidia nvidia-utils nvidia-settings
+fi
+
+echo "#################################"
+echo "End arcolinux-remove-nvidia"
+echo "#################################"
+#rm /usr/local/bin/arcolinux-remove-nvidia
+# keep it on
+systemctl disable arcolinux-remove-nvidia.service
