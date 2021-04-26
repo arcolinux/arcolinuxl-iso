@@ -31,7 +31,7 @@ echo
 
 	arcolinuxVersion='v21.05.7'
 
-	isoLabel='arcolinux-'$arcolinuxVersion'-x86_64.iso'
+	isoLabel='arcolinuxl-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 52-1"
@@ -191,18 +191,18 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name="arcolinux'
-	newname1='iso_name="arcolinux'
+	oldname1='iso_name="arcolinuxl'
+	newname1='iso_name="arcolinuxl'
 
-	oldname2='iso_label="arcolinux'
-	newname2='iso_label="arcolinux'
+	oldname2='iso_label="arcolinuxl'
+	newname2='iso_label="arcolinuxl'
 
-	oldname3='ArcoLinux'
-	newname3='ArcoLinux'
+	oldname3='ArcoLinuxL'
+	newname3='ArcoLinuxL'
 
 	#hostname
-	oldname4='ArcoLinux'
-	newname4='ArcoLinux'
+	oldname4='ArcoLinuxL'
+	newname4='ArcoLinuxL'
 
 	#sddm.conf user-session
 	oldname5='Session=xfce'
