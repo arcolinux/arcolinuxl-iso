@@ -1,3 +1,3 @@
-# arcolinux-iso
+# arcolinuxl-iso
 
 # stable
