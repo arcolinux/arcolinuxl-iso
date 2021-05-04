@@ -160,8 +160,6 @@ mesa
 nvidia
 nvidia-utils
 nvidia-settings
-#nvidia-390xx
-#nvidia-390xx-utils
 #libva-intel-driver
 #libva-vdpau-driver
 #mesa-demos
