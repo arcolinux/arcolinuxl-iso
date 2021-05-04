@@ -146,7 +146,7 @@ xf86-video-fbdev
 xf86-video-intel
 xf86-video-nouveau
 xf86-video-openchrome
-#xf86-video-qxl
+xf86-video-qxl
 xf86-video-vesa
 xf86-video-vmware
 #xf86-video-voodoo
@@ -157,8 +157,9 @@ mesa
 #bumblebee
 #optimus-manager
 #optimus-manager-qt
-#nvidia
-#nvidia-utils
+nvidia
+nvidia-utils
+nvidia-settings
 #nvidia-390xx
 #nvidia-390xx-utils
 #libva-intel-driver
@@ -881,7 +882,3 @@ xfce4-panel-profiles
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
-#arcolinuxb-installer-git
-nvidia
-nvidia-utils
-nvidia-settings
