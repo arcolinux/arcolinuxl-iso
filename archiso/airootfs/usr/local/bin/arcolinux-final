@@ -47,9 +47,10 @@ echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
 
-echo "Hardcode-fixer"
-echo "#################################"
-hardcode-fixer
+# Do not do here - extra /home/root folder
+#echo "Hardcode-fixer" 
+#echo "#################################"
+#hardcode-fixer
 
 echo "#################################"
 echo "End arcolinux-final"
