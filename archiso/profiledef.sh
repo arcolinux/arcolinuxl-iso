@@ -24,7 +24,6 @@ file_permissions=(
   ["/etc/sudoers.d"]="0:0:750"
   ["/usr/local/bin/arcolinux-all-cores"]="0:0:755"
   ["/usr/local/bin/arcolinux-final"]="0:0:755"
-  ["/usr/local/bin/arcolinux-skel"]="0:0:755"
   ["/usr/local/bin/arcolinux-remove-nvidia"]="0:0:755"
   ["/usr/local/bin/arcolinux-displaymanager-check"]="0:0:755"
   ["/usr/local/bin/arcolinux-before"]="0:0:755"
