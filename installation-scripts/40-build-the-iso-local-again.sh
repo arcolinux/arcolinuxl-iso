@@ -34,7 +34,7 @@ echo
 	isoLabel='arcolinuxl-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 55-1"
+	archisoRequiredVersion="archiso 54-1"
 	buildFolder=$HOME"/arcolinux-build"
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
@@ -63,7 +63,7 @@ echo
 	echo "or update your system"
 	echo "###################################################################################################"
 	tput sgr0
-	exit 1
+	#exit 1
 	fi
 
 echo
