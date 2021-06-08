@@ -453,6 +453,7 @@ surfn-icons-git
 mkinitcpio-openswap
 
 ###utilities-repo
+alacritty
 appstream
 archiso
 conky-lua-archers
