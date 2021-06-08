@@ -501,6 +501,7 @@ yad
 #                           ARCOLINUX FOLDER
 ###########################################################################
 
+arcolinux-alacritty-git
 #arcolinux-arc-kde
 arcolinux-arc-themes-git
 arcolinux-bin-git
