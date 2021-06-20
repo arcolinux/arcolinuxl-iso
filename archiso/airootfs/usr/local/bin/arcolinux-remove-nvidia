@@ -1,5 +1,5 @@
 #!/bin/bash
-# driver=free or driver=non-free - grub and efi
+# driver=free or driver=nonfree - grub and efi
 echo "Start arcolinux-remove-nvidia"
 kernel_cmdline(){
 	for param in $(cat /proc/cmdline); do

@@ -5,8 +5,8 @@
 ###archiso
 alsa-utils
 amd-ucode
-#archinstall
 arch-install-scripts
+#archinstall
 #b43-fwcutter
 base
 bind-tools
@@ -16,6 +16,7 @@ btrfs-progs
 clonezilla
 #cloud-init
 crda
+cryptsetup
 darkhttpd
 ddrescue
 dhclient
@@ -24,6 +25,7 @@ diffutils
 dmraid
 dnsmasq
 dosfstools
+e2fsprogs
 edk2-shell
 efibootmgr
 #espeakup
@@ -42,9 +44,11 @@ intel-ucode
 ipw2100-fw
 ipw2200-fw
 irssi
+#iw
 #iwd
 jfsutils
 kitty-terminfo
+less
 #lftp
 libfido2
 libusb-compat
@@ -82,11 +86,14 @@ partimage
 pcsclite
 ppp
 pptpclient
+#pv
+qemu-guest-agent
 reflector
 reiserfsprogs
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
+screen
 sdparm
 sg3_utils
 smartmontools
@@ -106,6 +113,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
+virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -143,10 +151,10 @@ xf86-video-amdgpu
 xf86-video-ati
 #xf86-video-dummy
 xf86-video-fbdev
-xf86-video-intel
+#xf86-video-intel
 xf86-video-nouveau
 xf86-video-openchrome
-xf86-video-qxl
+#xf86-video-qxl
 xf86-video-vesa
 xf86-video-vmware
 #xf86-video-voodoo
@@ -176,7 +184,7 @@ base-devel
 ###virtual box or vmware
 open-vm-tools
 #virtualbox-guest-modules-arch
-virtualbox-guest-utils
+#virtualbox-guest-utils
 
 ###packages for dual boot
 os-prober
@@ -556,6 +564,7 @@ arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
 arcolinux-system-config-git
+#arcolinux-system-config-dev-git
 #arcolinuxd-system-config-git
 arcolinux-systemd-services-git
 arcolinux-termite-themes-git
@@ -883,3 +892,4 @@ xfce4-panel-profiles
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
+arcolinux-meta-log

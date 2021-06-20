@@ -56,3 +56,6 @@ GRUB_THEME="/boot/grub/themes/Vimix/theme.txt"
 
 # Uncomment to make grub stop using submenus
 #GRUB_DISABLE_SUBMENU=y
+
+# Check for other operating systems
+GRUB_DISABLE_OS_PROBER=false
