@@ -485,7 +485,7 @@ python-pyparted
 python-pywal
 scour
 #screenkey-git
-sublime-text-dev
+sublime-text-4
 the_platinum_searcher-bin
 #trizen
 urxvt-fullscreen
@@ -525,6 +525,7 @@ arcolinux-grub-theme-vimix-git
 arcolinux-gtk3-sardi-arc-git
 #arcolinux-gtk3-surfn-arc-git
 #arcolinux-gtk3-surfn-arc-breeze-git
+#arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
 arcolinux-hblock-git
 arcolinux-keyring
