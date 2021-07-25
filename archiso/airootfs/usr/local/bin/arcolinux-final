@@ -52,6 +52,8 @@ chmod -v 750 /root
 #echo "#################################"
 #hardcode-fixer
 
+/usr/local/bin/arcolinux-virtual-machine-check
+
 echo "#################################"
 echo "End arcolinux-final"
 echo "#################################"
