@@ -47,7 +47,7 @@ irssi
 #iw
 #iwd
 jfsutils
-kitty-terminfo
+#kitty-terminfo
 less
 #lftp
 libfido2
