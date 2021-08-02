@@ -125,7 +125,6 @@ xl2tpd
 dialog
 dnsutils
 grub
-haveged
 linux-headers
 logrotate
 ntp
