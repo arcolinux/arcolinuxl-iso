@@ -694,7 +694,7 @@ arcolinux-system-installation-git
 arcolinux-welcome-app-git
 #arcolinux-welcome-app-dev-git
 #arcolinux-welcome-app-deepin-git
-arcolinux-calamares-tool-git
+#arcolinux-calamares-tool-git
 #arcolinux-calamares-tool-dev-git
 
 ###########################################################################
