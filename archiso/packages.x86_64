@@ -112,7 +112,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
+#virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -182,7 +182,7 @@ base-devel
 ###virtual box or vmware
 open-vm-tools
 #virtualbox-guest-modules-arch
-#virtualbox-guest-utils
+virtualbox-guest-utils
 
 ###packages for dual boot
 os-prober
