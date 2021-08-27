@@ -17,7 +17,7 @@ clonezilla
 #cloud-init
 crda
 cryptsetup
-darkhttpd
+#darkhttpd
 ddrescue
 dhclient
 #dhcpcd
@@ -589,6 +589,7 @@ arcolinux-zsh-git
 #arcolinux-bspwm-git
 #arcolinux-budgie-git
 #arcolinux-cinnamon-git
+#arcolinux-cutefish-git
 #arcolinux-cwm-git
 #arcolinux-deepin-git
 #arcolinux-dwm-git
@@ -625,6 +626,7 @@ arcolinux-config-all-desktops-git
 #arcolinux-config-bspwm-git
 #arcolinux-config-budgie-git
 #arcolinux-config-cinnamon-git
+#arcolinux-config-cutefish-git
 #arcolinux-config-cwm-git
 #arcolinux-config-deepin-git
 #arcolinux-config-dwm-git
@@ -658,6 +660,7 @@ arcolinux-dconf-all-desktops-git
 #arcolinux-bspwm-dconf-git
 #arcolinux-budgie-dconf-git
 #arcolinux-cinnamon-dconf-git
+#arcolinux-cutefish-dconf-git
 #arcolinux-cwm-dconf-git
 #arcolinux-dconf-git
 #arcolinux-deepin-dconf-git
@@ -731,6 +734,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-budgie-git
 #arcob-calamares-config-cinnamon-git
 #arcob-calamares-config-cwm-git
+#arcob-calamares-config-cutefish-git
 #arcob-calamares-config-deepin-git
 #arcob-calamares-config-dwm-git
 #arcob-calamares-config-enlightenment-git
