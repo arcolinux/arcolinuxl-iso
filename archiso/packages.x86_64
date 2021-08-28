@@ -398,7 +398,7 @@ simple-scan
 speedtest-cli-git
 telegram-desktop
 timeshift
-#tlp
+tlp
 tree
 ufw
 gufw
