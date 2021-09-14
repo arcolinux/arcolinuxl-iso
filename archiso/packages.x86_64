@@ -534,6 +534,7 @@ arcolinux-kvantum-git
 #arcolinux-kvantum-plasma-git
 arcolinux-kvantum-theme-arc-git
 arcolinux-local-applications-git
+arcolinux-local-applications-all-hide-git
 #arcolinux-local-applications-plasma-hide-git
 arcolinux-local-xfce4-git
 arcolinux-logo-git
