@@ -614,6 +614,7 @@ arcolinux-zsh-git
 #arcolinux-qtile-git
 #arcolinux-spectrwm-git
 #arcolinux-ukui-git
+#arcolinux-wmderland-git
 arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
@@ -648,6 +649,7 @@ arcolinux-config-all-desktops-git
 #arcolinux-config-qtile-git
 #arcolinux-config-spectrwm-git
 #arcolinux-config-ukui-git
+#arcolinux-config-wmderland-git
 #arcolinux-config-xfce-git
 #arcolinux-config-xmonad-git
 #arcolinux-config-xtended-git
@@ -681,6 +683,7 @@ arcolinux-dconf-all-desktops-git
 #arcolinux-qtile-dconf-git
 #arcolinux-spectrwm-dconf-git
 #arcolinux-ukui-dconf-git
+#arcolinux-wmderland-dconf-git
 #arcolinux-xfce-dconf-git
 #arcolinux-xmonad-dconf-git
 #arcolinux-xtended-dconf-git
@@ -753,6 +756,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-qtile-git
 #arcob-calamares-config-spectrwm-git
 #arcob-calamares-config-ukui-git
+#arcob-calamares-config-wmderland-git
 #arcob-calamares-config-xfce-git
 #arcob-calamares-config-xmonad-git
 #arcob-calamares-config-xtended-git
