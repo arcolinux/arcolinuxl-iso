@@ -603,6 +603,7 @@ arcolinux-zsh-git
 #arcolinux-i3wm-git
 #arcolinux-icewm-git
 #arcolinux-jwm-git
+#arcolinux-leftwm-git
 #arcolinux-kodi-git
 #arcolinux-lxqt-git
 #arcolinux-mate-git
@@ -641,6 +642,7 @@ arcolinux-config-all-desktops-git
 #arcolinux-config-icewm-git
 #arcolinux-config-jwm-git
 #arcolinux-config-kodi-git
+#arcolinux-config-leftwm-git
 #arcolinux-config-lxqt-git
 #arcolinux-config-openbox-git
 #arcolinux-config-mate-git
@@ -676,6 +678,7 @@ arcolinux-dconf-all-desktops-git
 #arcolinux-icewm-dconf-git
 #arcolinux-jwm-dconf-git
 #arcolinux-kodi-dconf-git
+#arcolinux-leftwm-dconf-git
 #arcolinux-lxqt-dconf-git
 #arcolinux-mate-dconf-git
 #arcolinux-openbox-dconf-git
@@ -749,6 +752,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-icewm-git
 #arcob-calamares-config-jwm-git
 #arcob-calamares-config-kodi-git
+#arcob-calamares-config-leftwm-git
 #arcob-calamares-config-lxqt-git
 #arcob-calamares-config-mate-git
 #arcob-calamares-config-openbox-git
