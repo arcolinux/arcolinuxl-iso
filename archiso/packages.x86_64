@@ -787,7 +787,7 @@ accountsservice
 ###sddm
 sddm
 arcolinux-sddm-sugar-candy-git
-sddm-config-editor-git
+#sddm-config-editor-git
 
 ###########################################################################
 #                         PICOM OR COMPTON
