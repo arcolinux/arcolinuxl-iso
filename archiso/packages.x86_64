@@ -787,6 +787,7 @@ accountsservice
 ###sddm
 sddm
 arcolinux-sddm-sugar-candy-git
+#arcolinux-sddm-simplicity-git
 #sddm-config-editor-git
 
 ###########################################################################
