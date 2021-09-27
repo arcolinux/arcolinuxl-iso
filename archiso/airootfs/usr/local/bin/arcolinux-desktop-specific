@@ -4,12 +4,12 @@ echo "#################################"
 echo "Begin arcolinux-desktop-specific"
 echo "#################################"
 
-desktop=$(echo $DESKTOP_SESSION)
+desktop=$(ls /usr/share/xsessions)
 echo "#################################"
-echo "This is your current desktop "$desktop
+echo "This is your current desktop file "$desktop
 echo "#################################"
 case $desktop in
-  leftwm)
+  leftwm.desktop)
 	sed -i "s/theme=white/theme=sweet/g" /etc/arcologout.conf
     ;;
 
