@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "#################################"
+echo "Begin arcolinux-desktop-specific"
+echo "#################################"
+
+desktop=$(echo $DESKTOP_SESSION)
+echo "#################################"
+echo "This is your current desktop "$desktop
+echo "#################################"
+case $desktop in
+  leftwm)
+	sed -i "s/theme=white/theme=sweet/g" /etc/arcologout.conf
+    ;;
+
+  *)
+    echo "Nothing to do"
+    ;;
+esac
+
+echo "#################################"
+echo "End arcolinux-desktop-specific"
+echo "#################################"
+rm /usr/local/bin/arcolinux-desktop-specific
