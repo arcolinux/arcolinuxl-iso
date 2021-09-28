@@ -11,6 +11,7 @@ echo "#################################"
 case $desktop in
   leftwm.desktop)
 	sed -i "s/theme=white/theme=sweet/g" /etc/arcologout.conf
+  rm /etc/skel/.config/conky/conky-sessionfile
     ;;
 
   *)
