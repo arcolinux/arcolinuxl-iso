@@ -23,6 +23,11 @@ echo "Deleting the work folder if one exists"
 echo "Checking for newer files online first"
 git pull
 
+workdir=$(pwd)
+echo "getting latest .bashrc"
+wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O $workdir/archiso/airootfs/etc/skel/.bashrc
+
+
 # Below command will backup everything inside the project folder
 git add --all .
 
