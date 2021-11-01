@@ -382,7 +382,7 @@ playerctl
 polkit
 polkit-gnome
 #python2-dbus
-python2-xdg
+#python2-xdg
 #qt4
 qt5ct
 #qt5-styleplugins
