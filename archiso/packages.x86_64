@@ -399,7 +399,7 @@ speedtest-cli-git
 telegram-desktop
 timeshift
 tlp
-tree
+#tree
 ufw
 gufw
 unace
