@@ -11,7 +11,7 @@ arch-install-scripts
 base
 bind-tools
 #brltty
-#broadcom-wl
+broadcom-wl-dkms
 btrfs-progs
 clonezilla
 #cloud-init
@@ -918,4 +918,3 @@ prot16-xfce4-terminal
 alacritty-themes
 base16-alacritty-git
 xfce4-terminal-base16-colors-git
-broadcom-wl-dkms
