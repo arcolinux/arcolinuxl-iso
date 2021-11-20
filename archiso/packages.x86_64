@@ -163,7 +163,7 @@ mesa
 #bumblebee
 #optimus-manager
 #optimus-manager-qt
-nvidia
+nvidia-dkms
 nvidia-utils
 nvidia-settings
 #libva-intel-driver
