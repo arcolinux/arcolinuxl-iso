@@ -122,12 +122,15 @@ xfsprogs
 xl2tpd
 
 ###archiso-extra
+aic94xx-firmware
 dialog
 dnsutils
 grub
 linux-headers
 logrotate
 ntp
+upd72020x-fw
+wd719x-firmware
 wget
 
 ###xorg
