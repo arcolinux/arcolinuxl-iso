@@ -86,7 +86,7 @@ partimage
 pcsclite
 ppp
 pptpclient
-#pv
+pv
 qemu-guest-agent
 reflector
 reiserfsprogs
