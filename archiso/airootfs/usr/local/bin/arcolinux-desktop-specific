@@ -14,6 +14,11 @@ case $desktop in
   sed -i "s/neofetch/#neofetch/g" /etc/skel/.bashrc
   sed -i "s/#ufetch-arco/ufetch-arco | lolcat/g" /etc/skel/.bashrc
     ;;
+  dusk.desktop)
+	sed -i "s/theme=white/theme=sweet/g" /etc/arcologout.conf
+  sed -i "s/neofetch/#neofetch/g" /etc/skel/.bashrc
+  sed -i "s/#paleofetch/paleofetch | lolcat/g" /etc/skel/.bashrc
+    ;;
   *)
     echo "Nothing to do"
     ;;
