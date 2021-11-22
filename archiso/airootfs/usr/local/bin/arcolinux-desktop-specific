@@ -10,12 +10,16 @@ echo "This is your current desktop file "$desktop
 echo "#################################"
 case $desktop in
   leftwm.desktop)
+  echo "Changing arcologout theme"
 	sed -i "s/theme=white/theme=sweet/g" /etc/arcologout.conf
+  echo "Changing .bashrc"
   sed -i "s/neofetch/#neofetch/g" /etc/skel/.bashrc
   sed -i "s/#ufetch-arco/ufetch-arco | lolcat/g" /etc/skel/.bashrc
     ;;
   dusk.desktop)
+  echo "Changing arcologout theme"
 	sed -i "s/theme=white/theme=sweet/g" /etc/arcologout.conf
+  echo "Changing .bashrc"
   sed -i "s/neofetch/#neofetch/g" /etc/skel/.bashrc
   sed -i "s/#paleofetch/paleofetch | lolcat/g" /etc/skel/.bashrc
     ;;
