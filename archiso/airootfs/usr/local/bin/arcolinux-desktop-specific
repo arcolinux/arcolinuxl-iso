@@ -11,7 +11,7 @@ echo "#################################"
 case $desktop in
   leftwm.desktop)
   echo "Changing arcologout theme"
-	sed -i "s/theme=white/theme=sweet/g" /etc/arcologout.conf
+	sed -i "s/theme=white/theme=beauty/g" /etc/arcologout.conf
   echo "Changing .bashrc"
   sed -i "s/neofetch/#neofetch/g" /etc/skel/.bashrc
   sed -i "s/#ufetch-arco/ufetch-arco | lolcat/g" /etc/skel/.bashrc

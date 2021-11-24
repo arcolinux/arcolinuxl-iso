@@ -146,6 +146,9 @@ alias ram='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
 #mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
 
+#enabling vmware services
+alias start-vmware="sudo systemctl enable --now vmtoolsd.service"
+
 #shopt
 shopt -s autocd # change to named directory
 shopt -s cdspell # autocorrects cd misspellings
