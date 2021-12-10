@@ -39,6 +39,7 @@ echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "free" ]]; then
 	pacman -R --noconfirm nvidia-dkms nvidia-utils nvidia-settings
+	cp /etc/calamares/settings-advanced-no-nivida.conf /etc/calamares/settings-advanced.conf
 fi
 
 #freenonouveau = remove nvidia-dkms and nouveau
@@ -49,6 +50,7 @@ echo "#################################"
 if [[ $selection == "freenonouveau" ]]; then
 	pacman -R --noconfirm nvidia-dkms nvidia-utils nvidia-settings
 	pacman -R --noconfirm xf86-video-nouveau
+	cp /etc/calamares/settings-advanced-no-nivida.conf /etc/calamares/settings-advanced.conf
 fi	
 
 #nonfree = keeping nvidia-dkms and nouveau
