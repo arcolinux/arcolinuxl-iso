@@ -172,7 +172,7 @@ nvidia-utils
 nvidia-settings
 #libva-intel-driver
 #libva-vdpau-driver
-#mesa-demos
+mesa-utils
 #mesa-vdpau
 #opencl-mesa
 #primus
