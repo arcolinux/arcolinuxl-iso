@@ -121,6 +121,7 @@ fi
 echo "#################################"
 echo "End arcolinux-remove-nvidia"
 echo "#################################"
-#rm /usr/local/bin/arcolinux-remove-nvidia
-# keep it on
+
 systemctl disable arcolinux-remove-nvidia.service
+
+rm /usr/local/bin/arcolinux-remove-nvidia

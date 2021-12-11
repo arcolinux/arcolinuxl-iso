@@ -57,4 +57,8 @@ chmod -v 750 /root
 echo "#################################"
 echo "End arcolinux-final"
 echo "#################################"
+rm /usr/local/bin/arcolinux-before
+rm /usr/local/bin/arcolinux-desktop-specific
+rm /usr/local/bin/arcolinux-displaymanager-check
+rm /usr/local/bin/arcolinux-remove-nvidia
 rm /usr/local/bin/arcolinux-final
