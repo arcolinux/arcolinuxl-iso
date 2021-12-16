@@ -38,7 +38,7 @@ echo "#################################"
 echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "free" ]]; then
-	pacman -R --noconfirm nvidia-dkms nvidia-utils nvidia-settings
+	pacman -Rns --noconfirm nvidia-dkms nvidia-utils nvidia-settings egl-wayland
 	cp /etc/calamares/settings-advanced-no-nivida.conf /etc/calamares/settings-advanced.conf
 fi
 
@@ -48,10 +48,10 @@ echo "#################################"
 echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "freenonouveau" ]]; then
-	pacman -R --noconfirm nvidia-dkms nvidia-utils nvidia-settings
-	pacman -R --noconfirm xf86-video-nouveau
+	pacman -Rns --noconfirm nvidia-dkms nvidia-utils nvidia-settings egl-wayland
+	pacman -Rns --noconfirm xf86-video-nouveau
 	cp /etc/calamares/settings-advanced-no-nivida.conf /etc/calamares/settings-advanced.conf
-fi	
+fi
 
 #nonfree = keeping nvidia-dkms and nouveau
 selection=$(get_driver)
@@ -60,7 +60,7 @@ if [[ $selection == "nonfree" ]]; then
 	echo "#################################"
 	echo "We keep nvidia-dkms and nouveau onboard"
 	echo "#################################"
-fi	
+fi
 
 # nonfreenonouveau : keep nvidia-dkms and remove nouveau
 selection=$(get_driver)
@@ -68,7 +68,7 @@ echo "#################################"
 echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "nonfreenonouveau" ]]; then
-	pacman -R --noconfirm xf86-video-nouveau
+	pacman -Rns --noconfirm xf86-video-nouveau
 fi
 
 # remove virtual machines
