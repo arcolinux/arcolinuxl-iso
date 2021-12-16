@@ -38,7 +38,7 @@ echo "#################################"
 echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "free" ]]; then
-	pacman -Rns --noconfirm nvidia-dkms nvidia-utils nvidia-settings egl-wayland xf86-video-nouveau
+	pacman -Rns --noconfirm nvidia-dkms nvidia-utils nvidia-settings egl-wayland
 	cp /etc/calamares/settings-advanced-no-nivida.conf /etc/calamares/settings-advanced.conf
 fi
 
