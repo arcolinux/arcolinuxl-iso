@@ -23,6 +23,11 @@ case $desktop in
   sed -i "s/neofetch/#neofetch/g" /etc/skel/.bashrc
   sed -i "s/#paleofetch/paleofetch | lolcat/g" /etc/skel/.bashrc
     ;;
+  deepin.desktop)
+  echo "Lightm is installed and active - go back to sddm"
+  pacman -S sddm --noconfirm --needed
+  systemctl enable sddm.service -f
+    ;;
   *)
     echo "Nothing to do"
     ;;
