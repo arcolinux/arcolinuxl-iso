@@ -35,7 +35,7 @@ bind "set completion-ignore-case on"
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
-alias ll='ls -la'
+alias ll='ls -alFh'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
@@ -203,6 +203,7 @@ alias nfstab="sudo $EDITOR /etc/fstab"
 alias nnsswitch="sudo $EDITOR /etc/nsswitch.conf"
 alias nsamba="sudo $EDITOR /etc/samba/smb.conf"
 alias ngnupgconf="sudo nano /etc/pacman.d/gnupg/gpg.conf"
+alias nhosts="sudo $EDITOR /etc/hosts"
 alias nb="$EDITOR ~/.bashrc"
 alias nz="$EDITOR ~/.zshrc"
 
