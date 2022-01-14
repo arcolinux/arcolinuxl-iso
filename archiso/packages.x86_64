@@ -712,6 +712,7 @@ arco-calamares
 #arco-calamares-git
 #arco-calamares-next
 arcolinux-system-installation-git
+#arcolinux-system-installation-dev-git
 #arcolinuxd-config-live-session-git
 arcolinux-welcome-app-git
 #arcolinuxd-welcome-app-git

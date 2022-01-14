@@ -17,10 +17,6 @@ get_driver(){
 	echo $(kernel_cmdline driver)
 }
 
-get_virtmach(){
-	echo $(kernel_cmdline virtmach)
-}
-
 while [ -e "/var/lib/pacman/db.lck" ];
 do
     echo 'Pacman is not ready yet. Will try again in 10 seconds.'
