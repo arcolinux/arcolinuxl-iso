@@ -1,6 +1,7 @@
-#
-# ~/.bashrc
-#
+### EXPORT ###
+export EDITOR='nano'
+export VISUAL='nano'
+export HISTCONTROL=ignoreboth:erasedups
 
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
@@ -9,17 +10,11 @@
 #export XMODIFIERS=@im=dbus
 #export QT_IM_MODULE=ibus
 
+PS1='[\u@\h \W]\$ '
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export HISTCONTROL=ignoreboth:erasedups
-
-# Make nano the default editor
-
-export EDITOR='nano'
-export VISUAL='nano'
-
-PS1='[\u@\h \W]\$ '
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
@@ -32,6 +27,8 @@ fi
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
 
+### ALIASES ###
+
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
@@ -41,13 +38,13 @@ alias l.="ls -A | egrep '^\.'"
 
 #fix obvious typo's
 alias cd..='cd ..'
-alias pdw="pwd"
+alias pdw='pwd'
 alias udpate='sudo pacman -Syyu'
 alias upate='sudo pacman -Syyu'
 alias updte='sudo pacman -Syyu'
 alias updqte='sudo pacman -Syyu'
-alias upqll="paru -Syu --noconfirm"
-alias upal="paru -Syu --noconfirm"
+alias upqll='paru -Syu --noconfirm'
+alias upal='paru -Syu --noconfirm'
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
@@ -115,6 +112,7 @@ alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
 #switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
 #switch between lightdm and sddm
 alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
@@ -182,6 +180,9 @@ alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
+#clear
+alias clean="clear; seq 1 (tput cols) | sort -R | sparklines | lolcat"
+
 #search content with ripgrep
 alias rg="rg --sort path"
 
@@ -207,6 +208,7 @@ alias ngnupgconf="sudo nano /etc/pacman.d/gnupg/gpg.conf"
 alias nhosts="sudo $EDITOR /etc/hosts"
 alias nb="$EDITOR ~/.bashrc"
 alias nz="$EDITOR ~/.zshrc"
+alias nf="EDITOR ~/.config/fish/config.fish"
 
 #gpg
 #verify signature for isos
