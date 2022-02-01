@@ -57,6 +57,7 @@ linux
 linux-atm
 linux-firmware
 linux-firmware-qlogic
+linux-firmware-marvell
 #livecd-sounds
 lsscsi
 lvm2
@@ -939,3 +940,5 @@ xfce4-terminal-base16-colors-git
 time
 pace
 sparklines-git
+fish
+arcolinux-fish-git
