@@ -366,7 +366,7 @@ gnome-software-packagekit-plugin
 gparted
 gpick
 gtop
-hardinfo
+hardinfo-gtk3
 hddtemp
 htop
 hunspell
