@@ -406,7 +406,7 @@ simple-scan
 #shotwell
 speedtest-cli-git
 telegram-desktop
-timeshift
+#timeshift
 tlp
 #tree
 ufw

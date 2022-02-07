@@ -2,6 +2,7 @@
 export EDITOR='nano'
 export VISUAL='nano'
 export HISTCONTROL=ignoreboth:erasedups
+export PAGER='most'
 
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
@@ -104,10 +105,10 @@ alias skel='[ -d ~/.config ] || mkdir ~/.config && cp -Rf ~/.config ~/.config-ba
 #backup contents of /etc/skel to hidden backup folder in home/user
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
-#copy bashrc-latest over on bashrc - cb= copy bashrc
-alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
-#copy /etc/skel/.zshrc over on ~/.zshrc - cb= copy zshrc
-#alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && exec zsh'
+#copy shell configs
+alias cb='cp /etc/skel/.bashrc ~/.bashrc && exec bash'
+alias cz='cp /etc/skel/.zshrc ~/.zshrc && echo "Copied."'
+alias cf='cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && echo "Copied."'
 
 #switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
@@ -126,6 +127,8 @@ alias tolxdm="sudo pacman -S lxdm --noconfirm --needed ; sudo systemctl enable l
 alias kc='killall conky'
 # quickly kill polybar
 alias kp='killall polybar'
+# quickly kill picom
+alias kpi='killall picom'
 
 #hardware info --short
 alias hw="hwinfo --short"
