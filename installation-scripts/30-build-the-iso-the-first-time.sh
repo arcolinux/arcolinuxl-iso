@@ -38,6 +38,10 @@ echo
 	buildFolder=$HOME"/arcolinux-build"
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
+	
+	# if you want to use your personal repo and personal packages
+	# set to true (default:false)
+	personalrepo=true
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
@@ -63,7 +67,6 @@ echo
 	echo "or update your system"
 	echo "###################################################################################################"
 	tput sgr0
-	#exit 1
 	fi
 
 echo
@@ -155,6 +158,7 @@ echo "- Deleting any files in /etc/skel"
 echo "- Getting the last version of bashrc in /etc/skel"
 echo "- Removing the old packages.x86_64 file from build folder"
 echo "- Copying the new packages.x86_64 file to the build folder"
+echo "- Add our own personal repo + add your packages to packages-personal-repo.x86_64"
 echo "- Changing group for polkit folder"
 tput sgr0
 echo "################################################################## "
@@ -171,8 +175,30 @@ echo
 	echo "Removing the old packages.x86_64 file from build folder"
 	rm $buildFolder/archiso/packages.x86_64
 	echo
+
 	echo "Copying the new packages.x86_64 file to the build folder"
 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
+	echo
+
+	if [ $personalrepo == true ]; then
+		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
+		cat ../archiso/packages-personal-repo.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
+	fi
+
+	if [ $personalrepo == true ]; then
+		echo "Adding our own repo to /etc/pacman.conf"
+		echo "Change these lines to reflect your own repo"
+		echo "Copy/paste these lines to add more repos"
+echo '
+[nemesis_repo]
+SigLevel = Optional TrustedOnly
+Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a $buildFolder/archiso/pacman.conf
+echo '
+[nemesis_repo]
+SigLevel = Optional TrustedOnly
+Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
+	fi
+
 	echo
 	echo "Changing group for polkit folder"
 	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d

@@ -184,7 +184,7 @@ alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 #clear
-alias clean="clear; seq 1 (tput cols) | sort -R | sparklines | lolcat"
+alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
 
 #search content with ripgrep
 alias rg="rg --sort path"
@@ -283,6 +283,17 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+#btrfs aliases
+alias btrfsfs="sudo btrfs filesystem df /"
+alias btrfsli="sudo btrfs su li / -t"
+
+#snapper aliases
+alias snapcroot="sudo snapper -c root create-config /"
+alias snapchome="sudo snapper -c home create-config /home"
+alias snapli="sudo snapper list"
+alias snapcr="sudo snapper -c root create"
+alias snapch="sudo snapper -c home create"
 
 #Leftwm aliases
 alias lti="leftwm-theme install"
