@@ -41,7 +41,7 @@ echo
 	
 	# if you want to use your personal repo and personal packages
 	# set to true (default:false)
-	personalrepo=false
+	personalrepo=true
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
