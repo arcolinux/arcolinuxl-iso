@@ -183,6 +183,7 @@ echo
 
 	if [ $personalrepo == true ]; then
 		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
+		printf "\n" | sudo tee -a $buildFolder/archiso/packages.x86_64
 		cat ../archiso/packages-personal-repo.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
 	fi
 
