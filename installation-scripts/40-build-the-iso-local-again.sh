@@ -39,8 +39,12 @@ echo
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 	
-	# if you want to use your personal repo and personal packages
-	# set to true (default:false)
+	# If you are ready to use your personal repo and personal packages
+	# https://arcolinux.com/use-our-knowledge-and-create-your-own-icon-theme-combo-use-github-to-saveguard-your-work/
+	# 1. set variable personalrepo to true in this file (default:false)
+	# 2. change the file personal-repo to reflect your repo
+	# 3. add your applications to the file packages-personal-repo.x86_64
+
 	personalrepo=true
 
 	echo "################################################################## "
@@ -159,7 +163,6 @@ echo "- Getting the last version of bashrc in /etc/skel"
 echo "- Removing the old packages.x86_64 file from build folder"
 echo "- Copying the new packages.x86_64 file to the build folder"
 echo "- Add our own personal repo + add your packages to packages-personal-repo.x86_64"
-echo "- Changing group for polkit folder"
 tput sgr0
 echo "################################################################## "
 echo
@@ -189,24 +192,11 @@ echo
 
 	if [ $personalrepo == true ]; then
 		echo "Adding our own repo to /etc/pacman.conf"
-		echo "Change these lines to reflect your own repo"
-		echo "Copy/paste these lines to add more repos"
 		printf "\n" | sudo tee -a $buildFolder/archiso/pacman.conf
 		printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
-echo '
-[nemesis_repo]
-SigLevel = Optional TrustedOnly
-Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a $buildFolder/archiso/pacman.conf
-echo '
-[nemesis_repo]
-SigLevel = Optional TrustedOnly
-Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
+		cat personal-repo | sudo tee -a $buildFolder/archiso/pacman.conf
+		cat personal-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 	fi
-
-	echo
-	echo "Changing group for polkit folder"
-	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
-	#is not working so fixing this during calamares installation
 
 echo
 echo "################################################################## "
