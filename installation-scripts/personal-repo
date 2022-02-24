@@ -1,0 +1,3 @@
+[nemesis_repo]
+SigLevel = Optional TrustedOnly
+Server = https://erikdubois.github.io/$repo/$arch
