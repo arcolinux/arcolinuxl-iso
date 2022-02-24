@@ -191,6 +191,8 @@ echo
 		echo "Adding our own repo to /etc/pacman.conf"
 		echo "Change these lines to reflect your own repo"
 		echo "Copy/paste these lines to add more repos"
+		printf "\n" | sudo tee -a $buildFolder/archiso/pacman.conf
+		printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 echo '
 [nemesis_repo]
 SigLevel = Optional TrustedOnly

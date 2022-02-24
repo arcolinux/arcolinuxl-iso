@@ -41,7 +41,7 @@ echo
 	
 	# if you want to use your personal repo and personal packages
 	# set to true (default:false)
-	personalrepo=true
+	personalrepo=false
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
@@ -174,6 +174,7 @@ echo
 
 	echo "Removing the old packages.x86_64 file from build folder"
 	rm $buildFolder/archiso/packages.x86_64
+	rm $buildFolder/archiso/packages-personal-repo.x86_64
 	echo
 
 	echo "Copying the new packages.x86_64 file to the build folder"
@@ -182,6 +183,7 @@ echo
 
 	if [ $personalrepo == true ]; then
 		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
+		printf "\n" | sudo tee -a $buildFolder/archiso/packages.x86_64
 		cat ../archiso/packages-personal-repo.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
 	fi
 
@@ -189,6 +191,8 @@ echo
 		echo "Adding our own repo to /etc/pacman.conf"
 		echo "Change these lines to reflect your own repo"
 		echo "Copy/paste these lines to add more repos"
+		printf "\n" | sudo tee -a $buildFolder/archiso/pacman.conf
+		printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 echo '
 [nemesis_repo]
 SigLevel = Optional TrustedOnly
