@@ -484,7 +484,7 @@ inxi
 mintstick-git
 neofetch
 numix-gtk-theme-git
-arcolinux-pamac-all
+#pamac-all
 #pamac-aur
 paru-bin
 peek
@@ -943,3 +943,4 @@ pace
 sparklines-git
 fish
 arcolinux-fish-git
+arcolinux-pamac-all
