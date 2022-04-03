@@ -327,7 +327,7 @@ ttf-ubuntu-font-family
 
 ###icons
 #arc-icon-theme
-gnome-icon-theme
+#gnome-icon-theme
 #papirus-icon-theme
 
 ###themes
