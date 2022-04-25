@@ -1,3 +1,4 @@
 QT_QPA_PLATFORMTHEME=qt5ct
-BROWSER=firefox
+QT_STYLE_OVERRIDE=kvantum
 EDITOR=nano
+BROWSER=firefox
