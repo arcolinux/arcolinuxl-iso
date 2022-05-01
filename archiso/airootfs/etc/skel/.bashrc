@@ -158,6 +158,7 @@ alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
 
 #enabling vmware services
 alias start-vmware="sudo systemctl enable --now vmtoolsd.service"
+alias vmware-start="sudo systemctl enable --now vmtoolsd.service"
 alias sv="sudo systemctl enable --now vmtoolsd.service"
 
 #shopt
