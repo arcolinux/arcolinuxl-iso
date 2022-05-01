@@ -22,6 +22,7 @@ ddrescue
 dhclient
 #dhcpcd
 diffutils
+dmidecode
 dmraid
 dnsmasq
 dosfstools
@@ -41,6 +42,7 @@ gptfdisk
 #grml-zsh-config
 grub
 hdparm
+hyperv
 intel-ucode
 ipw2100-fw
 ipw2200-fw
@@ -80,6 +82,8 @@ nilfs-utils
 #nmap
 ntfs-3g
 nvme-cli
+open-iscsi
+open-vm-tools
 openconnect
 openssh
 openvpn
@@ -187,7 +191,6 @@ base
 base-devel
 
 ###virtual box or vmware
-open-vm-tools
 #virtualbox-guest-modules-arch
 virtualbox-guest-utils
 
@@ -348,7 +351,6 @@ cronie
 dconf-editor
 dex
 discord
-dmidecode
 duf-bin
 edid-decode-git
 evince
