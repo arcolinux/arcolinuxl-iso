@@ -588,7 +588,7 @@ arcolinux-systemd-services-git
 arcolinux-termite-themes-git
 #arcolinux-tint2-git
 #arcolinux-tint2-themes-git
-arcolinux-tweak-tool-git
+archlinux-tweak-tool-git
 arcolinux-variety-git
 arcolinux-variety-autostart-git
 #arcolinux-volumeicon-git
