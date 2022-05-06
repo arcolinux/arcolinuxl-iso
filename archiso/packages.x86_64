@@ -554,11 +554,11 @@ arcolinux-local-applications-all-hide-git
 #arcolinux-local-applications-plasma-hide-git
 arcolinux-local-xfce4-git
 arcolinux-logo-git
-#arcolinux-logout-git
-#arcolinux-logout-themes-git
+archlinux-logout-git
+arcolinux-logout-themes-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
-arcolinux-meta-logout
+#arcolinux-meta-logout
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
 #arcolinux-nitrogen-git
