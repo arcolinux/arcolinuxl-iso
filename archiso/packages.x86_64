@@ -277,7 +277,7 @@ poppler-qt5
 #########################################################################
 
 ###applications
-atom
+#atom
 chromium
 #darktable
 #deadbeef
