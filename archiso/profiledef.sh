@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="arcolinuxl"
-iso_label="arcolinuxl-v22.06.06"
+iso_label="arcolinuxl-v22.06.07"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v22.06.06"
+iso_version="v22.06.07"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
