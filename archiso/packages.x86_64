@@ -136,7 +136,7 @@ dnsutils
 linux-headers
 logrotate
 ntp
-r8168-dkms
+#r8168-dkms
 upd72020x-fw
 wd719x-firmware
 wget
