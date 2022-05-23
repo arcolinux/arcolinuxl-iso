@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="arcolinuxl"
-iso_label="arcolinuxl-v22.06.07"
+iso_label="arcolinuxl-v22.07.01"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v22.06.07"
+iso_version="v22.07.01"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
@@ -20,5 +20,6 @@ file_permissions=(
   ["/root/.automated_script.sh"]="0:0:755"
   ["/etc/polkit-1/rules.d"]="0:0:750"
   ["/etc/sudoers.d"]="0:0:750"
+  ["/etc/grub.d/40_custom"]="0:0:755"
   ["/usr/local/bin/arcolinux-snapper"]="0:0:755"
 )
