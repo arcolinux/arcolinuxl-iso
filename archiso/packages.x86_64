@@ -303,7 +303,7 @@ pragha
 qbittorrent
 scrot
 simplescreenrecorder
-termite
+#termite
 variety
 vlc
 
@@ -583,7 +583,7 @@ arcolinux-system-config-git
 #arcolinux-system-config-dev-git
 #arcolinuxd-system-config-git
 arcolinux-systemd-services-git
-arcolinux-termite-themes-git
+#arcolinux-termite-themes-git
 #arcolinux-tint2-git
 #arcolinux-tint2-themes-git
 archlinux-tweak-tool-git
@@ -934,11 +934,11 @@ xfce4-panel-profiles
 #                                ISO SPECIFIC
 ###########################################################################
 arcolinux-meta-log
-tempus-themes-xfce4-terminal-git
-prot16-xfce4-terminal
+#tempus-themes-xfce4-terminal-git
+#prot16-xfce4-terminal
 alacritty-themes
 base16-alacritty-git
-xfce4-terminal-base16-colors-git
+#xfce4-terminal-base16-colors-git
 time
 pace
 sparklines-git
