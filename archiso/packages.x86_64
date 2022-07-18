@@ -278,7 +278,7 @@ poppler-qt5
 
 ###applications
 #atom
-chromium
+#chromium
 #darktable
 #deadbeef
 dmenu
@@ -288,12 +288,12 @@ firefox
 #flashplugin
 galculator
 #geany
-gimp
+#gimp
 #gmrun
 #gsimplecal
 guvcview
 imagemagick
-inkscape
+#inkscape
 #libreoffice-fresh
 lshw
 meld
@@ -336,7 +336,7 @@ ttf-ubuntu-font-family
 ###themes
 #adapta-gtk-theme
 arc-gtk-theme
-arc-darkest-theme-git
+#arc-darkest-theme-git
 kvantum
 #openbox-arc-git
 
@@ -436,9 +436,9 @@ zsh-syntax-highlighting
 ###########################################################################
 
 ###applications
-vivaldi
-vivaldi-ffmpeg-codecs
-vivaldi-widevine
+#vivaldi
+#vivaldi-ffmpeg-codecs
+#vivaldi-widevine
 
 ###cursors
 #breeze-cursors-lh
@@ -485,7 +485,7 @@ hardcode-fixer-git
 inxi
 mintstick-git
 neofetch
-numix-gtk-theme-git
+#numix-gtk-theme-git
 arcolinux-pamac-all
 #pamac-aur
 paru-bin
