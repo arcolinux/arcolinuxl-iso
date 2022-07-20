@@ -136,7 +136,6 @@ dnsutils
 linux-headers
 logrotate
 ntp
-#r8168-dkms
 upd72020x-fw
 wd719x-firmware
 wget
@@ -145,53 +144,34 @@ wget
 xorg-server
 xorg-apps
 xorg-xinit
-#xterm
 
 ###video
-#xorg-drivers
-#xorg-drivers includes
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-libinput
-#xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
 xf86-video-amdgpu
 xf86-video-ati
-#xf86-video-dummy
 xf86-video-fbdev
 #xf86-video-intel
 xf86-video-nouveau
 xf86-video-openchrome
-#xf86-video-qxl
 xf86-video-vesa
 xf86-video-vmware
-#xf86-video-voodoo
-#xf86-video-sisusb
 mesa
 
 ###hardware video support
-#bumblebee
-#optimus-manager
-#optimus-manager-qt
 nvidia-dkms
 nvidia-utils
 nvidia-settings
-#libva-intel-driver
-#libva-vdpau-driver
 mesa-utils
-#mesa-vdpau
-#opencl-mesa
-#primus
-#vulkan-intel
-#vulkan-radeon
 
 ###base and base-devel
 base
 base-devel
 
 ###virtual box or vmware
-#virtualbox-guest-modules-arch
 virtualbox-guest-utils
 
 ###packages for dual boot
@@ -235,7 +215,6 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 openresolv
-#samba
 
 ###file management
 gvfs
@@ -253,14 +232,9 @@ xdg-user-dirs
 cups
 cups-filters
 cups-pdf
-#cups-pk-helper
 ghostscript
 gsfonts
-#gtk3-print-backends
 gutenprint
-#libcups
-#hplip
-#splix
 system-config-printer
 
 ###tumbler
@@ -277,7 +251,6 @@ poppler-qt5
 #########################################################################
 
 ###applications
-#atom
 #chromium
 #darktable
 #deadbeef
@@ -400,7 +373,6 @@ qt5ct
 #qt5-tools
 qt5-webkit
 #powertop
-#redshift
 ripgrep
 #rofi
 rxvt-unicode
@@ -491,7 +463,6 @@ arcolinux-pamac-all
 paru-bin
 peek
 pulseaudio-equalizer-ladspa
-#pyakm
 python-pyparted
 python-pywal
 rate-mirrors-bin
@@ -727,8 +698,6 @@ arcolinux-welcome-app-git
 #arcolinuxd-welcome-app-git
 #arcolinux-welcome-app-dev-git
 #arcolinux-welcome-app-deepin-git
-#arcolinux-calamares-tool-git
-#arcolinux-calamares-tool-dev-git
 
 ###########################################################################
 #                                CALAMARES DEPENDENCIES
@@ -806,13 +775,8 @@ arco-calamares-config-xl-git
 ###########################################################################
 
 accountsservice
-
-
-###sddm
 sddm
-#arcolinux-sddm-sugar-candy-git
 arcolinux-sddm-simplicity-git
-#sddm-config-editor-git
 
 ###########################################################################
 #                         PICOM OR COMPTON
