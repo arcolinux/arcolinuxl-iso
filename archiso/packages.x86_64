@@ -253,14 +253,14 @@ xdg-user-dirs
 cups
 cups-filters
 cups-pdf
-cups-pk-helper
+#cups-pk-helper
 ghostscript
 gsfonts
-gtk3-print-backends
+#gtk3-print-backends
 gutenprint
-libcups
+#libcups
 #hplip
-splix
+#splix
 system-config-printer
 
 ###tumbler
