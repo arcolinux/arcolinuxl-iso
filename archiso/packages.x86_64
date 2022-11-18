@@ -587,6 +587,7 @@ arcolinux-zsh-git
 #arcolinux-fvwm3-git
 #arcolinux-gnome-git
 #arcolinux-herbstluftwm-git
+#arcolinux-hypr-git
 #arcolinux-i3wm-git
 #arcolinux-icewm-git
 #arcolinux-jwm-git
@@ -733,6 +734,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-bspwm-git
 #arcob-calamares-config-budgie-git
 #arcob-calamares-config-cinnamon-git
+#arcob-calamares-config-chadwm-git
 #arcob-calamares-config-cwm-git
 #arcob-calamares-config-cutefish-git
 #arcob-calamares-config-deepin-git
@@ -741,6 +743,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-fvwm3-git
 #arcob-calamares-config-gnome-git
 #arcob-calamares-config-herbstluftwm-git
+#arcob-calamares-config-hypr-git
 #arcob-calamares-config-i3-git
 #arcob-calamares-config-icewm-git
 #arcob-calamares-config-jwm-git
