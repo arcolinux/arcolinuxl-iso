@@ -371,7 +371,7 @@ polkit-gnome
 qt5ct
 #qt5-styleplugins
 #qt5-tools
-qt5-webkit
+#qt5-webkit
 #powertop
 ripgrep
 #rofi
