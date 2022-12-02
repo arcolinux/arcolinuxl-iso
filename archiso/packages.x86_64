@@ -513,6 +513,7 @@ arcolinux-gtk3-sardi-arc-git
 #arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
 arcolinux-hblock-git
+#arcolinux-hyprland-profile-git
 arcolinux-keyring
 arcolinux-kvantum-git
 #arcolinux-kvantum-lxqt-git
@@ -554,6 +555,7 @@ arcolinux-system-config-git
 #arcolinuxd-system-config-git
 arcolinux-systemd-services-git
 #arcolinux-systemd-services-dev-git
+#arcolinux-sway-profile-git
 #arcolinux-termite-themes-git
 #arcolinux-tint2-git
 #arcolinux-tint2-themes-git
@@ -563,6 +565,7 @@ arcolinux-variety-autostart-git
 #arcolinux-volumeicon-git
 arcolinux-wallpapers-git
 #arcolinux-wallpapers-dual-git
+#arcolinux-wayland-profile-git
 arcolinux-xfce-panel-profiles-git
 #arcolinux-xmobar-git
 arcolinux-zsh-git
@@ -601,6 +604,7 @@ arcolinux-zsh-git
 #arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
 #arcolinux-spectrwm-git
+#arcolinux-sway-git
 #arcolinux-ukui-git
 #arcolinux-worm-git
 #arcolinux-wmderland-git
@@ -692,6 +696,7 @@ arco-calamares
 #arco-calamares-dev
 #arco-calamares-git
 #arco-calamares-next
+#arco-calamares-wayland
 arcolinux-system-installation-git
 #arcolinux-system-installation-dev-git
 #arcolinuxd-config-live-session-git
@@ -739,6 +744,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-deepin-git
 #arcob-calamares-config-dwm-git
 #arcob-calamares-config-enlightenment-git
+#arcob-calamares-config-everyway-git
 #arcob-calamares-config-fvwm3-git
 #arcob-calamares-config-gnome-git
 #arcob-calamares-config-herbstluftwm-git
@@ -755,6 +761,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-plasma-git
 #arcob-calamares-config-qtile-git
 #arcob-calamares-config-spectrwm-git
+#arcob-calamares-config-sway-git
 #arcob-calamares-config-ukui-git
 #arcob-calamares-config-worm-git
 #arcob-calamares-config-wmderland-git
