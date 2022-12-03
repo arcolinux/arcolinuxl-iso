@@ -167,8 +167,7 @@ nvidia-utils
 nvidia-settings
 mesa-utils
 
-###base and base-devel
-base
+###base-devel
 base-devel
 
 ###virtual box or vmware
@@ -270,6 +269,7 @@ imagemagick
 #libreoffice-fresh
 lshw
 meld
+#micro
 #nitrogen
 numlockx
 pragha
@@ -590,6 +590,7 @@ arcolinux-zsh-git
 #arcolinux-gnome-git
 #arcolinux-herbstluftwm-git
 #arcolinux-hypr-git
+#arcolinux-hyprland-git
 #arcolinux-i3wm-git
 #arcolinux-icewm-git
 #arcolinux-jwm-git
@@ -749,6 +750,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-gnome-git
 #arcob-calamares-config-herbstluftwm-git
 #arcob-calamares-config-hypr-git
+#arcob-calamares-config-hyprland-git
 #arcob-calamares-config-i3-git
 #arcob-calamares-config-icewm-git
 #arcob-calamares-config-jwm-git
