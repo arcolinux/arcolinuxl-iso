@@ -462,7 +462,7 @@ neofetch
 arcolinux-pamac-all
 #pamac-aur
 paru-bin
-peek
+#peek
 pulseaudio-equalizer-ladspa
 python-pyparted
 python-pywal
