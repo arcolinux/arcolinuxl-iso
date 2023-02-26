@@ -215,6 +215,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 openresolv
+rtl8821cu-morrownr-dkms-git
 
 ###file management
 gvfs
@@ -926,4 +927,3 @@ arcolinux-fish-git
 ripgrep-all
 #archlinux-login-backgrounds-plain-git
 vimix-cursors
-rtl8821cu-morrownr-dkms-git
