@@ -106,10 +106,12 @@ alias merge="xrdb -merge ~/.Xresources"
 # pacman or pm
 alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syyu'
+alias upd='sudo pacman -Syyu'
 
 # paru as aur helper - updates everything
 alias pksyua="paru -Syu --noconfirm"
 alias upall="paru -Syu --noconfirm"
+alias upa="paru -Syu --noconfirm"
 
 #ps
 alias psa="ps auxf"
@@ -117,6 +119,7 @@ alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 #grub issue 08/2022
 alias install-grub-efi="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi"
 
@@ -259,6 +262,7 @@ alias nb="$EDITOR ~/.bashrc"
 alias nz="$EDITOR ~/.zshrc"
 alias nf="$EDITOR ~/.config/fish/config.fish"
 alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
+alias nplymouth="sudo $EDITOR /etc/plymouth/plymouthd.conf"
 
 #reading logs with bat
 alias lcalamares="bat /var/log/Calamares.log"
@@ -342,7 +346,8 @@ ex ()
 }
 
 #wayland aliases
-alias wsimplescreenrecorder="wf-recorder -a"
+alias wsimplescreen="wf-recorder -a"
+alias wsimplescreenrecorder="wf-recorder -a -c h264_vaapi -C aac -d /dev/dri/renderD128 --file=recording.mp4"
 
 #btrfs aliases
 alias btrfsfs="sudo btrfs filesystem df /"
