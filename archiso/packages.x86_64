@@ -15,7 +15,6 @@ broadcom-wl-dkms
 btrfs-progs
 clonezilla
 #cloud-init
-#crda
 cryptsetup
 #darkhttpd
 ddrescue
@@ -34,6 +33,7 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
+#foot-terminfo
 fsarchiver
 gnu-netcat
 gpart
@@ -44,8 +44,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-#ipw2100-fw
-#ipw2200-fw
 irssi
 #iw
 #iwd
@@ -58,7 +56,6 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
-linux-firmware-qlogic
 linux-firmware-marvell
 #livecd-sounds
 lsscsi
@@ -123,6 +120,7 @@ usbutils
 vim
 #virtualbox-guest-utils-nox
 vpnc
+#wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -134,6 +132,7 @@ xl2tpd
 aic94xx-firmware
 dialog
 dnsutils
+linux-firmware-qlogic
 linux-headers
 logrotate
 ntp
