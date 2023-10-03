@@ -10,6 +10,7 @@ arch-install-scripts
 #b43-fwcutter
 base
 bind
+#bolt
 #brltty
 broadcom-wl-dkms
 btrfs-progs
