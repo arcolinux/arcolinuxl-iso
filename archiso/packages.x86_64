@@ -583,6 +583,7 @@ arcolinux-zsh-git
 #arcolinux-cutefish-git
 #arcolinux-cwm-git
 #arcolinux-deepin-git
+#arcolinux-dk-git
 #arcolinux-dwm-git
 #arcolinux-dwm-slstatus-git
 #arcolinux-dwm-st-git
@@ -744,6 +745,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-cwm-git
 #arcob-calamares-config-cutefish-git
 #arcob-calamares-config-deepin-git
+#arcob-calamares-config-dk-git
 #arcob-calamares-config-dwm-git
 #arcob-calamares-config-enlightenment-git
 #arcob-calamares-config-everyway-git
