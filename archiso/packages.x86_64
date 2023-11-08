@@ -133,6 +133,7 @@ xl2tpd
 aic94xx-firmware
 dialog
 dnsutils
+libadwaita-without-adwaita-git
 linux-firmware-qlogic
 linux-headers
 logrotate
@@ -933,4 +934,3 @@ mkinitcpio-firmware
 arcolinux-app-glade-git
 sofirem-git
 noto-fonts-emoji
-libadwaita-without-adwaita-git
