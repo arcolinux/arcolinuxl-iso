@@ -934,3 +934,5 @@ mkinitcpio-firmware
 arcolinux-app-glade-git
 sofirem-git
 noto-fonts-emoji
+hyfetch
+arcolinux-hyfetch-git
