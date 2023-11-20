@@ -10,13 +10,11 @@ arch-install-scripts
 #b43-fwcutter
 base
 bind
-#bolt
-#brltty
 broadcom-wl-dkms
 btrfs-progs
 clonezilla
 #cloud-init
-cryptsetup
+#cryptsetup
 #darkhttpd
 ddrescue
 dhclient
@@ -34,7 +32,6 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
-#foot-terminfo
 fsarchiver
 gnu-netcat
 gpart
@@ -121,7 +118,6 @@ usbutils
 vim
 #virtualbox-guest-utils-nox
 vpnc
-#wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -134,7 +130,6 @@ aic94xx-firmware
 dialog
 dnsutils
 libadwaita-without-adwaita-git
-linux-firmware-qlogic
 linux-headers
 logrotate
 ntp
@@ -449,6 +444,7 @@ mkinitcpio-openswap
 ###utilities-repo
 alacritty
 appstream
+appstream-qt5
 archiso
 conky-lua-archers
 downgrade
@@ -461,7 +457,9 @@ inxi
 mintstick-git
 neofetch
 #numix-gtk-theme-git
-arcolinux-pamac-all
+#arcolinux-pamac-all
+octopi
+octopi-notifier-qt5
 #pamac-aur
 paru-bin
 #peek
