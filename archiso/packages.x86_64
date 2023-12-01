@@ -778,6 +778,7 @@ arco-calamares-config-xl-git
 #arco-calamares-config-xl-dev-git
 #arco-calamares-config-xs-git
 #arco-calamares-config-xs-lts-git
+#arco-calamares-config-xs-rt-git
 #arco-calamares-config-xs-xanmod-git
 #arco-calamares-config-xs-zen-git
 #arco-calamares-config-xl-next-git
