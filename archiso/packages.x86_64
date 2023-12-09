@@ -457,9 +457,9 @@ inxi
 mintstick-git
 neofetch
 #numix-gtk-theme-git
-#arcolinux-pamac-all
-octopi
-octopi-notifier-qt5
+arcolinux-pamac-all
+#octopi
+#octopi-notifier-qt5
 #pamac-aur
 paru-bin
 #peek
