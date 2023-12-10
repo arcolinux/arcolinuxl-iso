@@ -457,10 +457,10 @@ inxi
 mintstick-git
 neofetch
 #numix-gtk-theme-git
-arcolinux-pamac-all
+#arcolinux-pamac-all
 #octopi
 #octopi-notifier-qt5
-#pamac-aur
+pamac-aur
 paru-bin
 #peek
 pulseaudio-equalizer-ladspa
