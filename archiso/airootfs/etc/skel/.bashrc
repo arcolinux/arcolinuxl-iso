@@ -320,6 +320,9 @@ alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
 alias xd="ls /usr/share/xsessions"
 alias xdw="ls /usr/share/wayland-sessions"
 
+#give a list of the kernels installed
+alias kernels="ls /usr/lib/modules"
+
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
 ex ()
