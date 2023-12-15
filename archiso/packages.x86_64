@@ -446,7 +446,7 @@ mkinitcpio-openswap
 alacritty
 appstream
 appstream-qt5
-archiso
+#archiso
 conky-lua-archers
 downgrade
 font-manager
