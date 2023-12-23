@@ -937,4 +937,5 @@ sofirem-git
 noto-fonts-emoji
 hyfetch
 arcolinux-hyfetch-git
-kernel-modules-hook
+#does this create issues?
+#kernel-modules-hook
