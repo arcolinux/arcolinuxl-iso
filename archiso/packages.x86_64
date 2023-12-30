@@ -42,7 +42,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-irssi
 #iw
 #iwd
 jfsutils
@@ -172,8 +171,6 @@ virtualbox-guest-utils
 
 ###packages for dual boot
 os-prober
-
-###LUKS encryption
 
 ###audio
 alsa-firmware
