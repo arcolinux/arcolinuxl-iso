@@ -14,7 +14,7 @@ broadcom-wl-dkms
 btrfs-progs
 clonezilla
 #cloud-init
-#cryptsetup
+cryptsetup
 #darkhttpd
 ddrescue
 dhclient
@@ -174,7 +174,6 @@ virtualbox-guest-utils
 os-prober
 
 ###LUKS encryption
-cryptsetup
 
 ###audio
 alsa-firmware
