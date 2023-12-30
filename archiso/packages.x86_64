@@ -42,8 +42,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-#iw
-#iwd
 jfsutils
 #kitty-terminfo
 less
