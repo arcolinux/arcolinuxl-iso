@@ -204,6 +204,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
+networkmanager-qt5
 openresolv
 rtl8821cu-morrownr-dkms-git
 
