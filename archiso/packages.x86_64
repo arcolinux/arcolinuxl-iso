@@ -953,3 +953,6 @@ hyfetch
 arcolinux-hyfetch-git
 #does this create issues?
 #kernel-modules-hook
+
+## chaotics-aur
+#flat-remix

@@ -38,6 +38,12 @@ echo
 	buildFolder=$HOME"/arcolinux-build"
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
+
+	# If you want to add packages from the chaotics-aur repo then
+	# change the variable to true and add the package names
+	# that are hosted on chaotics-aur in the packages.x86_64 at the bottom
+
+	chaoticsrepo=false
 	
 	# If you are ready to use your personal repo and personal packages
 	# https://arcolinux.com/use-our-knowledge-and-create-your-own-icon-theme-combo-use-github-to-saveguard-your-work/
@@ -196,6 +202,14 @@ echo
 		printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 		cat personal-repo | sudo tee -a $buildFolder/archiso/pacman.conf
 		cat personal-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
+	fi
+
+	if [ $chaoticsrepo == true ]; then
+		echo "Adding our chaotics repo to /etc/pacman.conf"
+		printf "\n" | sudo tee -a ../work/archiso/pacman.conf
+		printf "\n" | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+		cat chaotics-repo | sudo tee -a ../work/archiso/pacman.conf
+		cat chaotics-repo | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
 	fi
 
 echo
