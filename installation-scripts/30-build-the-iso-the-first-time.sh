@@ -212,6 +212,18 @@ echo
 		cat chaotics-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 	fi
 
+	echo
+	echo "Adding the content of the /personal folder"
+	echo
+	cp -rf ../personal/ $buildFolder/archiso/airootfs/
+
+	if test -f $buildFolder/archiso/airootfs/personal/.gitkeep ; then
+		echo
+		rm $buildFolder/archiso/airootfs/personal/.gitkeep
+		echo ".gitkeep is now removed"
+		echo
+    fi
+
 echo
 echo "################################################################## "
 tput setaf 2
