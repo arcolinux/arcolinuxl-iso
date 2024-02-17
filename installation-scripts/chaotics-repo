@@ -1,0 +1,3 @@
+[chaotic-aur]
+SigLevel = Required DatabaseOptional
+Include = /etc/pacman.d/chaotic-mirrorlist
