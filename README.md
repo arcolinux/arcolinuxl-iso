@@ -4,7 +4,7 @@
 
 # ArcoLinuXL iso
 
-# Follow installation tutorials on
+# Follow build and installation tutorials on
 
 https://arcolinuxb.com
 
