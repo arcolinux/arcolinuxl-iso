@@ -43,7 +43,7 @@ echo
 	# change the variable to true and add the package names
 	# that are hosted on chaotics-aur in the packages.x86_64 at the bottom
 
-	chaoticsrepo=false
+	chaoticsrepo=true
 	
 	# If you are ready to use your personal repo and personal packages
 	# https://arcolinux.com/use-our-knowledge-and-create-your-own-icon-theme-combo-use-github-to-saveguard-your-work/
@@ -206,10 +206,10 @@ echo
 
 	if [ $chaoticsrepo == true ]; then
 		echo "Adding our chaotics repo to /etc/pacman.conf"
-		printf "\n" | sudo tee -a ../work/archiso/pacman.conf
-		printf "\n" | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
-		cat chaotics-repo | sudo tee -a ../work/archiso/pacman.conf
-		cat chaotics-repo | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+		printf "\n" | sudo tee -a $buildFolder/archiso/pacman.conf
+		printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
+		cat chaotics-repo | sudo tee -a $buildFolder/archiso/pacman.conf
+		cat chaotics-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 	fi
 
 echo
