@@ -734,6 +734,7 @@ arcolinux-welcome-app-git
 #plasma-framework5
 #hwinfo
 #qt5-xmlpatterns
+
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
@@ -931,7 +932,9 @@ xfce4-panel-profiles
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
+##arcolinux-apps
 sofirem-git
+
 arcolinux-meta-log
 #tempus-themes-xfce4-terminal-git
 #prot16-xfce4-terminal
