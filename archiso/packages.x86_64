@@ -931,6 +931,7 @@ xfce4-panel-profiles
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
+sofirem-git
 arcolinux-meta-log
 #tempus-themes-xfce4-terminal-git
 #prot16-xfce4-terminal
@@ -947,7 +948,6 @@ ripgrep-all
 vimix-cursors
 mkinitcpio-firmware
 arcolinux-app-glade-git
-sofirem-git
 noto-fonts-emoji
 hyfetch
 arcolinux-hyfetch-git
