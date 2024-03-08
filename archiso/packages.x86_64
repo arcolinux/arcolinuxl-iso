@@ -384,12 +384,12 @@ unace
 unrar
 unzip
 #vnstat
-w3m
-webkit2gtk
-wmctrl
+#w3m
+#webkit2gtk
+#wmctrl
 xapp
-xdo
-xdotool
+#xdo
+#xdotool
 xdg-desktop-portal-gtk
 yt-dlp
 #youtube-dl
