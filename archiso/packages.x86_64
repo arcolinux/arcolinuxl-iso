@@ -58,7 +58,7 @@ lvm2
 #lynx
 man-db
 man-pages
-mc
+#mc
 mdadm
 memtest86+
 memtest86+-efi
@@ -305,7 +305,7 @@ ttf-ubuntu-font-family
 arc-gtk-theme
 #arc-darkest-theme-git
 kvantum-qt5-git
-kvantum-qt6-git
+#kvantum-qt6-git
 #openbox-arc-git
 
 ###utilities
@@ -616,7 +616,7 @@ arcolinux-zsh-git
 #arcolinux-wayfire-nemesis-git
 #arcolinux-worm-git
 #arcolinux-wmderland-git
-arcolinux-xfce-git
+#arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
 
@@ -662,7 +662,7 @@ arcolinux-config-all-desktops-git
 #                           ARCOLINUX DCONF FOLDER
 ###########################################################################
 
-arcolinux-dconf-all-desktops-git
+#arcolinux-dconf-all-desktops-git
 #arcolinux-awesome-dconf-git
 #arcolinux-berry-dconf-git
 #arcolinux-bspwm-dconf-git
@@ -715,25 +715,25 @@ arcolinux-welcome-app-git
 #arcolinux-welcome-app-deepin-git
 
 ###########################################################################
-#                                CALAMARES DEPENDENCIES
+#                                CALAMARES DEPENDENCIES IN PGKBUILD 
 ###########################################################################
 
-ckbcomp
-xkeyboard-config
-upower
-kcoreaddons5
-kconfig5
-ki18n5
-kservice5
-kwidgetsaddons5
-kpmcore
+#ckbcomp
+#xkeyboard-config
+#upower
+#kcoreaddons5
+#kconfig5
+#ki18n5
+#kservice5
+#kwidgetsaddons5
+#kpmcore
 #arcolinux-kpmcore
-boost-libs
-libpwquality
-squashfs-tools
-plasma-framework5
-hwinfo
-qt5-xmlpatterns
+#boost-libs
+#libpwquality
+#squashfs-tools
+#plasma-framework5
+#hwinfo
+#qt5-xmlpatterns
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
@@ -953,6 +953,8 @@ hyfetch
 arcolinux-hyfetch-git
 #does this create issues?
 #kernel-modules-hook
+arcolinux-xfce-prime-git
+arcolinux-arc-dawn-git
 
 ## chaotics-aur
 #flat-remix
