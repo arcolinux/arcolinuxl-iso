@@ -173,6 +173,9 @@ alias trizenskip='trizen -S --skipinteg'
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
+#approximation of how old your hardware is
+alias howold="sudo lshw | grep -B 3 -A 8 BIOS"
+
 #check cpu
 alias cpu="cpuid -i | grep uarch | head -n 1"
 
