@@ -458,7 +458,7 @@ neofetch
 #octopi
 #octopi-notifier-qt5
 #pamac-aur
-paru-bin
+paru-git
 #peek
 pulseaudio-equalizer-ladspa
 python-pyparted
