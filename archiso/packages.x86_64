@@ -58,7 +58,6 @@ lvm2
 #lynx
 man-db
 man-pages
-#mc
 mdadm
 memtest86+
 memtest86+-efi
@@ -448,7 +447,7 @@ downgrade
 font-manager
 #glxinfo
 gitahead-bin
-grub-customizer
+#grub-customizer
 hardcode-fixer-git
 inxi
 mintstick-git
@@ -493,6 +492,7 @@ yay-bin
 arcolinux-alacritty-git
 arcolinux-arc-kde
 arcolinux-bin-git
+arcolinux-bootloader-grub-git
 #arcolinux-btop-git
 a-candy-beauty-icon-theme-git
 #arcolinux-common-git
