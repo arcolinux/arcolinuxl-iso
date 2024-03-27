@@ -954,8 +954,6 @@ arcolinux-app-glade-git
 noto-fonts-emoji
 hyfetch
 arcolinux-hyfetch-git
-#does this create issues?
-#kernel-modules-hook
 arcolinux-xfce-prime-git
 arcolinux-arc-dawn-git
 

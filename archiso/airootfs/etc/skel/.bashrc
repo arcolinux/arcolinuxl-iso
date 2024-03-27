@@ -145,6 +145,7 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 #switch between displaymanager or bootsystem
 alias toboot="sudo /usr/local/bin/arcolinux-toboot"
 alias togrub="sudo /usr/local/bin/arcolinux-togrub"
+alias torefind="sudo /usr/local/bin/arcolinux-torefind"
 alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
 alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
 alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
@@ -333,7 +334,7 @@ alias kernel="ls /usr/lib/modules"
 alias kernels="ls /usr/lib/modules"
 
 #am I on grub or systemd-boot
-alias boot="sudo bootctl status | grep Product"
+alias boot="sudo bootctl status | grep Product | awk '{print \$2}'"
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
