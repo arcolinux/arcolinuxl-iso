@@ -2,57 +2,52 @@
  <img src="https://github.com/erikdubois/arcolinux-nemesis/blob/master/Personal/settings/arcolinuxws.png">
 </p>
 
-# ArcoLinuXL iso
+## Project Update: Transition to New Repositories
 
-# Follow build and installation tutorials on
+## Repository Status: Deprecated
 
-https://arcolinuxb.com
+**IMPORTANT NOTICE**: As of April 2024, these GitHub repositories will no longer be maintained and are preserved solely as a reference for the numerous tutorial videos available on YouTube. For active development and ISO building guides, please visit our new repositories.
 
-# Websites
+## Transition Announcement
 
-Information about ArcoLinux : https://arcolinux.info
+In April 2024, we announced a significant shift in our project to enhance simplification and efficiency. This update is focused on streamlining deployment and testing processes to improve the overall user experience.
 
-Tutorials about Linux : https://arcolinux.com
+## Key Updates
 
-Tutorials about ArcoLinuxD iso (D=desktop - any desktop) : https://arcolinuxd.com
+### Consolidation of ISOs
+- **Reduced Complexity**: We have streamlined from 45 different ISO images to just three, simplifying testing and maintenance.
+- **Tailored Options**: The available ISOs are optimized for diverse user needs, incorporating boot systems like GRUB, systemd, and rEFInd.
 
-Tutorials how to build your own iso on ArcoLinux iso : https://arcolinuxb.com
+### Calamares Installer Enhancements
+- **Enhanced Integration**: The Calamares installer now seamlessly supports multiple bootloaders, including the new rEFInd option, alongside existing GRUB and systemd-boot.
 
-Tutorials how to build your iso from scratch : https://arcolinuxiso.com
+### Desktop Environment and Software Selection
+- **Optimized Choices**: We have phased out less stable or popular desktops and software, focusing on options that provide stability and are well-regarded within the community.
 
-Alci - Arch Linux and the Calamares installer : https://alci.online
+### Community Testing and Feedback
+- **Engagement Request**: Community testing of the new ISOs is vital. We rely on your feedback to ensure compatibility across a wide range of hardware and to make necessary adjustments.
 
-Ariser - Pure arch - installed with scripts : https://ariser.eu
+### Future Directions and Bootloaders
+- **Innovation Continues**: We are exploring additional bootloaders and kernels to increase flexibility and meet the evolving preferences of our users.
 
-Forum : https://arcolinuxforum.com
+### Commitment to Education and Updates
+- **Rolling Release and Learning**: Our project remains committed to the rolling release model, promoting continual learning and regular updates to enhance skills in Linux and Arch-based distributions.
 
-# Social Media
+## Internet Connectivity and Kernel Testing
+- **Increased Importance of Connectivity**: Test your internet connectivity with the following kernel options, based on your distribution choice:
+  - **Arconet**: linux kernel, linux-zen kernel
+  - **Arcopro**: linux kernel, linux-lts kernel
+  - **Arcoplasma**: linux-kernel, linux-cachyos
 
-Facebook : https://www.facebook.com/arcolinuxd/
+## Guidance for Building ISOs
+For detailed instructions on building your ISOs using the latest tools and best practices, refer to our new active repositories:
 
-Facebook : https://www.facebook.com/groups/arcolinux/
+- **[Arconet Pro Repositories](https://github.com/orgs/arconetpro/repositories)**
 
-Flickr   : https://www.flickr.com/photos/arcolinux/
+## Just keep rolling
 
-Twitter  : https://twitter.com/arcolinux
+Users of ArcoLinuXL, ArcoLinuXS, ArcoLinuxD, and ArcoLinuxB ISOs can continue to enjoy the rolling release model, as these distributions are based on Arch Linux, which is inherently designed to roll forward with continuous updates.
 
-Instagram: https://www.instagram.com/arcolinux/
+**NOTE**: We use the `archiso` package from Arch Linux, which is subject to ongoing updates. Not every Arch Linux-based distro has access to this tool. Stay updated with the latest versions of `archiso` [here](https://www.archlinux.org/packages/extra/any/archiso/).
 
-Linked in: https://www.linkedin.com/in/arcolinux
-
-Youtube  : https://www.youtube.com/erikdubois
-
-Mastodon Page : https://mastodon.social/@arcolinux
-
-Mewe Group : https://mewe.com/group/5bbc4577a40f3002b313671d
-
-Mewe ArcoLinux : https://mewe.com/profile/5bc022ac70fb13619f97af90
-
-Matrix:
-
-https://matrix.to/#/#official-arcolinux-news:matrix.org
-
-https://matrix.to/#/#official-arcolinux-general-support:matrix.org
-
-https://matrix.to/#/!jUDkosOsuDbGWNzKYl:matrix.org?via=matrix.org&via=envs.net&via=privacytools.io
-
+We appreciate your continued support and feedback as we transition to these new platforms and enhance our project.
